@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+	--radius-s: 5px;
+	--radius-m: 5px;
+	--radius-l: 5px;
+	--input-radius: 5px;
+	--tab-radius-active: 5px;
+	--checkbox-radius: 5px;
+	--toggle-radius: 25px;
+	--toggle-thumb-radius: 25px; 
+	--slider-thumb-radius: 25px;
+  --bold-color: #e16d76;
+  --italic-color: #669eff;
 }
 
 .workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
@@ -32,3 +36,40 @@ svg * {
 .menu-separator {
 	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
 }
+
+/* Headings */
+.markdown-preview-section,
+.cm-header {
+   font-family: Rubik;
+} 
+
+.markdown-preview-section h1,
+.cm-header-1 {
+  color: #d04255 !important;
+}
+
+.markdown-preview-section h2,
+.cm-header-2 {
+  color: #d57634 !important;
+}
+
+.markdown-preview-section h3,
+.cm-header-3 {
+  color: #e5b567 !important;
+}
+
+.markdown-preview-section h4,
+.cm-header-4  {
+  color: #a8c373 !important;
+}
+
+.markdown-preview-section h5,
+.cm-header-5  {
+  color: #6c99bb !important;
+}
+
+.markdown-preview-section h6,
+.cm-header-6  {
+  color: #9386c8 !important;
+}
+
