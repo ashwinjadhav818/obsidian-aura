@@ -73,97 +73,24 @@ button.mod-cta {
    color: var(--text-white);
 }
 
-/*-----------------------------------------*/
-/* End of main theme, extra functionality can be added below */
+/* STYLE SETTINGS */
+/* @settings
 
-.markdown-source-view {
-   font-family: var(--font-monospace);
-}
+name: Aura
+id: aura
+settings:
+    - 
+        id: status-bar-position
+        title: status bar position
+        description: status bar style
+        type: variable-select
+        default: fixed
+        options:
+            - 
+                label: default
+                value: fixed
+            - 
+                label: full
+                value: inherit
 
-.cm-fat-cursor .CodeMirror-cursor {
-   background-color: #63959c !important;
-   opacity: 80% !important;
-   width: 9px !important;
-   visibility: visible !important;
-}
-
-.plugin-tabs .stayopen .view-header {
-   border-bottom: 2px solid var(--interactive-accent) !important;
-}
-
-.plugin-tabs
-   .mod-root.workspace-split.mod-vertical
-   div.workspace-leaf:not(.stayopen)
-   > .workspace-leaf-content
-   > .view-header
-   .view-header-title::before {
-   background-color: transparent !important;
-}
-
-.plugin-tabs
-   .mod-root.workspace-split.mod-vertical
-   .workspace-split.mod-vertical
-   > div.workspace-leaf:not(.stayopen),
-.plugin-tabs
-   .mod-root.workspace-split.mod-vertical
-   > div.workspace-leaf:not(.stayopen) {
-   border-radius: 5px 5px 0px 0px !important;
-}
-
-.plugin-tabs .mod-root.workspace-split.mod-vertical div.workspace-leaf {
-   border-color: var(--background-secondary-alt) !important;
-   border-bottom-width: 0px !important;
-   border-right-width: 0px !important;
-}
-
-.theme-light.plugin-tabs
-   .mod-root.workspace-split.mod-vertical
-   div.workspace-leaf {
-   border-color: var(--background-secondary-alt) !important;
-   border-left-width: 3px !important;
-   border-bottom-width: 0px !important;
-   border-right-width: 0px !important;
-}
-
-.plugin-tabs
-   .mod-root.workspace-split.mod-vertical
-   > div.workspace-leaf
-   hr.workspace-leaf-resize-handle,
-.plugin-tabs
-   .mod-root.workspace-split.mod-vertical
-   > .mod-vertical
-   hr.workspace-leaf-resize-handle {
-   display: none;
-}
-
-.plugin-tabs
-   .mod-root.workspace-split.mod-vertical
-   div.workspace-leaf
-   .view-header {
-   border-left-color: transparent !important;
-}
-
-.plugin-tabs
-   .workspace-split.mod-root
-   > .workspace-leaf:last-of-type
-   .workspace-leaf-content,
-.plugin-tabs
-   .workspace-split.mod-root
-   > .workspace-leaf:first-of-type
-   .workspace-leaf-content {
-   border-radius: 0px !important;
-}
-
-.plugin-tabs
-   .theme-dark
-   .mod-root.workspace-split.mod-vertical
-   .workspace-split.mod-vertical
-   > div.workspace-leaf.mod-active,
-.plugin-tabs
-   .theme-dark
-   .mod-root.workspace-split.mod-vertical
-   > div.workspace-leaf.mod-active {
-   border: 0 !important;
-   border-radius: 0px 0px 0px 0px !important;
-}
-
+*/
