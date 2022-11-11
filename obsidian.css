@@ -2,95 +2,152 @@
 /* Thank's to Wasp by Santi Younger and Sanctum by @jdanielmourao theme for the inspiartion */
 
 :root {
-   --font-monospace: 'Victor Mono', 'Source Code Pro', monospace;
+	--font-monospace: "Victor Mono", "Source Code Pro", monospace;
 }
 
 .theme-dark {
-   /* Background */
-   --background-primary: #161616;
-   --background-primary-alt: #161616;
-   --background-secondary: #161616;
-   --background-secondary-alt: #161616;
-   --background-modifier-border: #63959ca2;
+	/* Background */
+	--background-primary: #161616;
+	--background-primary-alt: #161616;
+	--background-secondary: #161616;
+	--background-secondary-alt: #161616;
+	--background-modifier-border: #63959ca2;
+	--interactive-accent: #63959c;
+	--interactive-accent-hover: #457076;
+	--vim-cursor: #63959c;
 
-   /* Text */
-   --text-normal: #faf2d6;
-   --text-faint: #bdae93;
-   --text-highlight-bg: #9dcad09a;
-   --text-link-internal: #83a598;
-   --text-link-external: #83a598;
-   --text-accent-hover: #7caab0;
-   --text-selection: #63959c;
-   --text-accent: #63959c;
-   --text-on-accent: #fff;
+	/* Text */
+	--text-normal: #faf2d6;
+	--text-faint: #bdae93;
+	--text-highlight-bg: #9dcad09a;
+	--text-link-internal: #83a598;
+	--text-link-external: #83a598;
+	--text-accent-hover: #7caab0;
+	--text-selection: #63959c;
+	--text-accent: #63959c;
+	--text-on-accent: #fff;
 
-   /* Heading */
-   --h1-color: #d04255;
-   --h2-color: #d57634;
-   --h3-color: #e5b567;
-   --h4-color: #a8c373;
-   --h5-color: #6c99bb;
-   --h6-color: #9386c8;
+	/* Heading */
+	--h1-color: #d04255;
+	--h2-color: #d57634;
+	--h3-color: #e5b567;
+	--h4-color: #a8c373;
+	--h5-color: #6c99bb;
+	--h6-color: #9386c8;
 
-   /* Code */
-   --code-block: #83a598;
-   --code-background: #101111;
-
-   /* MISC */
-   --interactive-accent-rgb: #63959c;
-   --vim-cursor: #63959c;
-   --interactive-accent: #63959c;
-   --interactive-before: #7c6f64;
+	/* Code */
+	--code-block: #83a598;
+	--code-background: #101111;
 }
 
-.nav-file-title,
-.nav-folder-title {
-   color: var(--text-normal);
+/* ----- Callout ----- */
+.callout:not(.is-collapsible) {
+	padding: 0px;
+}
+.callout:not(.is-collapsible) .callout-content {
+	padding: 0 var(--callout-title-padding) var(--callout-title-padding)
+		var(--callout-title-padding);
+}
+.callout:not(.is-collapsible) .callout-title {
+	background-color: rgba(var(--callout-color), 0 0.5);
+	padding: var(--callout-title-padding);
+	cursor: pointer;
+}
+.callout:not(.is-collapsible) .callout-title .callout-title-inner {
+	font-weight: normal;
 }
 
-.nav-file-title.is-active,
-.nav-folder-title.is-active,
-body:not(.is-grabbing) .nav-file-title:hover,
-body:not(.is-grabbing) .nav-folder-title:hover {
-   background-color: var(--background-modifier-border);
-   color: white;
+.callout:not(.is-collapsible) {
+	border-color: rgba(var(--callout-color), 0.4);
+	border-width: 1px;
+	border-radius: var(--callout-radius);
+	background-color: rgba(var(--ctp-mantle), 0.4);
 }
 
-.cm-s-obsidian span.cm-formatting-link {
-   color: var(--text-normal);
+.callout-content {
+	padding: var(--callout-title-padding) var(--callout-title-padding)
+		var(--callout-title-padding) calc(var(--callout-title-padding) * 1.5);
+	border-top: 1px dashed rgba(var(--callout-color), 0.4);
 }
 
-.CodeMirror-guttermarker-subtle {
-   color: var(--text-normal) !important;
+.callout-fold {
+	padding-right: 0px;
 }
 
-button.mod-cta {
-   background-color: var(--interactive-accent);
-   color: var(--text-normal);
+.callout-title-inner {
+	flex-grow: var(--anp-callout-fold-position, unset);
 }
 
-.vertical-tab-header-group-title {
-   color: var(--text-white);
+.callout {
+	--callout-title-padding: var(--size-4-2);
+}
+.callout.is-collapsible {
+	border-color: rgba(var(--callout-color), 0.4);
+	border-width: 1px;
+	border-radius: var(--callout-radius);
+	background-color: rgba(var(--ctp-mantle), 0.4);
+	--bold-weight: bolder;
+}
+.callout.is-collapsible .callout-fold {
+	padding-right: 0px;
+}
+.callout.is-collapsible .callout-title-inner {
+	flex-grow: var(--anp-callout-fold-position, unset);
+}
+.callout.is-collapsible.is-collapsed {
+	padding: 0;
+}
+.callout.is-collapsible.is-collapsed .callout-title {
+	background-color: rgba(var(--callout-color), 0.1);
+	padding: var(--callout-title-padding);
+	cursor: pointer;
+}
+.callout.is-collapsible.is-collapsed .callout-content {
+	display: none;
+}
+.callout.is-collapsible:not(.is-collapsed) {
+	padding: 0px 0px var(--callout-title-padding) 0px;
+}
+.callout.is-collapsible:not(.is-collapsed) .callout-title {
+	background-color: rgba(var(--callout-color), 0.1);
+	padding: var(--callout-title-padding);
+	border-color: rgba(var(--callout-color), 0.4);
+	cursor: pointer;
+}
+.callout.is-collapsible:not(.is-collapsed) .callout-content {
+	padding: var(--callout-title-padding) var(--callout-title-padding) 0
+		calc(var(--callout-title-padding) * 1.5);
+	border-top: 1px dashed rgba(var(--callout-color), 0.4);
+}
+.callout:not(.is-collapsible) {
+	padding: 0px;
+}
+.callout:not(.is-collapsible) .callout-title {
+	background-color: rgba(var(--callout-color), 0.1);
+	padding: var(--callout-title-padding);
+	border-color: rgba(var(--callout-color), 0.4);
+}
+.callout .list-collapse-indicator {
+	margin-left: -35px;
+	padding-right: 3px;
 }
 
 /* STYLE SETTINGS */
 /* @settings
-
-name: Aura
-id: aura
+name: UI settings
+id: aura-ui
 settings:
-    - 
-        id: status-bar-position
-        title: status bar position
-        description: status bar style
-        type: variable-select
-        default: fixed
-        options:
-            - 
-                label: default
-                value: fixed
-            - 
-                label: full
-                value: inherit
-
+   - 
+      id: status-bar-position
+      title: Status bar position
+      description: change the status bar style
+      type: variable-select
+      default: fixed
+      options:
+         - 
+            label: minimal
+            value: fixed
+         - 
+            label: full
+            value: inherit
 */
