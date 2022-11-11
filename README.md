@@ -8,4 +8,4 @@ Credits to:
 
 -   Wasp theme by [Santi Younger](https://github.com/santiyounger)
 -   Sanctum by [jdanielmourao](https://github.com/jdanielmourao)
--   Callouts and the colored folders by [Anubis](https://github.com/AnubisNekhet)
+-   Callouts by [Anubis](https://github.com/AnubisNekhet)
