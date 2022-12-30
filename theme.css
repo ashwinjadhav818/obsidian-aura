@@ -1,46 +1,197 @@
 /* This Theme is called "Aura" and Obsidian Theme created by Ashwin Jadhav */
-/* Thank's to Wasp by Santi Younger and Sanctum by @jdanielmourao theme for the inspiartion */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-:root {
-	--font-monospace: "Victor Mono", "Source Code Pro", monospace;
+/*------------------Style Settings-------------------*/
+/* @settings
+
+name: Aura
+id: aura
+level: 1
+settings:
+   - 
+      id: aura-colors
+      title: Colors
+      type: heading
+      level: 2
+      collapsed: true
+   - 
+      id: aura-accent
+      title: Theme accent
+      description: Change the theme accent as you like
+      type: class-select
+      allowEmpty: false
+      default: accent-blue
+      options:
+         - 
+            label: Red
+            value: color-red
+         - 
+            label: Orange
+            value: color-orange
+         - 
+            label: Yellow
+            value: color-yellow
+         - 
+            label: Green
+            value: color-green
+         - 
+            label: Blue
+            value: color-blue
+         - 
+            label: Purple
+            value: color-purple
+   - 
+      id: background-primary
+      title: Primary Background
+      type: variable-color
+      opacity: false
+      format: hex
+      alt-format:
+         -
+            id: accent-rgb
+            format: rgb
+      default: '#121212'
+   - 
+      id: background-secondary
+      title: Secondary Background
+      type: variable-color
+      opacity: false
+      format: hex
+      alt-format:
+         -
+            id: accent-rgb
+            format: rgb
+      default: '#0f0f10'
+
+   - 
+      id: aura-text
+      title: Text
+      type: heading
+      level: 2
+      collapsed: true
+   - 
+      id: font-interface
+      title: UI font
+      description: Font used for the user interface
+      type: variable-text
+      default: Overpass, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+   - 
+      id: font-text
+      title: Text font
+      description: Font used for the documents
+      type: variable-text
+      default: Rubik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif
+
+   - 
+      id: aura-workspace
+      title: Workspace
+      type: heading
+      level: 2
+      collapsed: true
+   - 
+      id: status-bar-position
+      title: Status bar
+      description: change the status bar style
+      type: variable-select
+      default: fixed
+      options:
+         - 
+            label: full
+            value: inherit
+         - 
+            label: minimal
+            value: fixed
+         - 
+            label: none
+            value: none
+*/
+
+body {
+	--font-interface: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--font-text: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 .theme-dark {
+	--accent: var(--accent-blue);
+	--accent-muted: var(--accent-blue-muted);
+
+	--black: #000000;
+	--white: #ffffff;
+	--accent-red: #d04255;
+	--accent-orange: #d57634;
+	--accent-yellow: #e5b567;
+	--accent-green: #a8c373;
+	--accent-blue: #6c99bb;
+	--accent-purple: #9386c8;
+
+	--white-muted: #e1e1e1de;
+	--accent-red-muted: #c43145;
+	--accent-orange-muted: #a9581e;
+	--accent-yellow-muted: #e3a032;
+	--accent-green-muted: #8ca952;
+	--accent-blue-muted: #477394;
+	--accent-purple-muted: #685c98;
+
 	/* Background */
-	--background-primary: #161616;
+	--background-primary: #121212;
 	--background-primary-alt: #161616;
-	--background-secondary: #161616;
+	--background-secondary: #0f0f10;
 	--background-secondary-alt: #161616;
-	--background-modifier-border: #63959ca2;
-	--interactive-accent: #63959c;
-	--interactive-accent-hover: #457076;
-	--vim-cursor: #63959c;
+
+	/* Interictive elements */
+	--interactive-accent-hover: var(--accent-muted);
+	--interactive-accent: var(--accent);
 
 	/* Text */
-	--text-normal: #faf2d6;
-	--text-faint: #bdae93;
-	--text-highlight-bg: #9dcad09a;
-	--text-link-internal: #83a598;
-	--text-link-external: #83a598;
-	--text-accent-hover: #7caab0;
-	--text-selection: #63959c;
-	--text-accent: #63959c;
-	--text-on-accent: #fff;
+	--text-normal: var(--white);
+	--text-faint: var(--white-muted);
+	--text-on-accent: var(--white);
+	--text-link-internal: var(--accent);
+	--text-link-external: var(--accent);
+	--text-selection: var(--accent-muted);
+	--text-accent: var(--accent);
+	--text-accent-hover: var(--accent-muted);
+	--bold-color: var(--accent-red);
+	--italic-color: var(--accent-blue);
 
-	/* Heading */
-	--h1-color: #d04255;
-	--h2-color: #d57634;
-	--h3-color: #e5b567;
-	--h4-color: #a8c373;
-	--h5-color: #6c99bb;
-	--h6-color: #9386c8;
-
-	/* Code */
-	--code-block: #83a598;
-	--code-background: #101111;
+	/* Headings	*/
+	--h1-color: var(--accent-red);
+	--h2-color: var(--accent-orange);
+	--h3-color: var(--accent-yellow);
+	--h4-color: var(--accent-green);
+	--h5-color: var(--accent-blue);
+	--h6-color: var(--accent-purple);
 }
 
-/* ----- Callout ----- */
+/*------------------Accent-------------------*/
+.color-red {
+	--accent: var(--accent-red);
+	--accent-muted: var(--accent-red-muted);
+}
+.color-orange {
+	--accent: var(--accent-orange);
+	--accent-muted: var(--accent-orange-muted);
+}
+.color-yellow {
+	--accent: var(--accent-yellow);
+	--accent-muted: var(--accent-yellow-muted);
+}
+.color-green {
+	--accent: var(--accent-green);
+	--accent-muted: var(--accent-green-muted);
+}
+.color-blue {
+	--accent: var(--accent-blue);
+	--accent-muted: var(--accent-blue-muted);
+}
+.color-purple {
+	--accent: var(--accent-purple);
+	--accent-muted: var(--accent-purple-muted);
+}
+
+/*------------------Callout-------------------*/
 .callout:not(.is-collapsible) {
 	padding: 0px;
 }
@@ -56,28 +207,23 @@
 .callout:not(.is-collapsible) .callout-title .callout-title-inner {
 	font-weight: normal;
 }
-
 .callout:not(.is-collapsible) {
 	border-color: rgba(var(--callout-color), 0.4);
 	border-width: 1px;
 	border-radius: var(--callout-radius);
 	background-color: rgba(var(--ctp-mantle), 0.4);
 }
-
 .callout-content {
 	padding: var(--callout-title-padding) var(--callout-title-padding)
 		var(--callout-title-padding) calc(var(--callout-title-padding) * 1.5);
 	border-top: 1px dashed rgba(var(--callout-color), 0.4);
 }
-
 .callout-fold {
 	padding-right: 0px;
 }
-
 .callout-title-inner {
 	flex-grow: var(--anp-callout-fold-position, unset);
 }
-
 .callout {
 	--callout-title-padding: var(--size-4-2);
 }
@@ -131,23 +277,3 @@
 	margin-left: -35px;
 	padding-right: 3px;
 }
-
-/* STYLE SETTINGS */
-/* @settings
-name: UI settings
-id: aura-ui
-settings:
-   - 
-      id: status-bar-position
-      title: Status bar position
-      description: change the status bar style
-      type: variable-select
-      default: fixed
-      options:
-         - 
-            label: minimal
-            value: fixed
-         - 
-            label: full
-            value: inherit
-*/
