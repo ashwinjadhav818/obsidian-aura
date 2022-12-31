@@ -209,10 +209,13 @@ body {
    --accent: var(--accent-purple);
    --accent-muted: var(--accent-purple-muted);
 }
-/*------------------Rainbow Folders-------------------*/
+
+/*------------------Folder Icons-------------------*/
 .aura-folder-icons .nav-folder-children .nav-folder-title-content::before {
    content: '📂 ';
 }
+
+/*------------------Rainbow Folders-------------------*/
 
 .aura-rainbow-folders .nav-folder-title-content .nav-file-title-content {
    color: var(--white);
@@ -220,8 +223,7 @@ body {
 .aura-rainbow-folders
    .nav-folder.mod-root
    > .nav-folder-children
-   > .nav-folder:nth-child(11n + 2),
-.nav-folder:nth-child(11n + 8) {
+   > .nav-folder:nth-child(11n + 2) {
    background-color: var(--accent-red);
    border-color: var(--accent-red);
    border-radius: 5px;
@@ -230,8 +232,7 @@ body {
 .aura-rainbow-folders
    .nav-folder.mod-root
    > .nav-folder-children
-   > .nav-folder:nth-child(11n + 3),
-.nav-folder:nth-child(11n + 9) {
+   > .nav-folder:nth-child(11n + 3) {
    background-color: var(--accent-orange);
    border-color: var(--accent-orange);
    border-radius: 5px;
@@ -240,8 +241,7 @@ body {
 .aura-rainbow-folders
    .nav-folder.mod-root
    > .nav-folder-children
-   > .nav-folder:nth-child(11n + 4),
-.nav-folder:nth-child(11n + 10) {
+   > .nav-folder:nth-child(11n + 4) {
    background-color: var(--accent-yellow);
    border-color: var(--accent-yellow);
    border-radius: 5px;
@@ -250,8 +250,7 @@ body {
 .aura-rainbow-folders
    .nav-folder.mod-root
    > .nav-folder-children
-   > .nav-folder:nth-child(11n + 5),
-.nav-folder:nth-child(11n + 11) {
+   > .nav-folder:nth-child(11n + 5) {
    background-color: var(--accent-green);
    border-color: var(--accent-green);
    border-radius: 5px;
@@ -260,8 +259,7 @@ body {
 .aura-rainbow-folders
    .nav-folder.mod-root
    > .nav-folder-children
-   > .nav-folder:nth-child(11n + 6),
-.nav-folder:nth-child(11n + 12) {
+   > .nav-folder:nth-child(11n + 6) {
    background-color: var(--accent-blue);
    border-color: var(--accent-blue);
    border-radius: 5px;
@@ -270,10 +268,54 @@ body {
 .aura-rainbow-folders
    .nav-folder.mod-root
    > .nav-folder-children
-   > .nav-folder:nth-child(11n + 7),
-.nav-folder:nth-child(11n + 13) {
+   > .nav-folder:nth-child(11n + 7) {
    background-color: var(--accent-purple);
    border-color: var(--accent-purple);
+   border-radius: 5px;
+   margin-top: 2px;
+}
+.aura-rainbow-folders
+   .nav-folder.mod-root
+   > .nav-folder-children
+   > .nav-folder:nth-child(11n + 8) {
+   background-color: var(--accent-red-muted);
+   border-color: var(--accent-red-muted);
+   border-radius: 5px;
+   margin-top: 2px;
+}
+.aura-rainbow-folders
+   .nav-folder.mod-root
+   > .nav-folder-children
+   > .nav-folder:nth-child(11n + 9) {
+   background-color: var(--accent-orange-muted);
+   border-color: var(--accent-orange-muted);
+   border-radius: 5px;
+   margin-top: 2px;
+}
+.aura-rainbow-folders
+   .nav-folder.mod-root
+   > .nav-folder-children
+   > .nav-folder:nth-child(11n + 10) {
+   background-color: var(--accent-yellow-muted);
+   border-color: var(--accent-yellow-muted);
+   border-radius: 5px;
+   margin-top: 2px;
+}
+.aura-rainbow-folders
+   .nav-folder.mod-root
+   > .nav-folder-children
+   > .nav-folder:nth-child(11n + 11) {
+   background-color: var(--accent-green-muted);
+   border-color: var(--accent-green-muted);
+   border-radius: 5px;
+   margin-top: 2px;
+}
+.aura-rainbow-folders
+   .nav-folder.mod-root
+   > .nav-folder-children
+   > .nav-folder:nth-child(11n + 12) {
+   background-color: var(--accent-blue-muted);
+   border-color: var(--accent-blue-muted);
    border-radius: 5px;
    margin-top: 2px;
 }
