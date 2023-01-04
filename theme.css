@@ -2,7 +2,11 @@
 /* By Ashwin Jadhav */
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-/*------------------Style Settings-------------------*/
+/* 
+==============================================================================
+========================= STYLE SETTINGS ==============================
+==============================================================================
+*/
 /* @settings
 
 name: Aura
@@ -102,9 +106,43 @@ settings:
          - 
             label: minimal
             value: fixed
+   - 
+      id: aura-workspace-background
+      title: Workspace Background
+      type: heading
+      level: 4
+      collapsed: true
+   -
+      id: aura-workspace-background
+      title: Enable Workspace Backgound
+      description: Customize your workspace background by adding images to it
+      type: class-toggle
+   -
+      id: aura-workspace-background-image
+      title: Select Workspace Background Image
+      description: Customize your workspace background by adding images to it
+      type: class-select
+      allowEmpty: false
+      default: aura-workspace-background-image-tokoyo
+      options:
          - 
-            label: none
-            value: none
+            label: Tokoyo
+            value: aura-workspace-background-image-tokoyo
+         - 
+            label: Skyline
+            value: aura-workspace-background-image-skyline
+         - 
+            label: Spider Man Multiverse
+            value: aura-workspace-background-image-spiderman
+         -
+            label: Custom
+            value: aura-workspace-background-image-custom
+   -
+      id: aura-workspace-background-image-custom-option
+      title: Custom Workspace Background Image
+      description: Customize the background image. Use the default format below for an online image. Use the following format to point to a local file - url("app://local/D:/Pictures/Mountain.jpg").
+      type: variable-text
+      default: url("https://") 
    - 
       id: aura-sidebar
       title: Sidebar
@@ -128,14 +166,15 @@ settings:
       level: 2
       collapsed: true
    -
-      id: aura-rainbow-tags
-      title: Rainbow Tags
-      description: Customize your tag with rainbow colors
-      type: class-toggle
-   -
       id: aura-custom-checkbox
       title: Custom Checkbox
       description: Enable custom checkboxes for checkbox customization
+      default: true
+      type: class-toggle
+   -
+      id: aura-rainbow-tags
+      title: Rainbow Tags
+      description: Customize your tag with rainbow colors
       type: class-toggle
 */
 .style-settings-container
@@ -208,7 +247,11 @@ settings:
 	font-weight: bold;
 }
 
-/*------------------Variables-------------------*/
+/* 
+==============================================================================
+========================= VARIABLES ==============================
+==============================================================================
+*/
 body {
 	--font-interface: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI",
 		Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -297,13 +340,20 @@ body {
 	--accent-muted: var(--accent-purple-muted);
 }
 
-/*------------------Folder Icons-------------------*/
+/* 
+==============================================================================
+========================= FOLDER ICONS ==============================
+==============================================================================
+*/
 .aura-folder-icons .nav-folder-children .nav-folder-title-content::before {
 	content: "📂 ";
 }
 
-/*------------------Rainbow Folders-------------------*/
-
+/* 
+==============================================================================
+========================= RAINBOW FOLDERS ==============================
+==============================================================================
+*/
 .aura-rainbow-folders .nav-folder-title-content .nav-file-title-content {
 	color: var(--white);
 }
@@ -406,7 +456,12 @@ body {
 	border-radius: 5px;
 	margin-top: 2px;
 }
-/*------------------Callout-------------------*/
+
+/* 
+==============================================================================
+========================= CUSTOM CALLOUTS ==============================
+==============================================================================
+*/
 .callout:not(.is-collapsible) {
 	padding: 0px;
 }
@@ -492,9 +547,14 @@ body {
 	margin-left: -35px;
 	padding-right: 3px;
 }
-/*------------------Rainbow Tags-------------------*/
+/* 
+==============================================================================
+========================= RAINBOW TAGS ==============================
+==============================================================================
+*/
 .aura-rainbow-tags a.tag {
 	font-weight: bold;
+	box-decoration-break: clone;
 	-webkit-box-decoration-break: clone;
 	display: inline-block;
 }
@@ -528,7 +588,11 @@ body {
 	color: var(--accent-purple);
 }
 
-/*------------------Custom Checkbox-------------------*/
+/* 
+==============================================================================
+========================= CUSTOM CHECKBOXES ==============================
+==============================================================================
+*/
 .aura-custom-checkbox .task-list-item-checkbox[data-task="x"],
 .aura-custom-checkbox
 	ul
@@ -914,4 +978,70 @@ body {
 .aura-custom-checkbox [data-task="C"][type="checkbox"]:checked:after {
 	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E");
 	-webkit-mask-size: 50%;
+}
+
+/* 
+==============================================================================
+========================= WORKSPACE BACKGROUND ==============================
+==============================================================================
+*/
+/*------------------Custom colors-------------------*/
+.aura-workspace-background {
+	--background-primary: #121212a3;
+	--background-primary-alt: #161616a3;
+	--background-secondary: #0f0f10d9;
+	--background-secondary-alt: #161616d9;
+	--ribbon-background: #0f0f1070;
+	--ribbon-background-collapsed: #0f0f10a8;
+}
+
+/*------------------Backgrounds Images-------------------*/
+.aura-workspace-background .workspace {
+	background: var(--workspace-background-image);
+	background-size: cover;
+}
+
+.aura-workspace-background.aura-workspace-background-image-tokoyo .workspace {
+	--tokyo: url("https://www.pixel4k.com/wp-content/uploads/2018/09/tokyo-tower-4k_1538072109.jpg");
+	--workspace-background-image: var(--tokyo);
+}
+.aura-workspace-background.aura-workspace-background-image-skyline .workspace {
+	--skyline: url("https://i.redd.it/m23bwh4n0x151.png");
+	--workspace-background-image: var(--skyline);
+}
+.aura-workspace-background.aura-workspace-background-image-spiderman
+	.workspace {
+	--sipder-man-multiverse: url("https://i.imgur.com/OuXoXpu.jpeg");
+	--workspace-background-image: var(--sipder-man-multiverse);
+}
+.aura-workspace-background.aura-workspace-background-image-custom .workspace {
+	--workspace-background-image: var(
+		--aura-workspace-background-image-custom-option
+	);
+}
+
+/*------------------Workspace customization-------------------*/
+.aura-workspace-background .horizontal-tab-content,
+.vertical-tab-content {
+	--background-primary: #121212;
+	--background-primary-alt: #161616;
+}
+.aura-workspace-background .vertical-tab-header {
+	--background-secondary: #0f0f10e8;
+	--background-secondary-alt: #161616e8;
+}
+.aura-workspace-background {
+	--titlebar-background: var(var(--ribbon-background));
+	--titlebar-background-focused: var(var(--ribbon-background-collapsed));
+}
+
+.aura-workspace-background .modal-container > .prompt {
+	--background-primary: #121212b7;
+}
+.aura-workspace-background .prompt-results {
+	background-color: var(--background-secondary);
+}
+
+.aura-workspace-background .suggestion-container {
+	--background-primary: #121212eb;
 }
