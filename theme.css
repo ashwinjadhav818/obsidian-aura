@@ -142,7 +142,32 @@ settings:
       title: Custom Workspace Background Image
       description: Customize the background image. Use the default format below for an online image. Use the following format to point to a local file - url("app://local/D:/Pictures/Mountain.jpg").
       type: variable-text
-      default: url("https://") 
+      default: url("https://")
+   -
+      id: aura-workspace-background-workspace-slider
+      title: Container opacity
+      type: variable-number-slider
+      min: 0
+      max: 1
+      step: 0.05
+      default: 0.4
+   - 
+      id: aura-workspace-background-blur
+      title: Background blur
+      type: variable-number-slider
+      min: 0
+      max: 20
+      step: 1
+      default: 5
+      format: px
+   - 
+      id: aura-workspace-background-brightness
+      title: Background brightness
+      type: variable-number-slider
+      min: 0
+      max: 1
+      step: 0.05
+      default: 0.7
    - 
       id: aura-sidebar
       title: Sidebar
@@ -282,7 +307,7 @@ settings:
 	[data-level="4"].setting-item-heading.style-settings-heading,
 .style-settings-container
 	[data-level="5"].setting-item-heading.style-settings-heading {
-	border-bottom: 1px solid rgba(var(--ctp-text), 0.2);
+	border-bottom: 1px solid rgba(var(--accent), 0.2);
 }
 .style-settings-container
 	[data-level="1"].setting-item-heading.style-settings-heading:not(
@@ -319,7 +344,11 @@ settings:
 }
 
 .style-settings-heading[data-id="aura"] {
-	background: linear-gradient(var(--accent-blue), var(--accent-purple));
+	background: linear-gradient(
+		rgb(var(--accent-orange)),
+		rgb(var(--accent-blue)),
+		rgb(var(--accent-purple))
+	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	font-weight: bold;
@@ -341,73 +370,78 @@ body {
 	--accent: var(--accent-blue);
 	--accent-muted: var(--accent-blue-muted);
 
-	--black: #000000;
-	--white: #ffffff;
-	--accent-red: #d04255;
-	--accent-orange: #d57634;
-	--accent-yellow: #e5b567;
-	--accent-green: #a8c373;
-	--accent-blue: #6c99bb;
-	--accent-purple: #9386c8;
+	--black: 0, 0, 0;
+	--white: 255, 255, 255;
+	--accent-red: 208, 66, 85;
+	--accent-orange: 213, 118, 52;
+	--accent-yellow: 229, 181, 103;
+	--accent-green: 168, 195, 115;
+	--accent-blue: 108, 153, 187;
+	--accent-purple: 147, 134, 200;
 
-	--white-muted: #e1e1e1de;
-	--accent-red-muted: #c43145;
-	--accent-orange-muted: #a9581e;
-	--accent-yellow-muted: #e3a032;
-	--accent-green-muted: #8ca952;
-	--accent-blue-muted: #477394;
-	--accent-purple-muted: #685c98;
+	--white-muted: 225, 225, 225, 0.871;
+	--accent-red-muted: 196, 49, 69;
+	--accent-orange-muted: 169, 88, 30;
+	--accent-yellow-muted: 227, 160, 51;
+	--accent-green-muted: 140, 169, 82;
+	--accent-blue-muted: 71, 115, 148;
+	--accent-purple-muted: 104, 92, 152;
 
 	/* Background */
-	--background-primary: #121212;
-	--background-primary-alt: #161616;
-	--background-secondary: #0f0f10;
-	--background-secondary-alt: #161616;
+	--bg-primary: 18, 18, 18;
+	--bg-primary-alt: 22, 22, 22;
+	--bg-secondary: 15, 15, 16;
+	--bg-secondary-alt: 22, 22, 22;
+
+	--background-primary: rgb(var(--bg-primary));
+	--background-primary-alt: rgb(var(--bg-primary-alt));
+	--background-secondary: rgb(var(--bg-secondary));
+	--background-secondary-alt: rgb(var(--bg-primary-alt));
 
 	/* Interictive elements */
 	--interactive-accent: var(--accent);
 	--interactive-accent-hover: var(--accent-muted);
 
 	/* Text */
-	--text-normal: var(--white);
-	--text-faint: var(--white-muted);
-	--text-on-accent: var(--white);
-	--text-link-internal: var(--accent);
-	--text-link-external: var(--accent);
-	--text-selection: #ffffff13;
-	--text-accent: var(--accent);
-	--text-accent-hover: var(--accent-muted);
-	--bold-color: var(--accent-red);
-	--italic-color: var(--accent-blue);
+	--text-normal: rgb(var(--white));
+	--text-faint: rgba(var(--white-muted));
+	--text-on-accent: rgb(var(--white));
+	--text-link-internal: rgb(var(--accent));
+	--text-link-external: rgb(var(--accent));
+	--text-selection: rgba(var(--white), 0.075);
+	--text-accent: rgb(var(--accent));
+	--text-accent-hover: rgb(var(--accent-muted));
+	--bold-color: rgb(var(--accent-red));
+	--italic-color: rgb(var(--accent-blue));
 
 	/* Sidebar */
-	--nav-item-color: var(--white);
+	--nav-item-color: rgb(var(--white));
 }
 
 /*------------------Accent-------------------*/
 .color-red {
-	--accent: var(--accent-red);
-	--accent-muted: var(--accent-red-muted);
+	--accent: rgb(var(--accent-red));
+	--accent-muted: rgb(var(--accent-red-muted));
 }
 .color-orange {
-	--accent: var(--accent-orange);
-	--accent-muted: var(--accent-orange-muted);
+	--accent: rgb(var(--accent-orange));
+	--accent-muted: rgb(var(--accent-orange-muted));
 }
 .color-yellow {
-	--accent: var(--accent-yellow);
-	--accent-muted: var(--accent-yellow-muted);
+	--accent: rgb(var(--accent-yellow));
+	--accent-muted: rgb(var(--accent-yellow-muted));
 }
 .color-green {
-	--accent: var(--accent-green);
-	--accent-muted: var(--accent-green-muted);
+	--accent: rgb(var(--accent-green));
+	--accent-muted: rgb(var(--accent-green-muted));
 }
 .color-blue {
-	--accent: var(--accent-blue);
-	--accent-muted: var(--accent-blue-muted);
+	--accent: rgb(var(--accent-blue));
+	--accent-muted: rgb(var(--accent-blue-muted));
 }
 .color-purple {
-	--accent: var(--accent-purple);
-	--accent-muted: var(--accent-purple-muted);
+	--accent: rgb(var(--accent-purple));
+	--accent-muted: rgb(var(--accent-purple-muted));
 }
 
 /* 
@@ -416,12 +450,12 @@ body {
 ==============================================================================
 */
 .aura-heading-color {
-	--h1-color: var(--accent-red);
-	--h2-color: var(--accent-orange);
-	--h3-color: var(--accent-yellow);
-	--h4-color: var(--accent-green);
-	--h5-color: var(--accent-blue);
-	--h6-color: var(--accent-purple);
+	--h1-color: rgb(var(--accent-red));
+	--h2-color: rgb(var(--accent-orange));
+	--h3-color: rgb(var(--accent-yellow));
+	--h4-color: rgb(var(--accent-green));
+	--h5-color: rgb(var(--accent-blue));
+	--h6-color: rgb(var(--accent-purple));
 }
 
 /* 
@@ -439,14 +473,14 @@ body {
 ==============================================================================
 */
 .aura-rainbow-folders .nav-folder-title-content .nav-file-title-content {
-	color: var(--white);
+	color: rgb(var(--white));
 }
 .aura-rainbow-folders
 	.nav-folder.mod-root
 	> .nav-folder-children
 	> .nav-folder:nth-child(11n + 2) {
-	background-color: var(--accent-red);
-	border-color: var(--accent-red);
+	background-color: rgb(var(--accent-red));
+	border-color: rgb(var(--accent-red));
 	border-radius: 5px;
 	margin-top: 2px;
 }
@@ -454,8 +488,8 @@ body {
 	.nav-folder.mod-root
 	> .nav-folder-children
 	> .nav-folder:nth-child(11n + 3) {
-	background-color: var(--accent-orange);
-	border-color: var(--accent-orange);
+	background-color: rgb(var(--accent-orange));
+	border-color: rgb(var(--accent-orange));
 	border-radius: 5px;
 	margin-top: 2px;
 }
@@ -463,8 +497,8 @@ body {
 	.nav-folder.mod-root
 	> .nav-folder-children
 	> .nav-folder:nth-child(11n + 4) {
-	background-color: var(--accent-yellow);
-	border-color: var(--accent-yellow);
+	background-color: rgb(var(--accent-yellow));
+	border-color: rgb(var(--accent-yellow));
 	border-radius: 5px;
 	margin-top: 2px;
 }
@@ -472,8 +506,8 @@ body {
 	.nav-folder.mod-root
 	> .nav-folder-children
 	> .nav-folder:nth-child(11n + 5) {
-	background-color: var(--accent-green);
-	border-color: var(--accent-green);
+	background-color: rgb(var(--accent-green));
+	border-color: rgb(var(--accent-green));
 	border-radius: 5px;
 	margin-top: 2px;
 }
@@ -481,8 +515,8 @@ body {
 	.nav-folder.mod-root
 	> .nav-folder-children
 	> .nav-folder:nth-child(11n + 6) {
-	background-color: var(--accent-blue);
-	border-color: var(--accent-blue);
+	background-color: rgb(var(--accent-blue));
+	border-color: rgb(var(--accent-blue));
 	border-radius: 5px;
 	margin-top: 2px;
 }
@@ -490,8 +524,8 @@ body {
 	.nav-folder.mod-root
 	> .nav-folder-children
 	> .nav-folder:nth-child(11n + 7) {
-	background-color: var(--accent-purple);
-	border-color: var(--accent-purple);
+	background-color: rgb(var(--accent-purple));
+	border-color: rgb(var(--accent-purple));
 	border-radius: 5px;
 	margin-top: 2px;
 }
@@ -499,8 +533,8 @@ body {
 	.nav-folder.mod-root
 	> .nav-folder-children
 	> .nav-folder:nth-child(11n + 8) {
-	background-color: var(--accent-red-muted);
-	border-color: var(--accent-red-muted);
+	background-color: rgb(var(--accent-red-muted));
+	border-color: rgb(var(--accent-red-muted));
 	border-radius: 5px;
 	margin-top: 2px;
 }
@@ -508,8 +542,8 @@ body {
 	.nav-folder.mod-root
 	> .nav-folder-children
 	> .nav-folder:nth-child(11n + 9) {
-	background-color: var(--accent-orange-muted);
-	border-color: var(--accent-orange-muted);
+	background-color: rgb(var(--accent-orange-muted));
+	border-color: rgb(var(--accent-orange-muted));
 	border-radius: 5px;
 	margin-top: 2px;
 }
@@ -517,8 +551,8 @@ body {
 	.nav-folder.mod-root
 	> .nav-folder-children
 	> .nav-folder:nth-child(11n + 10) {
-	background-color: var(--accent-yellow-muted);
-	border-color: var(--accent-yellow-muted);
+	background-color: rgb(var(--accent-yellow-muted));
+	border-color: rgb(var(--accent-yellow-muted));
 	border-radius: 5px;
 	margin-top: 2px;
 }
@@ -526,8 +560,8 @@ body {
 	.nav-folder.mod-root
 	> .nav-folder-children
 	> .nav-folder:nth-child(11n + 11) {
-	background-color: var(--accent-green-muted);
-	border-color: var(--accent-green-muted);
+	background-color: rgb(var(--accent-green-muted));
+	border-color: rgb(var(--accent-green-muted));
 	border-radius: 5px;
 	margin-top: 2px;
 }
@@ -535,8 +569,8 @@ body {
 	.nav-folder.mod-root
 	> .nav-folder-children
 	> .nav-folder:nth-child(11n + 12) {
-	background-color: var(--accent-blue-muted);
-	border-color: var(--accent-blue-muted);
+	background-color: rgb(var(--accent-blue-muted));
+	border-color: rgb(var(--accent-blue-muted));
 	border-radius: 5px;
 	margin-top: 2px;
 }
@@ -575,9 +609,6 @@ body {
 .callout-fold {
 	padding-right: 0px;
 }
-.callout-title-inner {
-	flex-grow: var(--anp-callout-fold-position, unset);
-}
 .callout {
 	--callout-title-padding: var(--size-4-2);
 }
@@ -590,9 +621,6 @@ body {
 }
 .callout.is-collapsible .callout-fold {
 	padding-right: 0px;
-}
-.callout.is-collapsible .callout-title-inner {
-	flex-grow: var(--anp-callout-fold-position, unset);
 }
 .callout.is-collapsible.is-collapsed {
 	padding: 0;
@@ -649,27 +677,27 @@ body {
 }
 
 .aura-rainbow-tags p > a.tag:nth-child(7n + 1) {
-	color: var(--accent-red);
+	color: rgb(var(--accent-red));
 }
 
 .aura-rainbow-tags p > a.tag:nth-child(7n + 2) {
-	color: var(--accent-orange);
+	color: rgb(var(--accent-orange));
 }
 
 .aura-rainbow-tags p > a.tag:nth-child(7n + 3) {
-	color: var(--accent-yellow);
+	color: rgb(var(--accent-yellow));
 }
 
 .aura-rainbow-tags p > a.tag:nth-child(7n + 4) {
-	color: var(--accent-green);
+	color: rgb(var(--accent-green));
 }
 
 .aura-rainbow-tags p > a.tag:nth-child(7n + 5) {
-	color: var(--accent-blue);
+	color: rgb(var(--accent-blue));
 }
 
 .aura-rainbow-tags p > a.tag:nth-child(7n + 6) {
-	color: var(--accent-purple);
+	color: rgb(var(--accent-purple));
 }
 
 /* 
@@ -682,16 +710,16 @@ body {
 	ul
 	> li.task-list-item[data-task="x"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-green);
-	border: 1px solid var(--accent-green);
+	background-color: rgb(var(--accent-green));
+	border: 1px solid rgb(var(--accent-green));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="x"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="x"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-green-muted);
-	border: 1px solid var(--accent-green-muted);
+	background-color: rgb(var(--accent-green-muted));
+	border: 1px solid rgb(var(--accent-green-muted));
 }
 .aura-custom-checkbox
 	.task-list-item-checkbox[data-task="X"]
@@ -699,24 +727,24 @@ body {
 	ul
 	> li.task-list-item[data-task="X"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-green);
-	border: 1px solid var(--accent-green);
+	background-color: rgb(var(--accent-green));
+	border: 1px solid rgb(var(--accent-green));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="X"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="X"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-green-muted);
-	border: 1px solid var(--accent-green-muted);
+	background-color: rgb(var(--accent-green-muted));
+	border: 1px solid rgb(var(--accent-green-muted));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="?"],
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="?"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-yellow);
-	border: 1px solid var(--accent-yellow);
+	background-color: rgb(var(--accent-yellow));
+	border: 1px solid rgb(var(--accent-yellow));
 	border-radius: 10px;
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="?"]:hover,
@@ -724,8 +752,8 @@ body {
 	ul
 	> li.task-list-item[data-task="?"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-yellow-muted);
-	border: 1px solid var(--accent-yellow-muted);
+	background-color: rgb(var(--accent-yellow-muted));
+	border: 1px solid rgb(var(--accent-yellow-muted));
 }
 .aura-custom-checkbox [data-task="?"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="?"][type="checkbox"]:checked:after {
@@ -738,16 +766,16 @@ body {
 	ul
 	> li.task-list-item[data-task="-"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-red);
-	border: 1px solid var(--accent-red);
+	background-color: rgb(var(--accent-red));
+	border: 1px solid rgb(var(--accent-red));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="-"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="-"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-red-muted);
-	border: 1px solid var(--accent-red-muted);
+	background-color: rgb(var(--accent-red-muted));
+	border: 1px solid rgb(var(--accent-red-muted));
 }
 .aura-custom-checkbox [data-task="-"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="-"][type="checkbox"]:checked:after {
@@ -760,16 +788,16 @@ body {
 	ul
 	> li.task-list-item[data-task="!"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-orange);
-	border: 1px solid var(--accent-orange);
+	background-color: rgb(var(--accent-orange));
+	border: 1px solid rgb(var(--accent-orange));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="!"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="!"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-orange-muted);
-	border: 1px solid var(--accent-orange-muted);
+	background-color: rgb(var(--accent-orange-muted));
+	border: 1px solid rgb(var(--accent-orange-muted));
 }
 .aura-custom-checkbox [data-task="!"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="!"][type="checkbox"]:checked:after {
@@ -782,16 +810,16 @@ body {
 	ul
 	> li.task-list-item[data-task=">"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-blue);
-	border: 1px solid var(--accent-blue);
+	background-color: rgb(var(--accent-blue));
+	border: 1px solid rgb(var(--accent-blue));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task=">"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task=">"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-blue-muted);
-	border: 1px solid var(--accent-blue-muted);
+	background-color: rgb(var(--accent-blue-muted));
+	border: 1px solid rgb(var(--accent-blue-muted));
 }
 .aura-custom-checkbox [data-task=">"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task=">"][type="checkbox"]:checked:after {
@@ -804,16 +832,16 @@ body {
 	ul
 	> li.task-list-item[data-task="/"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-purple);
-	border: 1px solid var(--accent-purple);
+	background-color: rgb(var(--accent-purple));
+	border: 1px solid rgb(var(--accent-purple));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="/"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="/"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-purple-muted);
-	border: 1px solid var(--accent-purple-muted);
+	background-color: rgb(var(--accent-purple-muted));
+	border: 1px solid rgb(var(--accent-purple-muted));
 }
 .aura-custom-checkbox [data-task="/"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="/"][type="checkbox"]:checked:after {
@@ -826,16 +854,16 @@ body {
 	ul
 	> li.task-list-item[data-task="R"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-green);
-	border: 1px solid var(--accent-green);
+	background-color: rgb(var(--accent-green));
+	border: 1px solid rgb(var(--accent-green));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="R"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="R"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-green-muted);
-	border: 1px solid var(--accent-green-muted);
+	background-color: rgb(var(--accent-green-muted));
+	border: 1px solid rgb(var(--accent-green-muted));
 }
 .aura-custom-checkbox [data-task="R"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="R"][type="checkbox"]:checked:after {
@@ -848,16 +876,16 @@ body {
 	ul
 	> li.task-list-item[data-task="+"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-purple);
-	border: 1px solid var(--accent-purple);
+	background-color: rgb(var(--accent-purple));
+	border: 1px solid rgb(var(--accent-purple));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="+"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="+"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-purple-muted);
-	border: 1px solid var(--accent-purple-muted);
+	background-color: rgb(var(--accent-purple-muted));
+	border: 1px solid rgb(var(--accent-purple-muted));
 }
 .aura-custom-checkbox [data-task="+"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="+"][type="checkbox"]:checked:after {
@@ -870,16 +898,16 @@ body {
 	ul
 	> li.task-list-item[data-task="b"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-orange);
-	border: 1px solid var(--accent-orange);
+	background-color: rgb(var(--accent-orange));
+	border: 1px solid rgb(var(--accent-orange));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="b"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="b"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-orange-muted);
-	border: 1px solid var(--accent-orange-muted);
+	background-color: rgb(var(--accent-orange-muted));
+	border: 1px solid rgb(var(--accent-orange-muted));
 }
 .aura-custom-checkbox [data-task="b"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="b"][type="checkbox"]:checked:after {
@@ -892,16 +920,16 @@ body {
 	ul
 	> li.task-list-item[data-task="B"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-blue);
-	border: 1px solid var(--accent-blue);
+	background-color: rgb(var(--accent-blue));
+	border: 1px solid rgb(var(--accent-blue));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="B"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="B"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-blue-muted);
-	border: 1px solid var(--accent-blue-muted);
+	background-color: rgb(var(--accent-blue-muted));
+	border: 1px solid rgb(var(--accent-blue-muted));
 }
 .aura-custom-checkbox [data-task="B"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="B"][type="checkbox"]:checked:after {
@@ -914,16 +942,16 @@ body {
 	ul
 	> li.task-list-item[data-task="D"]
 	.task-list-item-checkbox {
-	background-color: var(--white);
-	border: 1px solid var(--white);
+	background-color: rgb(var(--white));
+	border: 1px solid rgb(var(--white));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="D"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="D"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--white-muted);
-	border: 1px solid var(--white-muted);
+	background-color: rgb(var(--white-muted));
+	border: 1px solid rgb(var(--white-muted));
 }
 .aura-custom-checkbox [data-task="D"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="D"][type="checkbox"]:checked:after {
@@ -936,8 +964,8 @@ body {
 	ul
 	> li.task-list-item[data-task="I"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-blue);
-	border: 1px solid var(--accent-blue);
+	background-color: rgb(var(--accent-blue));
+	border: 1px solid rgb(var(--accent-blue));
 	border-radius: 10px;
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="I"]:hover,
@@ -945,8 +973,8 @@ body {
 	ul
 	> li.task-list-item[data-task="I"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-blue-muted);
-	border: 1px solid var(--accent-blue-muted);
+	background-color: rgb(var(--accent-blue-muted));
+	border: 1px solid rgb(var(--accent-blue-muted));
 }
 .aura-custom-checkbox [data-task="I"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="I"][type="checkbox"]:checked:after {
@@ -959,16 +987,16 @@ body {
 	ul
 	> li.task-list-item[data-task="i"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-yellow);
-	border: 1px solid var(--accent-yellow);
+	background-color: rgb(var(--accent-yellow));
+	border: 1px solid rgb(var(--accent-yellow));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="i"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="i"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-yellow-muted);
-	border: 1px solid var(--accent-yellow-muted);
+	background-color: rgb(var(--accent-yellow-muted));
+	border: 1px solid rgb(var(--accent-yellow-muted));
 }
 .aura-custom-checkbox [data-task="i"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="i"][type="checkbox"]:checked:after {
@@ -981,16 +1009,16 @@ body {
 	ul
 	> li.task-list-item[data-task="N"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-orange);
-	border: 1px solid var(--accent-orange);
+	background-color: rgb(var(--accent-orange));
+	border: 1px solid rgb(var(--accent-orange));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="N"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="N"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-orange-muted);
-	border: 1px solid var(--accent-orange-muted);
+	background-color: rgb(var(--accent-orange-muted));
+	border: 1px solid rgb(var(--accent-orange-muted));
 }
 .aura-custom-checkbox [data-task="N"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="N"][type="checkbox"]:checked:after {
@@ -1003,16 +1031,16 @@ body {
 	ul
 	> li.task-list-item[data-task="Q"]
 	.task-list-item-checkbox {
-	background-color: var(--white);
-	border: 1px solid var(--white);
+	background-color: rgb(var(--white));
+	border: 1px solid rgb(var(--white));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="Q"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="Q"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--white-muted);
-	border: 1px solid var(--white-muted);
+	background-color: rgb(var(--white-muted));
+	border: 1px solid rgb(var(--white-muted));
 }
 .aura-custom-checkbox [data-task="Q"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="Q"][type="checkbox"]:checked:after {
@@ -1025,16 +1053,16 @@ body {
 	ul
 	> li.task-list-item[data-task="P"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-blue);
-	border: 1px solid var(--accent-blue);
+	background-color: rgb(var(--accent-blue));
+	border: 1px solid rgb(var(--accent-blue));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="P"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="P"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-blue-muted);
-	border: 1px solid var(--accent-blue-muted);
+	background-color: rgb(var(--accent-blue-muted));
+	border: 1px solid rgb(var(--accent-blue-muted));
 }
 .aura-custom-checkbox [data-task="P"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="P"][type="checkbox"]:checked:after {
@@ -1047,16 +1075,16 @@ body {
 	ul
 	> li.task-list-item[data-task="C"]
 	.task-list-item-checkbox {
-	background-color: var(--accent-red);
-	border: 1px solid var(--accent-red);
+	background-color: rgb(var(--accent-red));
+	border: 1px solid rgb(var(--accent-red));
 }
 .aura-custom-checkbox .task-list-item-checkbox[data-task="C"]:hover,
 .aura-custom-checkbox
 	ul
 	> li.task-list-item[data-task="C"]
 	.task-list-item-checkbox:hover {
-	background-color: var(--accent-red-muted);
-	border: 1px solid var(--accent-red-muted);
+	background-color: rgb(var(--accent-red-muted));
+	border: 1px solid rgb(var(--accent-red-muted));
 }
 .aura-custom-checkbox [data-task="C"] input[type="checkbox"]:checked:after,
 .aura-custom-checkbox [data-task="C"][type="checkbox"]:checked:after {
@@ -1071,61 +1099,88 @@ body {
 */
 /*------------------Custom colors-------------------*/
 .aura-workspace-background {
-	--background-primary: #121212a3;
-	--background-primary-alt: #161616a3;
-	--background-secondary: #0f0f10d9;
-	--background-secondary-alt: #161616d9;
-	--ribbon-background: #0f0f1070;
-	--ribbon-background-collapsed: #0f0f10a8;
+	--background-primary: rgba(
+		var(--bg-primary),
+		var(--aura-workspace-background-workspace-slider)
+	);
+	--background-primary-alt: rgba(
+		var(--bg-primary-alt),
+		var(--aura-workspace-background-workspace-slider)
+	);
+	--background-secondary: rgba(
+		var(--bg-secondary),
+		var(--aura-workspace-background-workspace-slider)
+	);
+	--background-secondary-alt: rgba(
+		var(--bg-secondary-alt),
+		var(--aura-workspace-background-workspace-slider)
+	);
+	--ribbon-background: rgba(
+		var(--bg-secondary),
+		var(--aura-workspace-background-workspace-slider)
+	);
+	--ribbon-background-collapsed: rgba(
+		var(--bg-secondary),
+		var(--aura-workspace-background-workspace-slider)
+	);
 }
 
 /*------------------Backgrounds Images-------------------*/
-.aura-workspace-background .workspace {
+.aura-workspace-background .horizontal-main-container {
 	background: var(--workspace-background-image);
+	background-color: transparent;
 	background-size: cover;
 }
+.aura-workspace-background .workspace {
+	background-color: rgba(var(--bg-primary), 0.2);
+	backdrop-filter: brightness(
+			var(--aura-workspace-background-brightness, 0.5)
+		)
+		blur(var(--aura-workspace-background-blur, 5px));
+}
 
-.aura-workspace-background.aura-workspace-background-image-tokoyo .workspace {
+.aura-workspace-background.aura-workspace-background-image-tokoyo
+	.horizontal-main-container {
 	--tokyo: url("https://www.pixel4k.com/wp-content/uploads/2018/09/tokyo-tower-4k_1538072109.jpg");
 	--workspace-background-image: var(--tokyo);
 }
-.aura-workspace-background.aura-workspace-background-image-skyline .workspace {
+.aura-workspace-background.aura-workspace-background-image-skyline
+	.horizontal-main-container {
 	--skyline: url("https://i.redd.it/m23bwh4n0x151.png");
 	--workspace-background-image: var(--skyline);
 }
 .aura-workspace-background.aura-workspace-background-image-spiderman
-	.workspace {
+	.horizontal-main-container {
 	--sipder-man-multiverse: url("https://i.imgur.com/OuXoXpu.jpeg");
 	--workspace-background-image: var(--sipder-man-multiverse);
 }
-.aura-workspace-background.aura-workspace-background-image-custom .workspace {
+.aura-workspace-background.aura-workspace-background-image-custom
+	.horizontal-main-container {
 	--workspace-background-image: var(
 		--aura-workspace-background-image-custom-option
 	);
 }
 
 /*------------------Workspace customization-------------------*/
-.aura-workspace-background .horizontal-tab-content,
-.vertical-tab-content {
-	--background-primary: #121212;
-	--background-primary-alt: #161616;
-}
-.aura-workspace-background .vertical-tab-header {
-	--background-secondary: #0f0f10e8;
-	--background-secondary-alt: #161616e8;
-}
 .aura-workspace-background {
-	--titlebar-background: var(var(--ribbon-background));
-	--titlebar-background-focused: var(var(--ribbon-background-collapsed));
+	--titlebar-background: rgb(var(--ribbon-background));
+	--titlebar-background-focused: rgb(var(--ribbon-background-collapsed));
+}
+
+.aura-workspace-background .modal {
+	--background-primary: rgba(var(--bg-primary), 0.8);
+	--background-primary-alt: rgba(var(--bg-primary-alt), 0.8);
+	--background-secondary: rgba(var(--bg-secondary), 0.9);
+	--background-secondary-alt: rgba(var(--bg-secondary-alt), 0.8);
 }
 
 .aura-workspace-background .modal-container > .prompt {
-	--background-primary: #121212b7;
+	--background-primary: rgba(var(--bg-primary), 0.718);
 }
 .aura-workspace-background .prompt-results {
 	background-color: var(--background-secondary);
 }
 
 .aura-workspace-background .suggestion-container {
-	--background-primary: #121212eb;
+	--background-primary: rgba(var(--bg-primary), 0.922);
 }

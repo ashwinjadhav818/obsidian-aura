@@ -32,3 +32,4 @@ To install the theme
 -   Wasp theme by [Santi Younger](https://github.com/santiyounger)
 -   Sanctum by [jdanielmourao](https://github.com/jdanielmourao)
 -   Callouts & Colored Folders by [Anubis](https://github.com/AnubisNekhet)
+-   Workspace background by [Farouk](http://github.com/faroukx)
