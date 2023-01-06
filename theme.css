@@ -405,12 +405,10 @@ body {
 	/* Text */
 	--text-normal: rgb(var(--white));
 	--text-faint: rgba(var(--white-muted));
+	--text-accent: var(--accent);
+	--text-accent-hover: var(--accent-muted);
 	--text-on-accent: rgb(var(--white));
-	--text-link-internal: rgb(var(--accent));
-	--text-link-external: rgb(var(--accent));
 	--text-selection: rgba(var(--white), 0.075);
-	--text-accent: rgb(var(--accent));
-	--text-accent-hover: rgb(var(--accent-muted));
 	--bold-color: rgb(var(--accent-red));
 	--italic-color: rgb(var(--accent-blue));
 
@@ -705,6 +703,9 @@ body {
 ========================= CUSTOM CHECKBOXES ==============================
 ==============================================================================
 */
+.aura-custom-checkbox input[type="checkbox"]:checked:after {
+	background-color: rgb(var(--black));
+}
 .aura-custom-checkbox .task-list-item-checkbox[data-task="x"],
 .aura-custom-checkbox
 	ul
@@ -1167,11 +1168,13 @@ body {
 	--titlebar-background-focused: rgb(var(--ribbon-background-collapsed));
 }
 
-.aura-workspace-background .modal {
+.aura-workspace-background .modal,
+.menu {
 	--background-primary: rgba(var(--bg-primary), 0.8);
 	--background-primary-alt: rgba(var(--bg-primary-alt), 0.8);
 	--background-secondary: rgba(var(--bg-secondary), 0.9);
 	--background-secondary-alt: rgba(var(--bg-secondary-alt), 0.8);
+	--modal-background: rgba(var(--bg-secondary), 0.9);
 }
 
 .aura-workspace-background .modal-container > .prompt {
