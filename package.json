@@ -1,6 +1,6 @@
 {
 	"name": "aura",
-	"version": "1.4.3",
+	"version": "1.4.4",
 	"scripts": {
 		"version": "node version-bump.mjs && git add manifest.json versions.json"
 	}
