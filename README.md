@@ -1,7 +1,5 @@
 # Aura
 
-Aura is a minimal theme.
-
 ![](assets/screenshot.png)
 
 ## Installation
@@ -15,21 +13,31 @@ To install the theme
 
 ## Features
 
--   Custom **checkboxes**
+### Workspace Background
 
-    ![](assets/checkboxes.png)
+Customize your workspace with custom background images
 
--   Rainbow Tags
+<img src="assets/workspace-background.png" style="border-radius: 10px"/>
 
-    ![](assets/tags.png)
+Alternate Layout
 
--   Rainbow Folders
+Make your workspace more rounded
 
-    ![](assets/rainbow-folders.png)
+<img src="assets/alternate-layout.png" style="border-radius: 10px"/>
+
+### Rainbow Folders
+
+Make your folders look awesome
+
+<img src="assets/rainbow-folders.png" style="border-radius: 10px; width: 400px"/>
+
+### Custom **checkboxes**
+
+Unveal the true power of checkboxes
+
+<img src="assets/checkboxes.png" style="border-radius: 10px; width: 400px"/>
 
 ## Credits
 
--   Wasp theme by [Santi Younger](https://github.com/santiyounger)
--   Sanctum by [jdanielmourao](https://github.com/jdanielmourao)
 -   Callouts & Colored Folders by [Anubis](https://github.com/AnubisNekhet)
--   Workspace background by [Farouk](http://github.com/faroukx)
+-   Workspace background and card layout by [Farouk](http://github.com/faroukx)

@@ -46,27 +46,20 @@ settings:
             label: Purple
             value: color-purple
    - 
-      id: background-primary
+      id: bg-primary
       title: Primary Background
       type: variable-color
       opacity: false
-      format: hex
-      alt-format:
-         -
-            id: accent-rgb
-            format: rgb
-      default: '#121212'
+      format: rgb-values
+      default: 'rgb(18, 18, 18)'
    - 
-      id: background-secondary
+      id: bg-secondary
       title: Secondary Background
       type: variable-color
       opacity: false
-      format: hex
-      alt-format:
-         -
-            id: accent-rgb
-            format: rgb
-      default: '#0f0f10'
+      format: rgb-values
+      default: 'rgb(15, 15, 16)'
+   - 
 
    - 
       id: aura-text
@@ -168,6 +161,71 @@ settings:
       max: 1
       step: 0.05
       default: 0.7
+   - 
+      id: aura-layout-heading
+      title: Layout
+      type: heading
+      level: 4
+      collapsed: true
+   - 
+      id: aura-layout-select
+      title: Layout Style
+      type: class-select
+      allowEmpty: false
+      default: aura-default-layout
+      options:
+         -
+            label: Default
+            value: aura-default-layout
+         -
+            label: Cards
+            value: aura-card-layout
+   - 
+      id: aura-disable-borders
+      title: Disable borders
+      type: class-toggle
+   -
+      id: tab-outline-color
+      title: Custom borders Color
+      type: variable-themed-color
+      opacity: true
+      format: hex
+      default-light: '#'
+      default-dark: '#'
+   - 
+      id: aura-card-radius
+      title: Card radius
+      description: Size unit is px
+      type: variable-number
+      default: 16
+      format: px
+   - 
+      id: aura-card-layout-padding
+      title: Card padding
+      description: Size unit is px
+      type: variable-number
+      default: 10
+      format: px
+   - 
+      id: aura-card-header-left-padding
+      title: Tab left padding
+      description: Size unit is px
+      type: variable-number
+      default: 20
+      format: px
+   - 
+      id: aura-card-shadows
+      title: Enable shadows for cards
+      type: class-toggle
+   - 
+      id: aura-card-layout-actions
+      title: Enable card format for left ribbon
+      type: class-toggle
+   - 
+      id: aura-card-layout-fileexplorer
+      title: Enable card format for file explorer
+      default: true
+      type: class-toggle
    - 
       id: aura-sidebar
       title: Sidebar
@@ -1186,4 +1244,227 @@ body {
 
 .aura-workspace-background .suggestion-container {
 	--background-primary: rgba(var(--bg-primary), 0.922);
+}
+
+/* 
+==============================================================================
+========================= CARD LAYOUT ==============================
+==============================================================================
+*/
+.horizontal-main-container,
+.aura-card-layout .mod-left-split,
+.aura-card-layout .mod-left-split .workspace-tabs .workspace-leaf,
+.aura-card-layout .mod-right-split .workspace-tabs .workspace-leaf,
+.aura-card-layout .mod-root .workspace-tabs .workspace-leaf,
+.aura-card-layout .mod-vertical,
+.aura-card-layout .mod-vertical .workspace-tab-container,
+.aura-card-layout .mod-vertical .workspace-tabs,
+.aura-card-layout
+	.workspace-fake-target-overlay:not(.is-in-sidebar)
+	.workspace-tabs
+	.workspace-leaf,
+.aura-card-layout .workspace-split.mod-vertical,
+.workspace {
+	background-color: var(--tab-container-background);
+}
+
+.workspace-split:not(.mod-root) .graph-controls,
+.workspace-split:not(.mod-root) .graph-controls.is-close,
+.workspace-split:not(.mod-root) .graph-controls:not(.is-close) {
+	background-color: rgb(var(--exterior));
+}
+
+.aura-card-layout .workspace-split:not(.mod-root) .graph-controls,
+.aura-card-layout .workspace-split:not(.mod-root) .graph-controls.is-close,
+.aura-card-layout
+	.workspace-split:not(.mod-root)
+	.graph-controls:not(.is-close),
+.workspace-leaf .graph-controls,
+.workspace-leaf .graph-controls.is-close,
+.workspace-leaf .graph-controls:not(.is-close) {
+	background-color: rgb(var(--side));
+}
+
+body {
+	--card-background-color: rgb(var(--exterior));
+	--card-foreground-color: var(--background-primary);
+}
+
+.aura-card-layout .sidebar-toggle-button,
+.aura-card-layout .workspace-tabs.mod-top,
+body.aura-card-layout {
+	--tab-container-background: var(--card-background-color);
+	--file-header-border: var(--border-width) dotted
+		var(--background-modifier-border);
+}
+
+body.is-focused.aura-card-layout,
+body.is-focused.aura-card-layout .sidebar-toggle-button,
+body.is-focused.aura-card-layout .workspace-tabs.mod-top {
+	--tab-container-background: var(--card-background-color);
+}
+
+.aura-card-layout .mod-left-split .workspace-tab-header-container,
+.aura-card-layout .workspace-tab-header-container {
+	border-bottom: none;
+}
+
+.aura-card-layout .workspace-ribbon.mod-left {
+	padding: 0;
+	background-color: var(--tab-container-background);
+	border: none;
+}
+
+.aura-card-layout-actions.aura-card-layout .workspace-ribbon.mod-left {
+	margin-right: var(--aura-card-layout-padding, 10px);
+}
+
+.aura-card-layout .workspace-ribbon.mod-left:before {
+	border-bottom: none;
+	background-color: var(--tab-container-background) !important;
+}
+
+.aura-card-layout .side-dock-actions,
+.aura-card-layout .side-dock-settings {
+	padding: var(--ribbon-padding);
+}
+
+.aura-card-layout-actions.aura-card-layout .side-dock-actions {
+	border-radius: 0 var(--aura-card-radius, var(--radius-xl))
+		var(--aura-card-radius, var(--radius-xl)) 0;
+	border: 1px solid var(--tab-outline-color);
+	background-color: var(--card-foreground-color);
+	margin-top: 2px;
+}
+
+.aura-card-layout-actions.aura-card-layout .side-dock-settings {
+	border-radius: 0 var(--aura-card-radius, var(--radius-xl)) 0 0;
+	border: 1px solid var(--tab-outline-color);
+	background-color: var(--card-foreground-color);
+}
+
+.aura-card-layout .workspace-ribbon.mod-left {
+	margin-top: calc(var(--header-height) - 1px) !important;
+}
+
+.aura-card-layout .mod-vertical .workspace-tab-header-container {
+	padding-left: var(--aura-card-header-left-padding, 20px);
+}
+
+.aura-card-layout .mod-vertical .workspace-tab-header-container-inner {
+	margin: 6px -5px calc(var(--tab-outline-width) * -1);
+	z-index: 1;
+}
+
+.aura-card-layout .mod-vertical .workspace-tabs {
+	padding-left: var(--aura-card-layout-padding, 10px);
+	padding-right: var(--aura-card-layout-padding, 10px);
+}
+
+.aura-card-layout .mod-left-split .workspace-tab-container,
+.aura-card-layout .mod-right-split .workspace-tab-container {
+	padding-left: var(--aura-card-layout-padding, 10px);
+	padding-right: var(--aura-card-layout-padding, 10px);
+	background-color: var(--tab-container-background);
+}
+
+.aura-card-layout
+	.workspace-split.mod-horizontal
+	> *
+	> .workspace-leaf-resize-handle,
+.aura-card-layout
+	.workspace-split.mod-left-split
+	> .workspace-leaf-resize-handle,
+.aura-card-layout
+	.workspace-split.mod-right-split
+	> .workspace-leaf-resize-handle {
+	border: 2px solid transparent;
+}
+
+.aura-card-layout .workspace-split .workspace-leaf-content {
+	border-radius: var(--aura-card-radius, var(--radius-xl));
+	background-color: var(--card-foreground-color);
+	border: 1px solid var(--tab-outline-color);
+	margin-bottom: var(--aura-card-layout-padding, 10px);
+}
+
+.aura-card-layout.aura-card-shadows .side-dock-actions,
+.aura-card-layout.aura-card-shadows .workspace-split .workspace-leaf-content,
+.aura-card-layout.aura-card-shadows.aura-card-layout-fileexplorer
+	.workspace-split
+	.workspace-leaf-content[data-type="file-explorer"] {
+	box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.aura-card-layout
+	.workspace-split
+	.workspace-leaf-content[data-type="file-explorer"] {
+	background-color: var(--tab-container-background);
+	box-shadow: none;
+	border-width: 0;
+}
+
+.aura-card-layout.aura-card-layout-fileexplorer
+	.workspace-split
+	.workspace-leaf-content[data-type="file-explorer"] {
+	background-color: var(--card-foreground-color);
+	border-width: 1px;
+}
+
+.aura-card-layout .workspace-split .mod-stacked .workspace-leaf-content {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	border-left: none;
+}
+
+.aura-card-layout .workspace-split.mod-horizontal > * {
+	width: unset;
+}
+
+.aura-card-layout .mod-stacked .workspace-tab-header {
+	border-style: solid;
+	border-radius: var(--aura-card-radius, var(--radius-xl)) 0 0
+		var(--aura-card-radius, var(--radius-xl)) !important;
+	border-width: var(--tab-outline-width);
+	border-color: var(--tab-outline-color);
+	border-right: var(--tab-outline-width) dashed var(--tab-outline-color);
+}
+
+.aura-card-layout .mod-stacked .workspace-leaf {
+	border-left-width: 0;
+	border-top-width: var(--tab-outline-width);
+	border-bottom-width: var(--tab-outline-width);
+	border-style: solid;
+	border-color: var(--tab-outline-color);
+	border-radius: 0 var(--aura-card-radius, var(--radius-xl))
+		var(--aura-card-radius, var(--radius-xl)) 0;
+}
+
+.aura-card-layout .mod-stacked .workspace-tab-container {
+	padding-bottom: var(--aura-card-layout-padding, 10px);
+}
+
+.aura-card-layout .mod-top .workspace-leaf-resize-handle {
+	border-color: transparent;
+}
+
+body.aura-disable-borders,
+body.aura-disable-borders.aura-workspace-background-image-toggle {
+	--divider-color: transparent;
+}
+
+.aura-card-layout .workspace-drop-overlay:before {
+	width: calc(100% - 6px - var(--aura-card-layout-padding, 0) * 2);
+	height: calc(100% - 6px - var(--aura-card-layout-padding, 0) * 2);
+	margin: auto;
+}
+
+.aura-card-layout
+	.workspace
+	.mod-root
+	.workspace-tabs.mod-stacked
+	.workspace-tab-container
+	.workspace-leaf {
+	background-color: var(--background-primary);
 }
