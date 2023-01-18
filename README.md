@@ -13,7 +13,7 @@ To install the theme
 
 ## Features
 
-## Custom Colorschemes
+### Custom Colorschemes
 
 Change the look of you workspace with colorschemes
 
@@ -25,7 +25,7 @@ Customize your workspace with custom background images
 
 <img src="assets/workspace-background.png" style="border-radius: 10px"/>
 
-## Alternate Layout
+### Alternate Layout
 
 Make your workspace more rounded
 
