@@ -31,13 +31,19 @@ Make your workspace more rounded
 
 <img src="assets/alternate-layout.png" style="border-radius: 10px"/>
 
+### Colorful Frame
+
+Change the frame color as per your liking
+
+<img src="assets/colorful-frame.png" style="border-radius: 10px"/>
+
 ### Rainbow Folders
 
 Make your folders look awesome
 
 <img src="assets/rainbow-folders.png" style="border-radius: 10px; width: 400px"/>
 
-### Custom **checkboxes**
+### Custom checkboxes
 
 Unveal the true power of checkboxes
 
