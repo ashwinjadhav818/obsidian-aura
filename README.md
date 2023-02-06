@@ -45,5 +45,5 @@ Unveal the true power of checkboxes
 
 ## Credits
 
--   Callouts & Colored Folders by [Anubis](https://github.com/AnubisNekhet)
+-   Callouts, Floating Statusbar, File & Folder Icons by [Anubis](https://github.com/AnubisNekhet)
 -   Workspace background and card layout by [Farouk](http://github.com/faroukx)
