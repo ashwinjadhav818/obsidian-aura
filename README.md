@@ -1,6 +1,6 @@
 # Aura
 
-![](assets/screenshot.png)
+![](assets/showcase.png)
 
 ## Installation
 
@@ -17,7 +17,7 @@ To install the theme
 
 Change the look of you workspace with colorschemes
 
-<img src="assets/custom-colorschemes.png" style="border-radius: 10px"/>
+<img src="assets/colorschemes.png" style="border-radius: 10px"/>
 
 ### Workspace Background
 
@@ -36,6 +36,12 @@ Make your workspace more rounded
 Change the frame color as per your liking
 
 <img src="assets/colorful-frame.png" style="border-radius: 10px"/>
+
+### Rainbow Folders
+
+Make your callouts pop out
+
+<img src="assets/custom-callouts.png" style="border-radius: 10px; width: 400px"/>
 
 ### Rainbow Folders
 
