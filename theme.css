@@ -22,6 +22,10 @@ body {
    --h4-size: 1.25em;
    --h5-size: 1em;
    --h6-size: 1em;
+
+   /* Text */
+   --bold-colors: rgb(var(--cpt-red));
+   --italic-colors: rgb(var(--cpt-blue));
 }
 .theme-light {
    /* Core */
@@ -75,7 +79,7 @@ body {
    --text-accent: rgb(var(--cpt-accent));
    --text-accent-hover: rgba(var(--cpt-accent), 0.7);
    --text-on-accent: rgb(var(--cpt-mantle));
-   --text-selection: rgba(var(--cpt-text), 0.075);
+   --text-selection: rgba(var(--cpt-accent), 0.1);
 }
 .theme-dark {
    /* Core */
@@ -117,23 +121,23 @@ body {
    --background-modifier-form-field: rgb(var(--cpt-crust));
 
    /* Interictive elements */
-   --interactive-normal: rgb(var(--cpt-mantle));
-   --interactive-hover: rgb(var(--cpt-core), 0.7);
+   --interactive-normal: rgb(var(--cpt-crust));
+   --interactive-hover: rgb(var(--cpt-crust), 0.5);
    --interactive-accent: rgb(var(--cpt-accent));
    --interactive-accent-hover: rgba(var(--cpt-accent), 0.7);
 
    /* Text */
    --text-normal: rgb(var(--cpt-text));
-   --text-faint: rgba(var(--cpt-text), 0.9);
-   --text-muted: rgba(var(--cpt-text), 0.9);
+   --text-faint: rgba(var(--cpt-text), 0.7);
+   --text-muted: rgba(var(--cpt-text), 0.7);
    --text-accent: rgb(var(--cpt-accent));
    --text-accent-hover: rgba(var(--cpt-accent), 0.7);
    --text-on-accent: rgb(var(--cpt-mantle));
-   --text-selection: rgba(var(--cpt-text), 0.075);
+   --text-selection: rgba(var(--cpt-accent), 0.1);
 }
 
 /* ---------- COLOR SCHEMES ---------- */
-.theme-light.aura-colorschemes-notion-light {
+.theme-light.aura-colorschemes-light-notion {
    --cpt-crust: 227, 230, 232;
    --cpt-crust-alt: 225, 228, 230;
    --cpt-mantle: 247, 247, 245;
@@ -152,7 +156,7 @@ body {
    --cpt-black: 10, 10, 10;
    --cpt-white: 240, 240, 240;
 }
-.theme-light.aura-colorschemes-gruvbox-light {
+.theme-light.aura-colorschemes-light-gruvbox {
    --cpt-crust: 242, 229, 188;
    --cpt-crust-alt: 225, 228, 230;
    --cpt-mantle: 230, 220, 196;
@@ -171,7 +175,7 @@ body {
    --cpt-black: 10, 10, 10;
    --cpt-white: 240, 240, 240;
 }
-.theme-light.aura-colorschemes-solarized-light {
+.theme-light.aura-colorschemes-light-solarized {
    --cpt-crust: 228, 222, 203;
    --cpt-crust-alt: 225, 220, 200;
    --cpt-mantle: 238, 232, 213;
@@ -189,7 +193,7 @@ body {
    --cpt-black: 10, 10, 10;
    --cpt-white: 240, 240, 240;
 }
-.theme-dark.aura-colorschemes-dracula-dark {
+.theme-dark.aura-colorschemes-dark-dracula {
    --cpt-crust: 22, 23, 33;
    --cpt-crust-alt: 19, 19, 19;
    --cpt-mantle: 33, 34, 44;
@@ -209,7 +213,7 @@ body {
    --cpt-blue: 95, 126, 222;
    --cpt-purple: 189, 147, 249;
 }
-.theme-dark.aura-colorschemes-kanagawa-dark {
+.theme-dark.aura-colorschemes-dark-kanagawa {
    --cpt-crust: 15, 15, 22;
    --cpt-crust-alt: 16, 16, 24;
    --cpt-mantle: 22, 22, 29;
@@ -228,7 +232,7 @@ body {
    --cpt-blue: 126, 156, 216;
    --cpt-purple: 149, 127, 184;
 }
-.theme-dark.aura-colorschemes-gruvbox-dark {
+.theme-dark.aura-colorschemes-dark-gruvbox {
    --cpt-crust: 25, 27, 28;
    --cpt-crust-alt: 16, 16, 24;
    --cpt-mantle: 29, 32, 33;
@@ -247,7 +251,7 @@ body {
    --cpt-blue: 69, 133, 136;
    --cpt-purple: 177, 98, 134;
 }
-.theme-dark.aura-colorschemes-solarized-dark {
+.theme-dark.aura-colorschemes-dark-solarized {
    --cpt-crust: 0, 37, 50;
    --cpt-crust-alt: 0, 35, 48;
    --cpt-mantle: 0, 43, 54;
@@ -258,13 +262,31 @@ body {
    --cpt-text: 240, 240, 240;
    --cpt-border: 0, 35, 45;
 
-   --cpt-aura: var(--cpt-blue);
+   --cpt-aura: var(--cpt-red);
    --cpt-red: 220, 50, 47;
    --cpt-orange: 227, 131, 89;
    --cpt-yellow: 181, 137, 0;
    --cpt-green: 133, 153, 0;
    --cpt-blue: 38, 139, 210;
    --cpt-purple: 108, 113, 196;
+}
+.theme-dark.aura-colorschemes-dark-cyberpunk {
+   --cpt-crust: 9, 0, 15;
+   --cpt-crust-alt: 12, 3, 18;
+   --cpt-mantle: 12, 3, 19;
+   --cpt-mantle-alt: 17, 7, 25;
+   --cpt-core: 17, 7, 25;
+   --cpt-core-alt: 21, 10, 28;
+
+   --cpt-text: 240, 240, 240;
+
+   --cpt-aura: var(--cpt-purple);
+   --cpt-red: 216, 83, 84;
+   --cpt-orange: 221, 116, 50;
+   --cpt-yellow: 217, 163, 31;
+   --cpt-green: 119, 172, 8;
+   --cpt-blue: 22, 103, 211;
+   --cpt-purple: 226, 0, 248;
 }
 
 /* ---------- E D I T O R ---------- */
@@ -415,6 +437,40 @@ body {
    --h6-color: rgb(var(--cpt-purple));
 }
 
+/* Cyberpunk Heading */
+.theme-dark.aura-colorschemes-dark-cyberpunk .cm-header-1,
+.theme-dark.aura-colorschemes-dark-cyberpunk .HyperMD-header-1,
+.theme-dark.aura-colorschemes-dark-cyberpunk h1 {
+   text-shadow: 0 0 0.5em var(--h1-color);
+}
+.theme-dark.aura-colorschemes-dark-cyberpunk .cm-header-2,
+.theme-dark.aura-colorschemes-dark-cyberpunk .HyperMD-header-2,
+.theme-dark.aura-colorschemes-dark-cyberpunk h2 {
+   text-shadow: 0 0 0.5em var(--h2-color);
+}
+.theme-dark.aura-colorschemes-dark-cyberpunk .cm-header-3,
+.theme-dark.aura-colorschemes-dark-cyberpunk .HyperMD-header-3,
+.theme-dark.aura-colorschemes-dark-cyberpunk h3 {
+   text-shadow: 0 0 0.5em var(--h3-color);
+}
+.theme-dark.aura-colorschemes-dark-cyberpunk .cm-header-4,
+.theme-dark.aura-colorschemes-dark-cyberpunk .HyperMD-header-4,
+.theme-dark.aura-colorschemes-dark-cyberpunk h4 {
+   text-shadow: 0 0 0.5em var(--h4-color);
+}
+.theme-dark.aura-colorschemes-dark-cyberpunk .cm-header-5,
+.theme-dark.aura-colorschemes-dark-cyberpunk .HyperMD-header-5,
+.theme-dark.aura-colorschemes-dark-cyberpunk h5 {
+   text-shadow: 0 0 0.5em var(--h5-color);
+}
+.theme-dark.aura-colorschemes-dark-cyberpunk .cm-header-6,
+.theme-dark.aura-colorschemes-dark-cyberpunk .HyperMD-header-6,
+.theme-dark.aura-colorschemes-dark-cyberpunk h6 {
+   text-shadow: 0 0 0.5em var(--h6-color);
+}
+
+/*  */
+
 /* CALLOUTS */
 .aura-callouts.aura-callouts-vanilla .callout {
    border-radius: var(--callout-radius);
@@ -444,7 +500,7 @@ body {
 .aura-callouts.aura-callouts-sleek
    .callout:not(.is-collapsible)
    .callout-title {
-   background-color: rgba(var(--callout-color), 0 0.5);
+   background-color: rgba(var(--callout-color), 0 0.6);
    padding: var(--callout-title-padding);
    cursor: pointer;
 }
@@ -1118,10 +1174,10 @@ body {
 
 /* ---------- L A Y O U T ---------- */
 /* Prompt */
-.prompt .prompt-input {
+body:not(.aura-workspace-background) .prompt .prompt-input {
    background: rgb(var(--cpt-crust));
 }
-.prompt {
+body:not(.aura-workspace-background) .prompt {
    background: rgba(var(--cpt-mantle));
 }
 /* Card Layout */
@@ -1151,6 +1207,7 @@ body {
 .aura-card-layout:not(.aura-workspace-background) .workspace-split.mod-vertical,
 .aura-card-layout:not(.aura-workspace-background) .workspace {
    --tab-container-background: var(--background-secondary);
+   --titlebar-background-focused: var(--background-secondary);
    background-color: var(--tab-container-background);
 }
 
@@ -1418,6 +1475,13 @@ body.aura-disable-borders.aura-workspace-background-image-dark-toggle {
    );
 }
 
+.aura-workspace-background .popover {
+   background-color: rgba(
+      var(--cpt-core),
+      var(--aura-workspace-background-workspace-slider-dark)
+   );
+}
+
 .aura-workspace-background .horizontal-main-container {
    background: var(--workspace-background-image);
    background-color: transparent;
@@ -1425,11 +1489,17 @@ body.aura-disable-borders.aura-workspace-background-image-dark-toggle {
 }
 .theme-light.aura-workspace-background .workspace {
    background-color: rgba(var(--cpt-core), 0.2);
-   backdrop-filter: brightness(var(--aura-workspace-background-brightness-light, 0.5)) blur(var(--aura-workspace-background-blur-light, 5px));
+   backdrop-filter: brightness(
+         var(--aura-workspace-background-brightness-light, 0.5)
+      )
+      blur(var(--aura-workspace-background-blur-light, 5px));
 }
 .theme-dark.aura-workspace-background .workspace {
    background-color: rgba(var(--cpt-core), 0.2);
-   backdrop-filter: brightness(var(--aura-workspace-background-brightness-dark, 0.5)) blur(var(--aura-workspace-background-blur-dark, 5px));
+   backdrop-filter: brightness(
+         var(--aura-workspace-background-brightness-dark, 0.5)
+      )
+      blur(var(--aura-workspace-background-blur-dark, 5px));
 }
 
 .theme-light.aura-workspace-background.aura-workspace-background-image-lines
@@ -1448,7 +1518,9 @@ body.aura-disable-borders.aura-workspace-background-image-dark-toggle {
    --workspace-background-image: var(--water-waves);
 }
 .theme-light.aura-workspace-background .horizontal-main-container {
-   --workspace-background-image: var(--aura-workspace-background-image-light-custom-option);
+   --workspace-background-image: var(
+      --aura-workspace-background-image-light-custom-option
+   );
 }
 
 .theme-dark.aura-workspace-background.aura-workspace-background-image-tokoyo
@@ -1472,27 +1544,46 @@ body.aura-disable-borders.aura-workspace-background-image-dark-toggle {
    --workspace-background-image: var(--neon-sunrise);
 }
 .theme-dark.aura-workspace-background .horizontal-main-container {
-   --workspace-background-image: var(--aura-workspace-background-image-dark-custom-option);
+   --workspace-background-image: var(
+      --aura-workspace-background-image-dark-custom-option
+   );
 }
 
-.aura-workspace-background .modal,
-.menu {
-   --background-primary: rgba(var(--cpt-core), 0.8);
-   --background-primary-alt: rgba(var(--cpt-core-alt), 0.8);
-   --background-secondary: rgba(var(--cpt-mantle), 0.9);
-   --background-secondary-alt: rgba(var(--cpt-mantle-alt), 0.8);
+.aura-workspace-background
+   .workspace
+   .mod-root
+   .workspace-tabs.mod-stacked
+   .workspace-tab-container
+   .workspace-tab-header {
+   --background-primary: rgba(var(--cpt-crust), 0.7);
+}
+
+.aura-workspace-background .workspace-leaf.is-hidden {
+   --background-primary: transparent !important;
+}
+
+.aura-workspace-background
+   .workspace-fake-target-overlay:not(.is-in-sidebar)
+   .workspace-tabs
+   .workspace-leaf,
+.aura-workspace-background .mod-root .workspace-tabs .workspace-leaf {
+   --background-primary: rgba(
+      var(--cpt-crust),
+      var(--aura-workspace-background-workspace-slider-dark)
+   );
+}
+
+.aura-workspace-background,
+.prompt,
+.menu .popover {
+   --background-primary: rgba(var(--cpt-crust), 0.7);
+   --background-primary-alt: rgba(var(--cpt-core-alt), 0.7);
+   --background-secondary: rgba(var(--cpt-mantle), 0.5);
+   --background-secondary-alt: rgba(var(--cpt-mantle-alt), 0.5);
    --modal-background: rgba(var(--cpt-mantle), 0.9);
 }
-
-.aura-workspace-background .modal-container > .prompt {
-   --background-primary: rgba(var(--cpt-core), 0.718);
-}
-.aura-workspace-background .prompt-results {
+.aura-workspace-background .prompt {
    background-color: var(--background-secondary);
-}
-
-.aura-workspace-background .suggestion-container {
-   --background-primary: rgba(var(--cpt-core), 0.922);
 }
 
 /* File & Folder Icons */
@@ -2006,13 +2097,13 @@ settings:
          value: default
       -
          label: Notion
-         value: aura-colorschemes-notion-light
+         value: aura-colorschemes-light-notion
       - 
          label: Gruvbox
-         value: aura-colorschemes-gruvbox-light
+         value: aura-colorschemes-light-gruvbox
       - 
          label: Solarized
-         value: aura-colorschemes-solarized-light
+         value: aura-colorschemes-light-solarized
    - 
       id: aura-colorshemes-dark
       title: Dark Theme Colorscheme
@@ -2025,16 +2116,19 @@ settings:
          value: default
       -
          label: Dracula
-         value: aura-colorschemes-dracula-dark
+         value: aura-colorschemes-dark-dracula
       -
          label: Kanagawa
-         value: aura-colorschemes-kanagawa-dark
+         value: aura-colorschemes-dark-kanagawa
       - 
          label: Gruvbox
-         value: aura-colorschemes-gruvbox-dark
+         value: aura-colorschemes-dark-gruvbox
       - 
          label: Solarized
-         value: aura-colorschemes-solarized-dark
+         value: aura-colorschemes-dark-solarized
+      - 
+         label: Cyberpunk
+         value: aura-colorschemes-dark-cyberpunk
 
    #---------- E D I T O R ----------
    - 
@@ -2060,6 +2154,66 @@ settings:
          -
             label: Highlight + Border
             value: aura-active-line-highlight-border
+   - 
+      id: aura-text-heading
+      title: Text
+      type: heading
+      level: 2
+      collapsed: true
+   -
+      id: bold-color
+      title: Bold Color
+      type: variable-select
+      default: rgb(var(--cpt-red))
+      options:
+         - 
+            label: Red
+            value: rgb(var(--cpt-red))
+         - 
+            label: Orange
+            value: rgb(var(--cpt-orange))
+         - 
+            label: Yellow
+            value: rgb(var(--cpt-yellow))
+         - 
+            label: Green
+            value: rgb(var(--cpt-green))
+         - 
+            label: Cyan
+            value: rgb(var(--cpt-cyan))
+         - 
+            label: Blue
+            value: rgb(var(--cpt-blue))
+         - 
+            label: Purple
+            value: rgb(var(--cpt-purple))
+   -
+      id: italic-color
+      title: Italic Color
+      type: variable-select
+      default: rgb(var(--cpt-blue))
+      options:
+         - 
+            label: Red
+            value: rgb(var(--cpt-red))
+         - 
+            label: Orange
+            value: rgb(var(--cpt-orange))
+         - 
+            label: Yellow
+            value: rgb(var(--cpt-yellow))
+         - 
+            label: Green
+            value: rgb(var(--cpt-green))
+         - 
+            label: Cyan
+            value: rgb(var(--cpt-cyan))
+         - 
+            label: Blue
+            value: rgb(var(--cpt-blue))
+         - 
+            label: Purple
+            value: rgb(var(--cpt-purple))
    - 
       id: aura-headings-heading
       title: Headings
