@@ -1405,65 +1405,6 @@ body:not(.aura-workspace-background) .prompt {
    background: rgba(var(--cpt-mantle));
 }
 /* Card Layout */
-.aura-card-layout:not(.aura-workspace-background):not(
-      .aura-translucent-window:not(.is-fullscreen)
-   )
-   .horizontal-main-container,
-.aura-card-layout:not(.aura-workspace-background):not(
-      .aura-translucent-window:not(.is-fullscreen)
-   )
-   .mod-left-split,
-.aura-card-layout:not(.aura-workspace-background):not(
-      .aura-translucent-window:not(.is-fullscreen)
-   )
-   .mod-left-split
-   .workspace-tabs
-   .workspace-leaf,
-.aura-card-layout:not(.aura-workspace-background):not(
-      .aura-translucent-window:not(.is-fullscreen)
-   )
-   .mod-right-split
-   .workspace-tabs
-   .workspace-leaf,
-.aura-card-layout:not(.aura-workspace-background):not(
-      .aura-translucent-window:not(.is-fullscreen)
-   )
-   .mod-root
-   .workspace-tabs
-   .workspace-leaf,
-.aura-card-layout:not(.aura-workspace-background):not(
-      .aura-translucent-window:not(.is-fullscreen)
-   )
-   .mod-vertical,
-.aura-card-layout:not(.aura-workspace-background):not(
-      .aura-translucent-window:not(.is-fullscreen)
-   )
-   .mod-vertical
-   .workspace-tab-container,
-.aura-card-layout:not(.aura-workspace-background):not(
-      .aura-translucent-window:not(.is-fullscreen)
-   )
-   .mod-vertical
-   .workspace-tabs,
-.aura-card-layout:not(.aura-workspace-background):not(
-      .aura-translucent-window:not(.is-fullscreen)
-   )
-   .workspace-fake-target-overlay:not(.is-in-sidebar)
-   .workspace-tabs
-   .workspace-leaf,
-.aura-card-layout:not(.aura-workspace-background):not(
-      .aura-translucent-window:not(.is-fullscreen)
-   )
-   .workspace-split.mod-vertical,
-.aura-card-layout:not(.aura-workspace-background):not(
-      .aura-translucent-window:not(.is-fullscreen)
-   )
-   .workspace {
-   --tab-container-background: var(--background-secondary);
-   --titlebar-background-focused: var(--background-secondary);
-   background-color: var(--tab-container-background);
-}
-
 .workspace-split:not(.mod-root) .graph-controls,
 .workspace-split:not(.mod-root) .graph-controls.is-close,
 .workspace-split:not(.mod-root) .graph-controls:not(.is-close) {
@@ -1921,7 +1862,7 @@ body.aura-disable-borders.aura-workspace-background-image-dark-toggle {
 }
 
 /* Colorful Frame */
-.aura-colorful-frame {
+.aura-colorful-frame:not(.aura-translucent-window) {
    --titlebar-background: rgba(
       var(--cpt-accent),
       var(--aura-colorful-frame-opacity)
@@ -1932,26 +1873,26 @@ body.aura-disable-borders.aura-workspace-background-image-dark-toggle {
    );
    --tab-container-background: rgba(var(--cpt-accent), 0.7);
 }
-.aura-colorful-frame.aura-card-layout .horizontal-main-container,
-.aura-colorful-frame.aura-card-layout .mod-left-split,
-.aura-colorful-frame.aura-card-layout
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .horizontal-main-container,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .mod-left-split,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .mod-left-split
    .workspace-tabs
    .workspace-leaf,
-.aura-colorful-frame.aura-card-layout
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .mod-right-split
    .workspace-tabs
    .workspace-leaf,
-.aura-colorful-frame.aura-card-layout .mod-root .workspace-tabs .workspace-leaf,
-.aura-colorful-frame.aura-card-layout .mod-vertical,
-.aura-colorful-frame.aura-card-layout .mod-vertical .workspace-tab-container,
-.aura-colorful-frame.aura-card-layout .mod-vertical .workspace-tabs,
-.aura-colorful-frame.aura-card-layout
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .mod-root .workspace-tabs .workspace-leaf,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .mod-vertical,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .mod-vertical .workspace-tab-container,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .mod-vertical .workspace-tabs,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .workspace-fake-target-overlay:not(.is-in-sidebar)
    .workspace-tabs
    .workspace-leaf,
-.aura-colorful-frame.aura-card-layout .workspace-split.mod-vertical,
-.aura-colorful-frame.aura-card-layout .workspace {
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .workspace-split.mod-vertical,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .workspace {
    --tab-container-background: rgba(
       var(--cpt-accent),
       var(--aura-colorful-frame-opacity)
@@ -1966,50 +1907,53 @@ body.aura-disable-borders.aura-workspace-background-image-dark-toggle {
    );
 }
 
-.aura-colorful-frame .mod-left-split .mod-top .workspace-tab-header-inner-icon,
-.aura-colorful-frame.aura-card-layout
+.aura-colorful-frame:not(.aura-translucent-window) .mod-left-split .mod-top .workspace-tab-header-inner-icon,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .mod-left-split
    .workspace-tab-header-inner-icon,
-.aura-colorful-frame.aura-card-layout
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .mod-right-split
    .workspace-tab-header-inner-icon,
-.aura-colorful-frame
+.aura-colorful-frame:not(.aura-translucent-window)
    .mod-left-split
    .mod-top
    .workspace-tab-header-inner-icon:hover,
-.aura-colorful-frame .mod-right-split .mod-top .workspace-tab-header-inner-icon,
-.aura-colorful-frame
+.aura-colorful-frame:not(.aura-translucent-window).mod-right-split .mod-top .workspace-tab-header-inner-icon,
+.aura-colorful-frame:not(.aura-translucent-window)
    .mod-left-split
    .mod-top
    .workspace-tab-header-inner-icon:hover,
-.aura-colorful-frame
+.aura-colorful-frame:not(.aura-translucent-window)
    .mod-right-split
    .mod-top
    .workspace-tab-header-inner-icon:hover,
-.aura-colorful-frame .mod-vertical .workspace-tab-header:not(.is-active),
-.aura-colorful-frame
+.aura-colorful-frame:not(.aura-translucent-window) .mod-vertical .workspace-tab-header:not(.is-active),
+.aura-colorful-frame:not(.aura-translucent-window)
    .mod-vertical
    .workspace-tab-header:not(.is-active)
    .workspace-tab-header-inner:hover,
-.aura-colorful-frame .mod-vertical .workspace-tab-header-inner-icon:hover,
-.aura-colorful-frame.aura-card-layout
+.aura-colorful-frame:not(.aura-translucent-window) .mod-vertical .workspace-tab-header-inner-icon:hover,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .workspace-tabs.mod-top
    .workspace-tab-header:not(.is-active)
    .workspace-tab-header-inner-icon,
-.aura-colorful-frame
+.aura-colorful-frame:not(.aura-translucent-window)
    .workspace-split.mod-vertical
    .mod-top
    .workspace-tab-header:not(.is-active):hover,
-.aura-colorful-frame.aura-card-layout
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .mod-top
    .workspace-tab-header:not(.is-active):hover,
-.aura-colorful-frame.aura-card-layout
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .mod-vertical
    .workspace-tab-header:not(.is-active):hover,
-.aura-colorful-frame .workspace-tab-header-tab-list,
-.aura-colorful-frame .workspace-tab-header-tab-list .clickable-icon:hover,
-.aura-colorful-frame .workspace-tab-header-new-tab,
-.aura-colorful-frame .workspace-tab-header-new-tab .clickable-icon:hover {
+.aura-colorful-frame:not(.aura-translucent-window) .workspace-tab-header-tab-list,
+.aura-colorful-frame:not(.aura-translucent-window) .workspace-tab-header-tab-list .clickable-icon:hover,
+.aura-colorful-frame:not(.aura-translucent-window) .workspace-tab-header-new-tab,
+.aura-colorful-frame:not(.aura-translucent-window) .workspace-tab-header-new-tab .clickable-icon:hover,
+.aura-colorful-frame:not(.aura-translucent-window):not(.aura-card-layout-actions) .workspace-ribbon .side-dock-actions > .clickable-icon,
+.aura-colorful-frame:not(.aura-translucent-window):not(.aura-card-layout-fileexplorer) .workspace-tabs .tree-item > .tree-item-self,
+.aura-colorful-frame:not(.aura-translucent-window):not(.aura-card-layout-fileexplorer) .workspace-tabs .nav-header > .nav-buttons-container {
    color: rgb(var(--cpt-black)) !important;
    --icon-color: rgb(var(--cpt-black)) !important;
    --icon-color-hover: rgb(var(--cpt-black)) !important;
@@ -2391,6 +2335,11 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
 
 /* Toggle tooltips */
 .aura-tooltips-toggle .tooltip {
+   display: none;
+}
+
+/* Hide vault name */
+.aura-vault-name-toggle .nav-folder.mod-root > .nav-folder-title {
    display: none;
 }
 
@@ -3795,5 +3744,9 @@ settings:
    -   
       id: aura-tooltip-toggle
       title: Hide Tooltips
+      type: class-toggle
+   - 
+      id: aura-vault-name-toggle
+      title: Hide Vault Name
       type: class-toggle
 */
