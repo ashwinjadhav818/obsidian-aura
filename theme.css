@@ -1,5 +1,5 @@
 /* 
------------ W O L F -------------------
+----------- A U R A -------------------
 ------ A Minimalist Theme -------------
 ------- By Ashwin Jadhav --------------
 */
@@ -137,8 +137,8 @@ body {
    --cpt-border: 233, 223, 209;
 
    --color-accent: rgb(var(var(--cpt-accent)));
-   --cpt-accent: var(--cpt-wolf);
-   --cpt-wolf: var(--cpt-yellow);
+   --cpt-accent: var(--cpt-aura);
+   --cpt-aura: var(--cpt-yellow);
    --cpt-red: 240, 100, 119;
    --cpt-orange: 245, 146, 75;
    --cpt-yellow: 233, 179, 92;
@@ -195,8 +195,8 @@ body {
    --cpt-border: 50, 50, 50;
 
    --color-accent: rgb(var(--cpt-accent));
-   --cpt-accent: var(--cpt-wolf);
-   --cpt-wolf: var(--cpt-blue);
+   --cpt-accent: var(--cpt-aura);
+   --cpt-aura: var(--cpt-blue);
    --cpt-red: 208, 66, 85;
    --cpt-orange: 213, 118, 52;
    --cpt-yellow: 229, 181, 103;
@@ -242,7 +242,7 @@ body {
 }
 
 /* ---------- COLOR SCHEMES ---------- */
-.theme-light.wolf-colorschemes-light-notion {
+.theme-light.aura-colorschemes-light-notion {
    --cpt-crust: 227, 230, 232;
    --cpt-crust-alt: 225, 228, 230;
    --cpt-mantle: 247, 247, 245;
@@ -250,7 +250,7 @@ body {
    --cpt-core: 255, 255, 255;
    --cpt-core-alt: 253, 253, 253;
 
-   --cpt-wolf: var(--cpt-red);
+   --cpt-aura: var(--cpt-red);
    --cpt-red: 208, 66, 85;
    --cpt-orange: 213, 118, 52;
    --cpt-yellow: 229, 181, 103;
@@ -262,7 +262,7 @@ body {
    --cpt-black: 10, 10, 10;
    --cpt-white: 240, 240, 240;
 }
-.theme-light.wolf-colorschemes-light-gruvbox {
+.theme-light.aura-colorschemes-light-gruvbox {
    --cpt-crust: 242, 229, 188;
    --cpt-crust-alt: 225, 228, 230;
    --cpt-mantle: 230, 220, 196;
@@ -270,7 +270,7 @@ body {
    --cpt-core: 249, 245, 215;
    --cpt-core-alt: 253, 253, 253;
 
-   --cpt-wolf: var(--cpt-red);
+   --cpt-aura: var(--cpt-red);
    --cpt-red: 204, 36, 29;
    --cpt-orange: 214, 93, 14;
    --cpt-yellow: 215, 153, 33;
@@ -282,7 +282,7 @@ body {
    --cpt-black: 10, 10, 10;
    --cpt-white: 240, 240, 240;
 }
-.theme-light.wolf-colorschemes-light-solarized {
+.theme-light.aura-colorschemes-light-solarized {
    --cpt-crust: 228, 222, 203;
    --cpt-crust-alt: 225, 220, 200;
    --cpt-mantle: 238, 232, 213;
@@ -290,7 +290,7 @@ body {
    --cpt-core: 253, 246, 227;
    --cpt-core-alt: 250, 243, 225;
 
-   --cpt-wolf: var(--cpt-blue);
+   --cpt-aura: var(--cpt-blue);
    --cpt-red: 220, 50, 47;
    --cpt-orange: 227, 131, 89;
    --cpt-yellow: 181, 137, 0;
@@ -301,7 +301,7 @@ body {
    --cpt-black: 10, 10, 10;
    --cpt-white: 240, 240, 240;
 }
-.theme-dark.wolf-colorschemes-dark-dracula {
+.theme-dark.aura-colorschemes-dark-dracula {
    --cpt-crust: 22, 23, 33;
    --cpt-crust-alt: 19, 19, 19;
    --cpt-mantle: 33, 34, 44;
@@ -312,7 +312,7 @@ body {
    --cpt-text: 240, 240, 240;
    --cpt-border: 50, 50, 50;
 
-   --cpt-wolf: var(--cpt-purple);
+   --cpt-aura: var(--cpt-purple);
    --cpt-red: 255, 85, 85;
    --cpt-orange: 255, 184, 108;
    --cpt-yellow: 241, 250, 140;
@@ -322,7 +322,7 @@ body {
    --cpt-pink: 235, 0, 235;
    --cpt-purple: 189, 147, 249;
 }
-.theme-dark.wolf-colorschemes-dark-kanagawa {
+.theme-dark.aura-colorschemes-dark-kanagawa {
    --cpt-crust: 15, 15, 22;
    --cpt-crust-alt: 16, 16, 24;
    --cpt-mantle: 22, 22, 29;
@@ -333,7 +333,7 @@ body {
    --cpt-text: 244, 247, 210;
    --cpt-border: 50, 50, 50;
 
-   --cpt-wolf: var(--cpt-yellow);
+   --cpt-aura: var(--cpt-yellow);
    --cpt-red: 255, 93, 98;
    --cpt-orange: 255, 158, 59;
    --cpt-yellow: 255, 200, 148;
@@ -342,7 +342,7 @@ body {
    --cpt-pink: 235, 0, 235;
    --cpt-purple: 149, 127, 184;
 }
-.theme-dark.wolf-colorschemes-dark-gruvbox {
+.theme-dark.aura-colorschemes-dark-gruvbox {
    --cpt-crust: 25, 27, 28;
    --cpt-crust-alt: 16, 16, 24;
    --cpt-mantle: 29, 32, 33;
@@ -353,7 +353,7 @@ body {
    --cpt-text: 240, 240, 240;
    --cpt-border: 50, 50, 50;
 
-   --cpt-wolf: var(--cpt-orange);
+   --cpt-aura: var(--cpt-orange);
    --cpt-red: 204, 36, 29;
    --cpt-orange: 214, 93, 14;
    --cpt-yellow: 215, 153, 33;
@@ -362,7 +362,7 @@ body {
    --cpt-pink: 235, 0, 235;
    --cpt-purple: 177, 98, 134;
 }
-.theme-dark.wolf-colorschemes-dark-solarized {
+.theme-dark.aura-colorschemes-dark-solarized {
    --cpt-crust: 0, 37, 50;
    --cpt-crust-alt: 0, 35, 48;
    --cpt-mantle: 0, 43, 54;
@@ -373,7 +373,7 @@ body {
    --cpt-text: 240, 240, 240;
    --cpt-border: 0, 35, 45;
 
-   --cpt-wolf: var(--cpt-red);
+   --cpt-aura: var(--cpt-red);
    --cpt-red: 220, 50, 47;
    --cpt-orange: 227, 131, 89;
    --cpt-yellow: 181, 137, 0;
@@ -382,7 +382,7 @@ body {
    --cpt-pink: 235, 0, 235;
    --cpt-purple: 108, 113, 196;
 }
-.theme-dark.wolf-colorschemes-dark-mystical-nights {
+.theme-dark.aura-colorschemes-dark-mystical-nights {
    --cpt-crust: 9, 0, 15;
    --cpt-crust-alt: 12, 3, 18;
    --cpt-mantle: 12, 3, 19;
@@ -394,7 +394,7 @@ body {
    --cpt-border: 44, 25, 49;
    --background-modifier-border-focus: rgba(var(--cpt-crust), 0.5);
 
-   --cpt-wolf: var(--cpt-pink);
+   --cpt-aura: var(--cpt-pink);
    --cpt-red: 255, 85, 85;
    --cpt-orange: 255, 184, 108;
    --cpt-yellow: 217, 163, 31;
@@ -407,18 +407,18 @@ body {
 
 /* ---------- E D I T O R ---------- */
 /* Active Line Highlight */
-.wolf-active-line-highlight .markdown-source-view .cm-active.cm-line {
+.aura-active-line-highlight .markdown-source-view .cm-active.cm-line {
    background-color: var(--background-secondary);
 }
 
-.wolf-active-line-highlight-border .markdown-source-view .cm-active.cm-line {
+.aura-active-line-highlight-border .markdown-source-view .cm-active.cm-line {
    border-left: 2px solid var(--interactive-accent);
    margin-left: -2px !important;
    background-color: var(--background-secondary);
 }
 
 /* Headings */
-.wolf-heading-color {
+.aura-heading-color {
    --h1-color: rgb(var(--cpt-red));
    --h2-color: rgb(var(--cpt-orange));
    --h3-color: rgb(var(--cpt-yellow));
@@ -426,7 +426,7 @@ body {
    --h5-color: rgb(var(--cpt-blue));
    --h6-color: rgb(var(--cpt-purple));
 }
-.wolf-heading-color.theme-dark.wolf-colorschemes-dark-mystical-nights {
+.aura-heading-color.theme-dark.aura-colorschemes-dark-mystical-nights {
    --h1-color: rgb(var(--cpt-pink));
    --h2-color: rgb(var(--cpt-purple));
    --h3-color: rgb(var(--cpt-blue));
@@ -434,186 +434,186 @@ body {
    --h5-color: rgb(var(--cpt-red));
    --h6-color: rgb(var(--cpt-green));
 }
-.wolf-h1-red {
+.aura-h1-red {
    --h1-color: rgb(var(--cpt-red));
 }
-.wolf-h1-orange {
+.aura-h1-orange {
    --h1-color: rgb(var(--cpt-orange));
 }
-.wolf-h1-yellow {
+.aura-h1-yellow {
    --h1-color: rgb(var(--cpt-yellow));
 }
-.wolf-h1-green {
+.aura-h1-green {
    --h1-color: rgb(var(--cpt-green));
 }
-.wolf-h1-cyan {
+.aura-h1-cyan {
    --h1-color: rgb(var(--cpt-cyan));
 }
-.wolf-h1-blue {
+.aura-h1-blue {
    --h1-color: rgb(var(--cpt-blue));
 }
-.wolf-h1-pink {
+.aura-h1-pink {
    --h1-color: rgb(var(--cpt-pink));
 }
-.wolf-h1-purple {
+.aura-h1-purple {
    --h1-color: rgb(var(--cpt-purple));
 }
-.wolf-h2-red {
+.aura-h2-red {
    --h2-color: rgb(var(--cpt-red));
 }
-.wolf-h2-orange {
+.aura-h2-orange {
    --h2-color: rgb(var(--cpt-orange));
 }
-.wolf-h2-yellow {
+.aura-h2-yellow {
    --h2-color: rgb(var(--cpt-yellow));
 }
-.wolf-h2-green {
+.aura-h2-green {
    --h2-color: rgb(var(--cpt-green));
 }
-.wolf-h2-cyan {
+.aura-h2-cyan {
    --h2-color: rgb(var(--cpt-cyan));
 }
-.wolf-h2-blue {
+.aura-h2-blue {
    --h2-color: rgb(var(--cpt-blue));
 }
-.wolf-h2-pink {
+.aura-h2-pink {
    --h2-color: rgb(var(--cpt-pink));
 }
-.wolf-h2-purple {
+.aura-h2-purple {
    --h2-color: rgb(var(--cpt-purple));
 }
-.wolf-h3-red {
+.aura-h3-red {
    --h3-color: rgb(var(--cpt-red));
 }
-.wolf-h3-orange {
+.aura-h3-orange {
    --h3-color: rgb(var(--cpt-orange));
 }
-.wolf-h3-yellow {
+.aura-h3-yellow {
    --h3-color: rgb(var(--cpt-yellow));
 }
-.wolf-h3-green {
+.aura-h3-green {
    --h3-color: rgb(var(--cpt-green));
 }
-.wolf-h3-cyan {
+.aura-h3-cyan {
    --h3-color: rgb(var(--cpt-cyan));
 }
-.wolf-h3-blue {
+.aura-h3-blue {
    --h3-color: rgb(var(--cpt-blue));
 }
-.wolf-h3-pink {
+.aura-h3-pink {
    --h3-color: rgb(var(--cpt-pink));
 }
-.wolf-h3-purple {
+.aura-h3-purple {
    --h3-color: rgb(var(--cpt-purple));
 }
-.wolf-h4-red {
+.aura-h4-red {
    --h4-color: rgb(var(--cpt-red));
 }
-.wolf-h4-orange {
+.aura-h4-orange {
    --h4-color: rgb(var(--cpt-orange));
 }
-.wolf-h4-yellow {
+.aura-h4-yellow {
    --h4-color: rgb(var(--cpt-yellow));
 }
-.wolf-h4-green {
+.aura-h4-green {
    --h4-color: rgb(var(--cpt-green));
 }
-.wolf-h4-cyan {
+.aura-h4-cyan {
    --h4-color: rgb(var(--cpt-cyan));
 }
-.wolf-h4-blue {
+.aura-h4-blue {
    --h4-color: rgb(var(--cpt-blue));
 }
-.wolf-h4-pink {
+.aura-h4-pink {
    --h4-color: rgb(var(--cpt-pink));
 }
-.wolf-h4-purple {
+.aura-h4-purple {
    --h4-color: rgb(var(--cpt-purple));
 }
-.wolf-h5-red {
+.aura-h5-red {
    --h5-color: rgb(var(--cpt-red));
 }
-.wolf-h5-orange {
+.aura-h5-orange {
    --h5-color: rgb(var(--cpt-orange));
 }
-.wolf-h5-yellow {
+.aura-h5-yellow {
    --h5-color: rgb(var(--cpt-yellow));
 }
-.wolf-h5-green {
+.aura-h5-green {
    --h5-color: rgb(var(--cpt-green));
 }
-.wolf-h5-cyan {
+.aura-h5-cyan {
    --h5-color: rgb(var(--cpt-cyan));
 }
-.wolf-h5-blue {
+.aura-h5-blue {
    --h5-color: rgb(var(--cpt-blue));
 }
-.wolf-h5-pink {
+.aura-h5-pink {
    --h5-color: rgb(var(--cpt-pink));
 }
-.wolf-h5-purple {
+.aura-h5-purple {
    --h5-color: rgb(var(--cpt-purple));
 }
-.wolf-h6-red {
+.aura-h6-red {
    --h6-color: rgb(var(--cpt-red));
 }
-.wolf-h6-orange {
+.aura-h6-orange {
    --h6-color: rgb(var(--cpt-orange));
 }
-.wolf-h6-yellow {
+.aura-h6-yellow {
    --h6-color: rgb(var(--cpt-yellow));
 }
-.wolf-h6-green {
+.aura-h6-green {
    --h6-color: rgb(var(--cpt-green));
 }
-.wolf-h6-cyan {
+.aura-h6-cyan {
    --h6-color: rgb(var(--cpt-cyan));
 }
-.wolf-h6-blue {
+.aura-h6-blue {
    --h6-color: rgb(var(--cpt-blue));
 }
-.wolf-h6-pink {
+.aura-h6-pink {
    --h6-color: rgb(var(--cpt-pink));
 }
-.wolf-h6-purple {
+.aura-h6-purple {
    --h6-color: rgb(var(--cpt-purple));
 }
 
 /* Neon Heading */
-.wolf-neon-headings.wolf-heading-color .cm-header-1:not(.cm-formatting),
-.wolf-neon-headings.wolf-heading-color .HyperMD-header-1,
-.wolf-neon-headings.wolf-heading-color .inline-title,
-.wolf-neon-headings.wolf-heading-color h1 {
+.aura-neon-headings.aura-heading-color .cm-header-1:not(.cm-formatting),
+.aura-neon-headings.aura-heading-color .HyperMD-header-1,
+.aura-neon-headings.aura-heading-color .inline-title,
+.aura-neon-headings.aura-heading-color h1 {
    text-shadow: 0 0 0.5em var(--h1-color);
 }
 
-.wolf-neon-headings.wolf-heading-color .cm-header-2:not(.cm-formatting),
-.wolf-neon-headings.wolf-heading-color .HyperMD-header-2,
-.wolf-neon-headings.wolf-heading-color h2 {
+.aura-neon-headings.aura-heading-color .cm-header-2:not(.cm-formatting),
+.aura-neon-headings.aura-heading-color .HyperMD-header-2,
+.aura-neon-headings.aura-heading-color h2 {
    text-shadow: 0 0 0.5em var(--h2-color);
 }
 
-.wolf-neon-headings.wolf-heading-color .cm-header-3:not(.cm-formatting),
-.wolf-neon-headings.wolf-heading-color .HyperMD-header-3,
-.wolf-neon-headings.wolf-heading-color h3 {
+.aura-neon-headings.aura-heading-color .cm-header-3:not(.cm-formatting),
+.aura-neon-headings.aura-heading-color .HyperMD-header-3,
+.aura-neon-headings.aura-heading-color h3 {
    text-shadow: 0 0 0.5em var(--h3-color);
 }
 
-.wolf-neon-headings.wolf-heading-color .cm-header-4:not(.cm-formatting),
-.wolf-neon-headings.wolf-heading-color .HyperMD-header-4,
-.wolf-neon-headings.wolf-heading-color h4 {
+.aura-neon-headings.aura-heading-color .cm-header-4:not(.cm-formatting),
+.aura-neon-headings.aura-heading-color .HyperMD-header-4,
+.aura-neon-headings.aura-heading-color h4 {
    text-shadow: 0 0 0.5em var(--h4-color);
 }
 
-.wolf-neon-headings.wolf-heading-color .cm-header-5:not(.cm-formatting),
-.wolf-neon-headings.wolf-heading-color .HyperMD-header-5,
-.wolf-neon-headings.wolf-heading-color h5 {
+.aura-neon-headings.aura-heading-color .cm-header-5:not(.cm-formatting),
+.aura-neon-headings.aura-heading-color .HyperMD-header-5,
+.aura-neon-headings.aura-heading-color h5 {
    text-shadow: 0 0 0.5em var(--h5-color);
 }
 
-.wolf-neon-headings.wolf-heading-color .cm-header-6:not(.cm-formatting),
-.wolf-neon-headings.wolf-heading-color .HyperMD-header-6,
-.wolf-neon-headings.wolf-heading-color h6 {
+.aura-neon-headings.aura-heading-color .cm-header-6:not(.cm-formatting),
+.aura-neon-headings.aura-heading-color .HyperMD-header-6,
+.aura-neon-headings.aura-heading-color h6 {
    text-shadow: 0 0 0.5em var(--h6-color);
 }
 
@@ -696,90 +696,90 @@ body {
 }
 
 /* CALLOUTS */
-.wolf-callouts.wolf-callouts-vanilla .callout {
+.aura-callouts.aura-callouts-vanilla .callout {
    border-radius: var(--callout-radius);
    padding: 0;
 }
-.wolf-callouts.wolf-callouts-vanilla .callout .callout-title {
+.aura-callouts.aura-callouts-vanilla .callout .callout-title {
    padding: 10px;
    background-color: var(--callout-color);
 }
-.wolf-callouts.wolf-callouts-vanilla .callout .callout-content {
+.aura-callouts.aura-callouts-vanilla .callout .callout-content {
    padding-left: 20px;
    background-color: var(--background-primary-alt);
 }
-.wolf-callouts.wolf-callouts-vanilla .callout .callout-title,
-.wolf-callouts.wolf-callouts-vanilla .callout .callout-content {
+.aura-callouts.aura-callouts-vanilla .callout .callout-title,
+.aura-callouts.aura-callouts-vanilla .callout .callout-content {
    border-left: var(--size-2-3) solid rgb(var(--callout-color));
 }
-.wolf-callouts.wolf-callouts-sleek .callout:not(.is-collapsible) {
+.aura-callouts.aura-callouts-sleek .callout:not(.is-collapsible) {
    padding: 0px;
 }
-.wolf-callouts.wolf-callouts-sleek
+.aura-callouts.aura-callouts-sleek
    .callout:not(.is-collapsible)
    .callout-content {
    padding: 0 var(--callout-title-padding) var(--callout-title-padding)
       var(--callout-title-padding);
 }
-.wolf-callouts.wolf-callouts-sleek
+.aura-callouts.aura-callouts-sleek
    .callout:not(.is-collapsible)
    .callout-title {
    background-color: rgba(var(--callout-color), 0 0.6);
    padding: var(--callout-title-padding);
    cursor: pointer;
 }
-.wolf-callouts.wolf-callouts-sleek
+.aura-callouts.aura-callouts-sleek
    .callout:not(.is-collapsible)
    .callout-title
    .callout-title-inner {
    font-weight: normal;
 }
-.wolf-callouts.wolf-callouts-sleek .callout:not(.is-collapsible) {
+.aura-callouts.aura-callouts-sleek .callout:not(.is-collapsible) {
    border-color: rgba(var(--callout-color), 0.4);
    border-width: 1px;
    border-radius: var(--callout-radius);
    background-color: rgba(var(--cpt-mantle), 0.4);
 }
-.wolf-callouts.wolf-callouts-sleek .callout-content {
+.aura-callouts.aura-callouts-sleek .callout-content {
    padding: var(--callout-title-padding) var(--callout-title-padding)
       var(--callout-title-padding) calc(var(--callout-title-padding) * 1.5);
    border-top: 1px dashed rgba(var(--callout-color), 0.4);
 }
-.wolf-callouts.wolf-callouts-sleek .callout-fold {
+.aura-callouts.aura-callouts-sleek .callout-fold {
    padding-right: 0px;
 }
-.wolf-callouts.wolf-callouts-sleek .callout {
+.aura-callouts.aura-callouts-sleek .callout {
    --callout-title-padding: var(--size-4-2);
 }
-.wolf-callouts.wolf-callouts-sleek .callout.is-collapsible {
+.aura-callouts.aura-callouts-sleek .callout.is-collapsible {
    border-color: rgba(var(--callout-color), 0.4);
    border-width: 1px;
    border-radius: var(--callout-radius);
    background-color: rgba(var(--cpt-mantle), 0.4);
    --bold-weight: bolder;
 }
-.wolf-callouts.wolf-callouts-sleek .callout.is-collapsible .callout-fold {
+.aura-callouts.aura-callouts-sleek .callout.is-collapsible .callout-fold {
    padding-right: 0px;
 }
-.wolf-callouts.wolf-callouts-sleek .callout.is-collapsible.is-collapsed {
+.aura-callouts.aura-callouts-sleek .callout.is-collapsible.is-collapsed {
    padding: 0;
 }
-.wolf-callouts.wolf-callouts-sleek
+.aura-callouts.aura-callouts-sleek
    .callout.is-collapsible.is-collapsed
    .callout-title {
    background-color: rgba(var(--callout-color), 0.1);
    padding: var(--callout-title-padding);
    cursor: pointer;
 }
-.wolf-callouts.wolf-callouts-sleek
+.aura-callouts.aura-callouts-sleek
    .callout.is-collapsible.is-collapsed
    .callout-content {
    display: none;
 }
-.wolf-callouts.wolf-callouts-sleek .callout.is-collapsible:not(.is-collapsed) {
+.aura-callouts.aura-callouts-sleek .callout.is-collapsible:not(.is-collapsed) {
    padding: 0px 0px var(--callout-title-padding) 0px;
 }
-.wolf-callouts.wolf-callouts-sleek
+.aura-callouts.aura-callouts-sleek
    .callout.is-collapsible:not(.is-collapsed)
    .callout-title {
    background-color: rgba(var(--callout-color), 0.1);
@@ -787,184 +787,184 @@ body {
    border-color: rgba(var(--callout-color), 0.4);
    cursor: pointer;
 }
-.wolf-callouts.wolf-callouts-sleek
+.aura-callouts.aura-callouts-sleek
    .callout.is-collapsible:not(.is-collapsed)
    .callout-content {
    padding: var(--callout-title-padding) var(--callout-title-padding) 0
       calc(var(--callout-title-padding) * 1.5);
    border-top: 1px dashed rgba(var(--callout-color), 0.4);
 }
-.wolf-callouts.wolf-callouts-sleek .callout:not(.is-collapsible) {
+.aura-callouts.aura-callouts-sleek .callout:not(.is-collapsible) {
    padding: 0px;
 }
-.wolf-callouts.wolf-callouts-sleek
+.aura-callouts.aura-callouts-sleek
    .callout:not(.is-collapsible)
    .callout-title {
    background-color: rgba(var(--callout-color), 0.1);
    padding: var(--callout-title-padding);
    border-color: rgba(var(--callout-color), 0.4);
 }
-.wolf-callouts.wolf-callouts-sleek .callout .list-collapse-indicator {
+.aura-callouts.aura-callouts-sleek .callout .list-collapse-indicator {
    margin-left: -35px;
    padding-right: 3px;
 }
-.wolf-callouts.wolf-callouts-block .callout:not(.is-collapsible) {
+.aura-callouts.aura-callouts-block .callout:not(.is-collapsible) {
    padding: 0px;
 }
-.wolf-callouts.wolf-callouts-block
+.aura-callouts.aura-callouts-block
    .callout:not(.is-collapsible)
    .callout-content {
    padding: 0 var(--callout-title-padding) var(--callout-title-padding)
       var(--callout-title-padding);
 }
-.wolf-callouts.wolf-callouts-block
+.aura-callouts.aura-callouts-block
    .callout:not(.is-collapsible)
    .callout-title {
    padding: var(--callout-title-padding);
    cursor: pointer;
 }
-.wolf-callouts.wolf-callouts-block
+.aura-callouts.aura-callouts-block
    .callout:not(.is-collapsible)
    .callout-title
    .callout-title-inner {
    font-weight: bold;
 }
-.wolf-callouts.wolf-callouts-block .callout:not(.is-collapsible) {
+.aura-callouts.aura-callouts-block .callout:not(.is-collapsible) {
    border-color: rgba(var(--callout-color), 0.4);
    border-width: 1px;
    border-radius: var(--callout-radius);
    background-color: rgba(var(--cpt-mantle), 0.4);
 }
-.wolf-callouts.wolf-callouts-block .callout-content {
+.aura-callouts.aura-callouts-block .callout-content {
    padding: var(--callout-title-padding) var(--callout-title-padding) 0
       calc(var(--callout-title-padding) * 1.5);
 }
-.wolf-callouts.wolf-callouts-block .callout-fold {
+.aura-callouts.aura-callouts-block .callout-fold {
    padding-right: 0px;
 }
-.wolf-callouts.wolf-callouts-block .callout {
+.aura-callouts.aura-callouts-block .callout {
    --callout-title-padding: var(--size-4-2);
 }
-.wolf-callouts.wolf-callouts-block .callout.is-collapsible {
+.aura-callouts.aura-callouts-block .callout.is-collapsible {
    border-color: rgba(var(--callout-color), 0.4);
    border-width: 1px;
    border-radius: var(--callout-radius);
    background-color: rgba(var(--cpt-mantle), 0.4);
    --bold-weight: bolder;
 }
-.wolf-callouts.wolf-callouts-block .callout.is-collapsible .callout-fold {
+.aura-callouts.aura-callouts-block .callout.is-collapsible .callout-fold {
    padding-right: 0px;
 }
-.wolf-callouts.wolf-callouts-block .callout.is-collapsible.is-collapsed {
+.aura-callouts.aura-callouts-block .callout.is-collapsible.is-collapsed {
    padding: 0;
 }
-.wolf-callouts.wolf-callouts-block
+.aura-callouts.aura-callouts-block
    .callout.is-collapsible.is-collapsed
    .callout-title {
    padding: var(--callout-title-padding);
    cursor: pointer;
 }
-.wolf-callouts.wolf-callouts-block
+.aura-callouts.aura-callouts-block
    .callout.is-collapsible.is-collapsed
    .callout-content {
    display: none;
 }
-.wolf-callouts.wolf-callouts-block .callout.is-collapsible:not(.is-collapsed) {
+.aura-callouts.aura-callouts-block .callout.is-collapsible:not(.is-collapsed) {
    padding: 0px 0px var(--callout-title-padding) 0px;
 }
-.wolf-callouts.wolf-callouts-block
+.aura-callouts.aura-callouts-block
    .callout.is-collapsible:not(.is-collapsed)
    .callout-title {
    padding: var(--callout-title-padding);
    border-color: rgba(var(--callout-color), 0.4);
    cursor: pointer;
 }
-.wolf-callouts.wolf-callouts-block
+.aura-callouts.aura-callouts-block
    .callout.is-collapsible:not(.is-collapsed)
    .callout-content {
    padding: var(--callout-title-padding) var(--callout-title-padding) 0
       calc(var(--callout-title-padding) * 1.5);
 }
-.wolf-callouts.wolf-callouts-block .callout:not(.is-collapsible) {
+.aura-callouts.aura-callouts-block .callout:not(.is-collapsible) {
    padding: 0px;
 }
-.wolf-callouts.wolf-callouts-block
+.aura-callouts.aura-callouts-block
    .callout:not(.is-collapsible)
    .callout-title {
    padding: var(--callout-title-padding);
    border-color: rgba(var(--callout-color), 0.4);
 }
-.wolf-callouts.wolf-callouts-block .callout .list-collapse-indicator {
+.aura-callouts.aura-callouts-block .callout .list-collapse-indicator {
    margin-left: -35px;
    padding-right: 3px;
 }
 
-.wolf-callouts .callout[data-callout='note'],
+.aura-callouts .callout[data-callout='note'],
 .callout[data-callout='quote'],
 .callout[data-callout='cite'] {
    --callout-color: var(--cpt-blue);
 }
-.wolf-callouts .callout[data-callout='abstract'],
-.wolf-callouts .callout[data-callout='summary'],
-.wolf-callouts .callout[data-callout='tldr'],
-.wolf-callouts .callout[data-callout='seealso'] {
+.aura-callouts .callout[data-callout='abstract'],
+.aura-callouts .callout[data-callout='summary'],
+.aura-callouts .callout[data-callout='tldr'],
+.aura-callouts .callout[data-callout='seealso'] {
    --callout-color: var(--cpt-blue);
 }
-.wolf-callouts .callout[data-callout='info'],
-.wolf-callouts .callout[data-callout='todo'],
-.wolf-callouts .callout[data-callout='tip'],
-.wolf-callouts .callout[data-callout='hint'],
-.wolf-callouts .callout[data-callout='important'] {
+.aura-callouts .callout[data-callout='info'],
+.aura-callouts .callout[data-callout='todo'],
+.aura-callouts .callout[data-callout='tip'],
+.aura-callouts .callout[data-callout='hint'],
+.aura-callouts .callout[data-callout='important'] {
    --callout-color: var(--cpt-blue);
 }
-.wolf-callouts .callout[data-callout='success'],
-.wolf-callouts .callout[data-callout='check'],
-.wolf-callouts .callout[data-callout='done'],
-.wolf-callouts .callout[data-callout='question'],
-.wolf-callouts .callout[data-callout='help'],
-.wolf-callouts .callout[data-callout='faq'] {
+.aura-callouts .callout[data-callout='success'],
+.aura-callouts .callout[data-callout='check'],
+.aura-callouts .callout[data-callout='done'],
+.aura-callouts .callout[data-callout='question'],
+.aura-callouts .callout[data-callout='help'],
+.aura-callouts .callout[data-callout='faq'] {
    --callout-color: var(--cpt-green);
 }
-.wolf-callouts .callout[data-callout='warning'],
-.wolf-callouts .callout[data-callout='caution'],
-.wolf-callouts .callout[data-callout='attention'] {
+.aura-callouts .callout[data-callout='warning'],
+.aura-callouts .callout[data-callout='caution'],
+.aura-callouts .callout[data-callout='attention'] {
    --callout-color: var(--cpt-yellow);
 }
-.wolf-callouts .callout[data-callout='failure'],
-.wolf-callouts .callout[data-callout='fail'],
-.wolf-callouts .callout[data-callout='missing'] {
+.aura-callouts .callout[data-callout='failure'],
+.aura-callouts .callout[data-callout='fail'],
+.aura-callouts .callout[data-callout='missing'] {
    --callout-color: var(--cpt-orange);
 }
-.wolf-callouts .callout[data-callout='danger'],
-.wolf-callouts .callout[data-callout='error'],
-.wolf-callouts .callout[data-callout='bug'] {
+.aura-callouts .callout[data-callout='danger'],
+.aura-callouts .callout[data-callout='error'],
+.aura-callouts .callout[data-callout='bug'] {
    --callout-color: var(--cpt-red);
 }
-.wolf-callouts .callout[data-callout='example'] {
+.aura-callouts .callout[data-callout='example'] {
    --callout-color: var(--cpt-purple);
 }
 
 /* Custom Checkbox */
-.wolf-custom-checkbox {
+.aura-custom-checkbox {
    --checkbox-marker-color: rgb(var(--cpt-black));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='x'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='x'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='x']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-green));
    border: 1px solid rgb(var(--cpt-green));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='x']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='x']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='x']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-green), 0.7);
    border: 1px solid rgba(var(--cpt-green), 0.7);
 }
-.wolf-custom-checkbox
+.aura-custom-checkbox
    .task-list-item-checkbox[data-task='X']
    > input[type='checkbox']:checked
    ul
@@ -973,16 +973,16 @@ body {
    background-color: rgb(var(--cpt-green));
    border: 1px solid rgb(var(--cpt-green));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='X']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='X']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='X']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-green), 0.7);
    border: 1px solid rgba(var(--cpt-green), 0.7);
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='?'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='?'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='?']
    .task-list-item-checkbox {
@@ -990,225 +990,225 @@ body {
    border: 1px solid rgb(var(--cpt-yellow));
    border-radius: 10px;
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='?']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='?']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='?']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-yellow), 0.7);
    border: 1px solid rgba(var(--cpt-yellow), 0.7);
 }
-.wolf-custom-checkbox [data-task='?'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='?'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='?'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='?'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 96c-17.7 0-32 14.3-32 32s-14.3 32-32 32s-32-14.3-32-32C0 75 43 32 96 32h97c70.1 0 127 56.9 127 127c0 52.4-32.2 99.4-81 118.4l-63 24.5 0 18.1c0 17.7-14.3 32-32 32s-32-14.3-32-32V301.9c0-26.4 16.2-50.1 40.8-59.6l63-24.5C240 208.3 256 185 256 159c0-34.8-28.2-63-63-63H96zm48 384c-22.1 0-40-17.9-40-40s17.9-40 40-40s40 17.9 40 40s-17.9 40-40 40z'/%3E%3C/svg%3E");
    -webkit-mask-size: 50%;
 }
 
-.wolf-custom-checkbox .HyperMD-task-line[data-task='-'] {
+.aura-custom-checkbox .HyperMD-task-line[data-task='-'] {
    text-decoration: var(--checklist-done-decoration);
    color: var(--checklist-done-color);
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='-'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='-'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='-']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-red));
    border: 1px solid rgb(var(--cpt-red));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='-']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='-']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='-']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-red), 0.7);
    border: 1px solid rgba(var(--cpt-red), 0.7);
 }
-.wolf-custom-checkbox [data-task='-'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='-'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='-'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='-'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E");
    -webkit-mask-size: 50%;
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='!'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='!'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='!']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-orange));
    border: 1px solid rgb(var(--cpt-orange));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='!']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='!']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='!']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-orange), 0.7);
    border: 1px solid rgba(var(--cpt-orange), 0.7);
 }
-.wolf-custom-checkbox [data-task='!'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='!'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='!'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='!'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 64c0-17.7-14.3-32-32-32S32 46.3 32 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM64 480c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40s17.9 40 40 40z'/%3E%3C/svg%3E");
    -webkit-mask-size: 20%;
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='>'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='>'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='>']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-blue));
    border: 1px solid rgb(var(--cpt-blue));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='>']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='>']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='>']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-blue), 0.7);
    border: 1px solid rgba(var(--cpt-blue), 0.7);
 }
-.wolf-custom-checkbox [data-task='>'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='>'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='>'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='>'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M3.4 81.7c-7.9 15.8-1.5 35 14.3 42.9L280.5 256 17.7 387.4C1.9 395.3-4.5 414.5 3.4 430.3s27.1 22.2 42.9 14.3l320-160c10.8-5.4 17.7-16.5 17.7-28.6s-6.8-23.2-17.7-28.6l-320-160c-15.8-7.9-35-1.5-42.9 14.3z'/%3E%3C/svg%3E");
    -webkit-mask-size: 50%;
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='/'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='/'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='/']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-purple));
    border: 1px solid rgb(var(--cpt-purple));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='/']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='/']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='/']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-purple), 0.7);
    border: 1px solid rgba(var(--cpt-purple), 0.7);
 }
-.wolf-custom-checkbox [data-task='/'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='/'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='/'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='/'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 416c0-17.7 14.3-32 32-32l54.7 0c12.3-28.3 40.5-48 73.3-48s61 19.7 73.3 48L480 384c17.7 0 32 14.3 32 32s-14.3 32-32 32l-246.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 448c-17.7 0-32-14.3-32-32zm192 0c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zM384 256c0-17.7-14.3-32-32-32s-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32zm-32-80c32.8 0 61 19.7 73.3 48l54.7 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-54.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l246.7 0c12.3-28.3 40.5-48 73.3-48zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zm73.3 0L480 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l-214.7 0c-12.3 28.3-40.5 48-73.3 48s-61-19.7-73.3-48L32 128C14.3 128 0 113.7 0 96S14.3 64 32 64l86.7 0C131 35.7 159.2 16 192 16s61 19.7 73.3 48z'/%3E%3C/svg%3E");
    -webkit-mask-size: 60%;
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='R'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='R'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='R']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-green));
    border: 1px solid rgb(var(--cpt-green));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='R']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='R']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='R']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-green), 0.7);
    border: 1px solid rgba(var(--cpt-green), 0.7);
 }
-.wolf-custom-checkbox [data-task='R'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='R'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='R'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='R'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256s-114.6 256-256 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z'/%3E%3C/svg%3E");
    -webkit-mask-size: 60%;
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='+'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='+'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='+']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-purple));
    border: 1px solid rgb(var(--cpt-purple));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='+']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='+']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='+']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-purple), 0.7);
    border: 1px solid rgba(var(--cpt-purple), 0.7);
 }
-.wolf-custom-checkbox [data-task='+'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='+'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='+'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='+'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z'/%3E%3C/svg%3E");
    -webkit-mask-size: 60%;
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='b'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='b'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='b']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-orange));
    border: 1px solid rgb(var(--cpt-orange));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='b']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='b']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='b']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-orange), 0.7);
    border: 1px solid rgba(var(--cpt-orange), 0.7);
 }
-.wolf-custom-checkbox [data-task='b'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='b'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='b'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='b'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E");
    -webkit-mask-size: 40%;
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='B'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='B'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='B']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-blue));
    border: 1px solid rgb(var(--cpt-blue));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='B']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='B']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='B']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-blue), 0.7);
    border: 1px solid rgba(var(--cpt-blue), 0.7);
 }
-.wolf-custom-checkbox [data-task='B'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='B'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='B'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='B'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z'/%3E%3C/svg%3E");
    -webkit-mask-size: 60%;
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='D'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='D'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='D']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-cyan));
    border: 1px solid rgb(var(--cpt-cyan));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='D']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='D']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='D']
    .task-list-item-checkbox:hover {
    background-colora: rgb(var(--cpt-cyan), 0.7);
    border: 1px solida rgb(var(--cpt-cyan), 0.7);
 }
-.wolf-custom-checkbox [data-task='D'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='D'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='D'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='D'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z'/%3E%3C/svg%3E");
    -webkit-mask-size: 50%;
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='I'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='I'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='I']
    .task-list-item-checkbox {
@@ -1216,172 +1216,172 @@ body {
    border: 1px solid rgb(var(--cpt-blue));
    border-radius: 10px;
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='I']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='I']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='I']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-blue), 0.7);
    border: 1px solid rgba(var(--cpt-blue), 0.7);
 }
-.wolf-custom-checkbox [data-task='I'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='I'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='I'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='I'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M144 80c0 26.5-21.5 48-48 48s-48-21.5-48-48s21.5-48 48-48s48 21.5 48 48zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z'/%3E%3C/svg%3E");
    -webkit-mask-size: 25%;
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='i'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='i'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='i']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-yellow));
    border: 1px solid rgb(var(--cpt-yellow));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='i']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='i']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='i']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-yellow), 0.7);
    border: 1px solid rgba(var(--cpt-yellow), 0.7);
 }
-.wolf-custom-checkbox [data-task='i'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='i'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='i'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='i'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z'/%3E%3C/svg%3E");
    -webkit-mask-size: 40%;
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='N'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='N'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='N']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-orange));
    border: 1px solid rgb(var(--cpt-orange));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='N']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='N']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='N']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-orange), 0.7);
    border: 1px solid rgba(var(--cpt-orange), 0.7);
 }
-.wolf-custom-checkbox [data-task='N'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='N'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='N'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='N'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H288V368c0-26.5 21.5-48 48-48H448V96c0-35.3-28.7-64-64-64H64zM448 352H402.7 336c-8.8 0-16 7.2-16 16v66.7V480l32-32 64-64 32-32z'/%3E%3C/svg%3E");
    -webkit-mask-size: 50%;
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='Q'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='Q'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='Q']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-cyan));
    border: 1px solid rgb(var(--cpt-cyan));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='Q']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='Q']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='Q']
    .task-list-item-checkbox:hover {
    background-colora: rgb(var(--cpt-cyan), 0.7);
    border: 1px solida rgb(var(--cpt-cyan), 0.7);
 }
-.wolf-custom-checkbox [data-task='Q'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='Q'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='Q'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='Q'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z'/%3E%3C/svg%3E");
    -webkit-mask-size: 50%;
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='P'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='P'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='P']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-blue));
    border: 1px solid rgb(var(--cpt-blue));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='P']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='P']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='P']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-blue), 0.7);
    border: 1px solid rgba(var(--cpt-blue), 0.7);
 }
-.wolf-custom-checkbox [data-task='P'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='P'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='P'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='P'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z'/%3E%3C/svg%3E");
    -webkit-mask-size: 50%;
 }
 
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='C'],
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='C'],
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='C']
    .task-list-item-checkbox {
    background-color: rgb(var(--cpt-red));
    border: 1px solid rgb(var(--cpt-red));
 }
-.wolf-custom-checkbox .task-list-item-checkbox[data-task='C']:hover,
-.wolf-custom-checkbox
+.aura-custom-checkbox .task-list-item-checkbox[data-task='C']:hover,
+.aura-custom-checkbox
    ul
    > li.task-list-item[data-task='C']
    .task-list-item-checkbox:hover {
    background-color: rgba(var(--cpt-red), 0.7);
    border: 1px solid rgba(var(--cpt-red), 0.7);
 }
-.wolf-custom-checkbox [data-task='C'] input[type='checkbox']:checked:after,
-.wolf-custom-checkbox [data-task='C'][type='checkbox']:checked:after {
+.aura-custom-checkbox [data-task='C'] input[type='checkbox']:checked:after,
+.aura-custom-checkbox [data-task='C'][type='checkbox']:checked:after {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E");
    -webkit-mask-size: 50%;
 }
 
 /* RAINBOW TAGS */
-.wolf-rainbow-tags a.tag {
+.aura-rainbow-tags a.tag {
    font-weight: bold;
    box-decoration-break: clone;
    -webkit-box-decoration-break: clone;
    display: inline-block;
 }
 
-.wolf-rainbow-tags a.tag:hover,
-.wolf-rainbow-tags a.tag:focus {
+.aura-rainbow-tags a.tag:hover,
+.aura-rainbow-tags a.tag:focus {
    transform: translateY(-0.25em);
 }
 
-.wolf-rainbow-tags p > a.tag:nth-child(7n + 1) {
+.aura-rainbow-tags p > a.tag:nth-child(7n + 1) {
    color: rgb(var(--cpt-red));
 }
 
-.wolf-rainbow-tags p > a.tag:nth-child(7n + 2) {
+.aura-rainbow-tags p > a.tag:nth-child(7n + 2) {
    color: rgb(var(--cpt-orange));
 }
 
-.wolf-rainbow-tags p > a.tag:nth-child(7n + 3) {
+.aura-rainbow-tags p > a.tag:nth-child(7n + 3) {
    color: rgb(var(--cpt-yellow));
 }
 
-.wolf-rainbow-tags p > a.tag:nth-child(7n + 4) {
+.aura-rainbow-tags p > a.tag:nth-child(7n + 4) {
    color: rgb(var(--cpt-green));
 }
 
-.wolf-rainbow-tags p > a.tag:nth-child(7n + 5) {
+.aura-rainbow-tags p > a.tag:nth-child(7n + 5) {
    color: rgb(var(--cpt-cyan));
 }
-.wolf-rainbow-tags p > a.tag:nth-child(7n + 6) {
+.aura-rainbow-tags p > a.tag:nth-child(7n + 6) {
    color: rgb(var(--cpt-blue));
 }
 
-.wolf-rainbow-tags p > a.tag:nth-child(7n + 7) {
+.aura-rainbow-tags p > a.tag:nth-child(7n + 7) {
    color: rgb(var(--cpt-purple));
 }
 
 /* CSS Class */
-.wolf-css-classes .novel {
+.aura-css-classes .novel {
    --h1-font: 'Noto Serif';
    --h2-font: 'Noto Serif';
    --h3-font: 'Noto Serif';
@@ -1392,16 +1392,16 @@ body {
       serif;
 }
 
-.wolf-css-classes .wide-note {
+.aura-css-classes .wide-note {
    --file-line-width: 100%;
 }
 
 /* ---------- L A Y O U T ---------- */
 /* Prompt */
-body:not(.wolf-workspace-background) .prompt .prompt-input {
+body:not(.aura-workspace-background) .prompt .prompt-input {
    background: rgb(var(--cpt-crust));
 }
-body:not(.wolf-workspace-background) .prompt {
+body:not(.aura-workspace-background) .prompt {
    background: rgba(var(--cpt-mantle));
 }
 /* Card Layout */
@@ -1411,9 +1411,9 @@ body:not(.wolf-workspace-background) .prompt {
    background-color: rgb(var(--cpt-crust));
 }
 
-.wolf-card-layout .workspace-split:not(.mod-root) .graph-controls,
-.wolf-card-layout .workspace-split:not(.mod-root) .graph-controls.is-close,
-.wolf-card-layout
+.aura-card-layout .workspace-split:not(.mod-root) .graph-controls,
+.aura-card-layout .workspace-split:not(.mod-root) .graph-controls.is-close,
+.aura-card-layout
    .workspace-split:not(.mod-root)
    .graph-controls:not(.is-close),
 .workspace-leaf .graph-controls,
@@ -1426,106 +1426,106 @@ body {
    --card-background-color: rgb(var(--cpt-crust));
 }
 
-.wolf-card-layout .sidebar-toggle-button,
-.wolf-card-layout .workspace-tabs.mod-top,
-body.wolf-card-layout {
+.aura-card-layout .sidebar-toggle-button,
+.aura-card-layout .workspace-tabs.mod-top,
+body.aura-card-layout {
    --file-header-border: var(--border-width) dotted
       var(--background-modifier-border);
 }
 
-.wolf-card-layout .mod-left-split .workspace-tab-header-container,
-.wolf-card-layout .workspace-tab-header-container {
+.aura-card-layout .mod-left-split .workspace-tab-header-container,
+.aura-card-layout .workspace-tab-header-container {
    border-bottom: none;
 }
 
-.wolf-card-layout .workspace-ribbon.mod-left {
+.aura-card-layout .workspace-ribbon.mod-left {
    padding: 0;
    background-color: var(--tab-container-background);
    border: none;
 }
 
-.wolf-card-layout-actions.wolf-card-layout .workspace-ribbon.mod-left {
-   margin-right: var(--wolf-card-layout-padding, 10px);
+.aura-card-layout-actions.aura-card-layout .workspace-ribbon.mod-left {
+   margin-right: var(--aura-card-layout-padding, 10px);
 }
 
-.wolf-card-layout .workspace-ribbon.mod-left:before {
+.aura-card-layout .workspace-ribbon.mod-left:before {
    border-bottom: none;
    background-color: var(--tab-container-background) !important;
 }
 
-.wolf-card-layout .side-dock-actions,
-.wolf-card-layout .side-dock-settings {
+.aura-card-layout .side-dock-actions,
+.aura-card-layout .side-dock-settings {
    padding: var(--ribbon-padding);
 }
 
-.wolf-card-layout-actions.wolf-card-layout .side-dock-actions {
-   border-radius: 0 var(--wolf-card-radius, var(--radius-xl))
-      var(--wolf-card-radius, var(--radius-xl)) 0;
+.aura-card-layout-actions.aura-card-layout .side-dock-actions {
+   border-radius: 0 var(--aura-card-radius, var(--radius-xl))
+      var(--aura-card-radius, var(--radius-xl)) 0;
    border: 1px solid var(--tab-outline-color);
    background-color: var(--card-background-color);
    margin-top: 2px;
 }
 
-.wolf-card-layout-actions.wolf-card-layout .side-dock-settings {
-   border-radius: 0 var(--wolf-card-radius, var(--radius-xl)) 0 0;
+.aura-card-layout-actions.aura-card-layout .side-dock-settings {
+   border-radius: 0 var(--aura-card-radius, var(--radius-xl)) 0 0;
    border: 1px solid var(--tab-outline-color);
    background-color: var(--card-background-color);
 }
 
-.wolf-card-layout .workspace-ribbon.mod-left {
+.aura-card-layout .workspace-ribbon.mod-left {
    margin-top: calc(var(--header-height) - 1px) !important;
 }
 
-.wolf-card-layout .mod-vertical .workspace-tab-header-container {
-   padding-left: var(--wolf-card-header-left-padding, 20px);
+.aura-card-layout .mod-vertical .workspace-tab-header-container {
+   padding-left: var(--aura-card-header-left-padding, 20px);
 }
 
-.wolf-card-layout .mod-vertical .workspace-tab-header-container-inner {
+.aura-card-layout .mod-vertical .workspace-tab-header-container-inner {
    margin: 6px -5px calc(var(--tab-outline-width) * -1);
    z-index: 1;
 }
 
-.wolf-card-layout .mod-vertical .workspace-tabs {
-   padding-left: var(--wolf-card-layout-padding, 10px);
-   padding-right: var(--wolf-card-layout-padding, 10px);
+.aura-card-layout .mod-vertical .workspace-tabs {
+   padding-left: var(--aura-card-layout-padding, 10px);
+   padding-right: var(--aura-card-layout-padding, 10px);
 }
 
-.wolf-card-layout .mod-left-split .workspace-tab-container,
-.wolf-card-layout .mod-right-split .workspace-tab-container {
-   padding-left: var(--wolf-card-layout-padding, 10px);
-   padding-right: var(--wolf-card-layout-padding, 10px);
+.aura-card-layout .mod-left-split .workspace-tab-container,
+.aura-card-layout .mod-right-split .workspace-tab-container {
+   padding-left: var(--aura-card-layout-padding, 10px);
+   padding-right: var(--aura-card-layout-padding, 10px);
    background-color: var(--tab-container-background);
 }
 
-.wolf-card-layout
+.aura-card-layout
    .workspace-split.mod-horizontal
    > *
    > .workspace-leaf-resize-handle,
-.wolf-card-layout
+.aura-card-layout
    .workspace-split.mod-left-split
    > .workspace-leaf-resize-handle,
-.wolf-card-layout
+.aura-card-layout
    .workspace-split.mod-right-split
    > .workspace-leaf-resize-handle {
    border: 2px solid transparent;
 }
 
-.wolf-card-layout .workspace-split .workspace-leaf-content {
-   border-radius: var(--wolf-card-radius, var(--radius-xl));
+.aura-card-layout .workspace-split .workspace-leaf-content {
+   border-radius: var(--aura-card-radius, var(--radius-xl));
    background-color: var(--card-background-color);
    border: 1px solid var(--tab-outline-color);
-   margin-bottom: var(--wolf-card-layout-padding, 10px);
+   margin-bottom: var(--aura-card-layout-padding, 10px);
 }
 
-.wolf-card-layout.wolf-card-shadows.wolf-card-layout-actions .side-dock-actions,
-.wolf-card-layout.wolf-card-shadows .workspace-split .workspace-leaf-content,
-.wolf-card-layout.wolf-card-shadows.wolf-card-layout-fileexplorer
+.aura-card-layout.aura-card-shadows.aura-card-layout-actions .side-dock-actions,
+.aura-card-layout.aura-card-shadows .workspace-split .workspace-leaf-content,
+.aura-card-layout.aura-card-shadows.aura-card-layout-fileexplorer
    .workspace-split
    .workspace-leaf-content[data-type='file-explorer'] {
    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.05);
 }
 
-.wolf-card-layout
+.aura-card-layout
    .workspace-split
    .workspace-leaf-content[data-type='file-explorer'] {
    background-color: var(--tab-container-background);
@@ -1533,63 +1533,63 @@ body.wolf-card-layout {
    border-width: 0;
 }
 
-.wolf-card-layout.wolf-card-layout-fileexplorer
+.aura-card-layout.aura-card-layout-fileexplorer
    .workspace-split
    .workspace-leaf-content[data-type='file-explorer'] {
    background-color: var(--card-background-color);
    border-width: 1px;
 }
 
-.wolf-card-layout .workspace-split .mod-stacked .workspace-leaf-content {
+.aura-card-layout .workspace-split .mod-stacked .workspace-leaf-content {
    border-radius: 0;
    border: none;
    margin-bottom: 0;
    border-left: none;
 }
 
-.wolf-card-layout .workspace-split.mod-horizontal > * {
+.aura-card-layout .workspace-split.mod-horizontal > * {
    width: unset;
 }
 
-.wolf-card-layout .mod-stacked .workspace-tab-header {
+.aura-card-layout .mod-stacked .workspace-tab-header {
    border-style: solid;
-   border-radius: var(--wolf-card-radius, var(--radius-xl)) 0 0
-      var(--wolf-card-radius, var(--radius-xl)) !important;
+   border-radius: var(--aura-card-radius, var(--radius-xl)) 0 0
+      var(--aura-card-radius, var(--radius-xl)) !important;
    border-width: var(--tab-outline-width);
    border-color: var(--tab-outline-color);
    border-right: var(--tab-outline-width) dashed var(--tab-outline-color);
 }
 
-.wolf-card-layout .mod-stacked .workspace-leaf {
+.aura-card-layout .mod-stacked .workspace-leaf {
    border-left-width: 0;
    border-top-width: var(--tab-outline-width);
    border-bottom-width: var(--tab-outline-width);
    border-style: solid;
    border-color: var(--tab-outline-color);
-   border-radius: 0 var(--wolf-card-radius, var(--radius-xl))
-      var(--wolf-card-radius, var(--radius-xl)) 0;
+   border-radius: 0 var(--aura-card-radius, var(--radius-xl))
+      var(--aura-card-radius, var(--radius-xl)) 0;
 }
 
-.wolf-card-layout .mod-stacked .workspace-tab-container {
-   padding-bottom: var(--wolf-card-layout-padding, 10px);
+.aura-card-layout .mod-stacked .workspace-tab-container {
+   padding-bottom: var(--aura-card-layout-padding, 10px);
 }
 
-.wolf-card-layout .mod-top .workspace-leaf-resize-handle {
+.aura-card-layout .mod-top .workspace-leaf-resize-handle {
    border-color: transparent;
 }
 
-body.wolf-disable-borders,
-body.wolf-disable-borders.wolf-workspace-background-image-dark-toggle {
+body.aura-disable-borders,
+body.aura-disable-borders.aura-workspace-background-image-dark-toggle {
    --divider-color: transparent;
 }
 
-.wolf-card-layout .workspace-drop-overlay:before {
-   width: calc(100% - 6px - var(--wolf-card-layout-padding, 0) * 2);
-   height: calc(100% - 6px - var(--wolf-card-layout-padding, 0) * 2);
+.aura-card-layout .workspace-drop-overlay:before {
+   width: calc(100% - 6px - var(--aura-card-layout-padding, 0) * 2);
+   height: calc(100% - 6px - var(--aura-card-layout-padding, 0) * 2);
    margin: auto;
 }
 
-.wolf-card-layout:not(.wolf-translucent-window:not(.is-fullscreen))
+.aura-card-layout:not(.aura-translucent-window:not(.is-fullscreen))
    .workspace
    .mod-root
    .workspace-tabs.mod-stacked
@@ -1599,150 +1599,150 @@ body.wolf-disable-borders.wolf-workspace-background-image-dark-toggle {
 }
 
 /* Workspace Background */
-.theme-light.wolf-workspace-background {
+.theme-light.aura-workspace-background {
    --background-primary: rgba(
       var(--cpt-core),
-      var(--wolf-workspace-background-workspace-slider-light)
+      var(--aura-workspace-background-workspace-slider-light)
    );
    --background-primary-alt: rgba(
       var(--cpt-core-alt),
-      var(--wolf-workspace-background-workspace-slider-light)
+      var(--aura-workspace-background-workspace-slider-light)
    );
    --background-secondary: rgba(
       var(--cpt-mantle),
-      var(--wolf-workspace-background-workspace-slider-light)
+      var(--aura-workspace-background-workspace-slider-light)
    );
    --background-secondary-alt: rgba(
       var(--cpt-mantle-alt),
-      var(--wolf-workspace-background-workspace-slider-light)
+      var(--aura-workspace-background-workspace-slider-light)
    );
    --ribbon-background: rgba(
       var(--cpt-mantle),
-      var(--wolf-workspace-background-workspace-slider-light)
+      var(--aura-workspace-background-workspace-slider-light)
    );
    --ribbon-background-collapsed: rgba(
       var(--cpt-mantle),
-      var(--wolf-workspace-background-workspace-slider-light)
+      var(--aura-workspace-background-workspace-slider-light)
    );
    --titlebar-background: rgba(
       var(--cpt-crust),
-      var(--wolf-workspace-background-workspace-slider-light)
+      var(--aura-workspace-background-workspace-slider-light)
    );
    --titlebar-background-focused: rgba(
       var(--cpt-crust),
-      var(--wolf-workspace-background-workspace-slider-light)
+      var(--aura-workspace-background-workspace-slider-light)
    );
 }
-.theme-dark.wolf-workspace-background {
+.theme-dark.aura-workspace-background {
    --background-primary: rgba(
       var(--cpt-core),
-      var(--wolf-workspace-background-workspace-slider-dark)
+      var(--aura-workspace-background-workspace-slider-dark)
    );
    --background-primary-alt: rgba(
       var(--cpt-core-alt),
-      var(--wolf-workspace-background-workspace-slider-dark)
+      var(--aura-workspace-background-workspace-slider-dark)
    );
    --background-secondary: rgba(
       var(--cpt-mantle),
-      var(--wolf-workspace-background-workspace-slider-dark)
+      var(--aura-workspace-background-workspace-slider-dark)
    );
    --background-secondary-alt: rgba(
       var(--cpt-mantle-alt),
-      var(--wolf-workspace-background-workspace-slider-dark)
+      var(--aura-workspace-background-workspace-slider-dark)
    );
    --ribbon-background: rgba(
       var(--cpt-mantle),
-      var(--wolf-workspace-background-workspace-slider-dark)
+      var(--aura-workspace-background-workspace-slider-dark)
    );
    --ribbon-background-collapsed: rgba(
       var(--cpt-mantle),
-      var(--wolf-workspace-background-workspace-slider-dark)
+      var(--aura-workspace-background-workspace-slider-dark)
    );
    --titlebar-background: rgba(
       var(--cpt-crust),
-      var(--wolf-workspace-background-workspace-slider-dark)
+      var(--aura-workspace-background-workspace-slider-dark)
    );
    --titlebar-background-focused: rgba(
       var(--cpt-crust),
-      var(--wolf-workspace-background-workspace-slider-dark)
+      var(--aura-workspace-background-workspace-slider-dark)
    );
 }
 
-.wolf-workspace-background .popover {
+.aura-workspace-background .popover {
    background-color: rgba(
       var(--cpt-core),
-      var(--wolf-workspace-background-workspace-slider-dark)
+      var(--aura-workspace-background-workspace-slider-dark)
    );
 }
 
-.wolf-workspace-background .horizontal-main-container {
+.aura-workspace-background .horizontal-main-container {
    background: var(--workspace-background-image);
    background-color: transparent;
    background-size: cover;
 }
-.theme-light.wolf-workspace-background .workspace {
+.theme-light.aura-workspace-background .workspace {
    background-color: rgba(var(--cpt-core), 0.2);
    backdrop-filter: brightness(
-         var(--wolf-workspace-background-brightness-light, 0.5)
+         var(--aura-workspace-background-brightness-light, 0.5)
       )
-      blur(var(--wolf-workspace-background-blur-light, 5px));
+      blur(var(--aura-workspace-background-blur-light, 5px));
 }
-.theme-dark.wolf-workspace-background .workspace {
+.theme-dark.aura-workspace-background .workspace {
    background-color: rgba(var(--cpt-core), 0.2);
    backdrop-filter: brightness(
-         var(--wolf-workspace-background-brightness-dark, 0.5)
+         var(--aura-workspace-background-brightness-dark, 0.5)
       )
-      blur(var(--wolf-workspace-background-blur-dark, 5px));
+      blur(var(--aura-workspace-background-blur-dark, 5px));
 }
 
-.theme-light.wolf-workspace-background.wolf-workspace-background-image-lines
+.theme-light.aura-workspace-background.aura-workspace-background-image-lines
    .horizontal-main-container {
    --lines: url('https://images.hdqwalls.com/wallpapers/up-down-lines-light-mode-8k-o9.jpg');
    --workspace-background-image: var(--lines);
 }
-.theme-light.wolf-workspace-background.wolf-workspace-background-image-waves
+.theme-light.aura-workspace-background.aura-workspace-background-image-waves
    .horizontal-main-container {
    --waves: url('https://wallpapercave.com/wp/wp8561217.jpg');
    --workspace-background-image: var(--waves);
 }
-.theme-light.wolf-workspace-background.wolf-workspace-background-image-waterwaves
+.theme-light.aura-workspace-background.aura-workspace-background-image-waterwaves
    .horizontal-main-container {
    --water-waves: url('https://wallpapercave.com/wp/wp8561104.jpg');
    --workspace-background-image: var(--water-waves);
 }
-.theme-light.wolf-workspace-background .horizontal-main-container {
+.theme-light.aura-workspace-background .horizontal-main-container {
    --workspace-background-image: var(
-      --wolf-workspace-background-image-light-custom-option
+      --aura-workspace-background-image-light-custom-option
    );
 }
 
-.theme-dark.wolf-workspace-background.wolf-workspace-background-image-tokoyo
+.theme-dark.aura-workspace-background.aura-workspace-background-image-tokoyo
    .horizontal-main-container {
    --tokyo: url('https://www.pixel4k.com/wp-content/uploads/2018/09/tokyo-tower-4k_1538072109.jpg');
    --workspace-background-image: var(--tokyo);
 }
-.theme-dark.wolf-workspace-background.wolf-workspace-background-image-skyline
+.theme-dark.aura-workspace-background.aura-workspace-background-image-skyline
    .horizontal-main-container {
    --skyline: url('https://i.redd.it/m23bwh4n0x151.png');
    --workspace-background-image: var(--skyline);
 }
-.theme-dark.wolf-workspace-background.wolf-workspace-background-image-spiderman
+.theme-dark.aura-workspace-background.aura-workspace-background-image-spiderman
    .horizontal-main-container {
    --sipder-man-multiverse: url('https://i.imgur.com/OuXoXpu.jpeg');
    --workspace-background-image: var(--sipder-man-multiverse);
 }
-.theme-dark.wolf-workspace-background.wolf-workspace-background-image-neonsunrise
+.theme-dark.aura-workspace-background.aura-workspace-background-image-neonsunrise
    .horizontal-main-container {
    --neon-sunrise: url('https://i.imgur.com/W08gUuJ.jpeg');
    --workspace-background-image: var(--neon-sunrise);
 }
-.theme-dark.wolf-workspace-background .horizontal-main-container {
+.theme-dark.aura-workspace-background .horizontal-main-container {
    --workspace-background-image: var(
-      --wolf-workspace-background-image-dark-custom-option
+      --aura-workspace-background-image-dark-custom-option
    );
 }
 
-.wolf-workspace-background
+.aura-workspace-background
    .workspace
    .mod-root
    .workspace-tabs.mod-stacked
@@ -1751,22 +1751,22 @@ body.wolf-disable-borders.wolf-workspace-background-image-dark-toggle {
    --background-primary: rgba(var(--cpt-crust), 0.7);
 }
 
-.wolf-workspace-background .workspace-leaf.is-hidden {
+.aura-workspace-background .workspace-leaf.is-hidden {
    --background-primary: transparent !important;
 }
 
-.wolf-workspace-background
+.aura-workspace-background
    .workspace-fake-target-overlay:not(.is-in-sidebar)
    .workspace-tabs
    .workspace-leaf,
-.wolf-workspace-background .mod-root .workspace-tabs .workspace-leaf {
+.aura-workspace-background .mod-root .workspace-tabs .workspace-leaf {
    --background-primary: rgba(
       var(--cpt-crust),
-      var(--wolf-workspace-background-workspace-slider-dark)
+      var(--aura-workspace-background-workspace-slider-dark)
    );
 }
 
-.wolf-workspace-background,
+.aura-workspace-background,
 .prompt,
 .menu .popover {
    --background-primary: rgba(var(--cpt-crust), 0.7);
@@ -1775,12 +1775,12 @@ body.wolf-disable-borders.wolf-workspace-background-image-dark-toggle {
    --background-secondary-alt: rgba(var(--cpt-mantle-alt), 0.5);
    --modal-background: rgba(var(--cpt-mantle), 0.9);
 }
-.wolf-workspace-background .prompt {
+.aura-workspace-background .prompt {
    background-color: var(--background-secondary);
 }
 
 /* File & Folder Icons */
-.wolf-folder-icons .nav-folder .nav-folder-collapse-indicator {
+.aura-folder-icons .nav-folder .nav-folder-collapse-indicator {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 24' fill='none' stroke='currentColor' stroke-linejoin='round' stroke-linecap='round' stroke-width='2'%3E%3Cpath d='M6 14l1.45-2.9A2 2 0 0 1 9.24 10H22a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H20a2 2 0 0 1 2 2v2'/%3E%3C/svg%3E%0A");
    -webkit-mask-repeat: no-repeat;
    background-color: currentColor;
@@ -1789,15 +1789,15 @@ body.wolf-disable-borders.wolf-workspace-background-image-dark-toggle {
    margin-right: 4px;
 }
 
-.wolf-folder-icons .nav-folder.is-collapsed .nav-folder-collapse-indicator {
+.aura-folder-icons .nav-folder.is-collapsed .nav-folder-collapse-indicator {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 24' fill='none' stroke='currentColor' stroke-linejoin='round' stroke-linecap='round' stroke-width='2'%3E%3Cpath d='M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2z'/%3E%3Cpath d='M2 10h20' /%3E%3C/svg%3E%0A");
 }
 
-.wolf-folder-icons .nav-folder-collapse-indicator svg.svg-icon {
+.aura-folder-icons .nav-folder-collapse-indicator svg.svg-icon {
    color: transparent !important;
 }
 
-.wolf-file-icons .nav-file .nav-file-title[data-path]::before {
+.aura-file-icons .nav-file .nav-file-title[data-path]::before {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpath d='M14 2v6h6'/%3E%3C/svg%3E%0A");
    -webkit-mask-repeat: no-repeat;
    background-color: currentColor;
@@ -1809,51 +1809,51 @@ body.wolf-disable-borders.wolf-workspace-background-image-dark-toggle {
    margin-right: 5px;
 }
 
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.md']::before {
+.aura-file-icons .nav-file .nav-file-title[data-path$='.md']::before {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpath d='M14 2v6h6m-4 5H8m8 4H8m2-8H8'/%3E%3C/svg%3E%0A");
    -webkit-mask-repeat: no-repeat;
 }
 
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.canvas']::before {
+.aura-file-icons .nav-file .nav-file-title[data-path$='.canvas']::before {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3h7v9H3zm11 0h7v5h-7zm0 9h7v9h-7zM3 16h7v5H3z'/%3E%3C/svg%3E");
    -webkit-mask-repeat: no-repeat;
 }
 
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.svg']::before,
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.bmp']::before,
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.jpg']::before,
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.gif']::before,
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.webp']::before,
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.jpeg']::before,
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.png']::before {
+.aura-file-icons .nav-file .nav-file-title[data-path$='.svg']::before,
+.aura-file-icons .nav-file .nav-file-title[data-path$='.bmp']::before,
+.aura-file-icons .nav-file .nav-file-title[data-path$='.jpg']::before,
+.aura-file-icons .nav-file .nav-file-title[data-path$='.gif']::before,
+.aura-file-icons .nav-file .nav-file-title[data-path$='.webp']::before,
+.aura-file-icons .nav-file .nav-file-title[data-path$='.jpeg']::before,
+.aura-file-icons .nav-file .nav-file-title[data-path$='.png']::before {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z'/%3E%3Cpath d='M14 2v6h6'/%3E%3Ccircle cx='10' cy='13' r='2'/%3E%3Cpath d='m20 17-1.09-1.09a2 2 0 0 0-2.82 0L10 22'/%3E%3C/svg%3E%0A");
    -webkit-mask-repeat: no-repeat;
 }
 
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.mp3']::before,
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.wav']::before,
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.m4a']::before,
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.ogg']::before,
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.flac']::before,
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.3gp']::before {
+.aura-file-icons .nav-file .nav-file-title[data-path$='.mp3']::before,
+.aura-file-icons .nav-file .nav-file-title[data-path$='.wav']::before,
+.aura-file-icons .nav-file .nav-file-title[data-path$='.m4a']::before,
+.aura-file-icons .nav-file .nav-file-title[data-path$='.ogg']::before,
+.aura-file-icons .nav-file .nav-file-title[data-path$='.flac']::before,
+.aura-file-icons .nav-file .nav-file-title[data-path$='.3gp']::before {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 18V5l12-2v13M9 9l12-2'/%3E%3Ccircle cx='6' cy='18' r='3'/%3E%3Ccircle cx='18' cy='16' r='3'/%3E%3C/svg%3E");
    -webkit-mask-repeat: no-repeat;
 }
 
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.webm']::before {
+.aura-file-icons .nav-file .nav-file-title[data-path$='.webm']::before {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M10 8l6 4-6 4V8z'/%3E%3C/svg%3E");
    -webkit-mask-repeat: no-repeat;
 }
 
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.mp4']::before,
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.ogv']::before,
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.mov']::before,
-.wolf-file-icons .nav-file .nav-file-title[data-path$='.mkv']::before {
+.aura-file-icons .nav-file .nav-file-title[data-path$='.mp4']::before,
+.aura-file-icons .nav-file .nav-file-title[data-path$='.ogv']::before,
+.aura-file-icons .nav-file .nav-file-title[data-path$='.mov']::before,
+.aura-file-icons .nav-file .nav-file-title[data-path$='.mkv']::before {
    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 11v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8H4Z'/%3E%3Cpath d='m4 11-.88-2.87a2 2 0 0 1 1.33-2.5l11.48-3.5a2 2 0 0 1 2.5 1.32l.87 2.87L4 11.01Z'/%3E%3Cpath d='M6.6 4.99l3.38 4.2m1.88-5.81l3.38 4.2'/%3E%3C/svg%3E");
    -webkit-mask-repeat: no-repeat;
 }
 
-.wolf-file-icons
+.aura-file-icons
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-file
@@ -1862,98 +1862,98 @@ body.wolf-disable-borders.wolf-workspace-background-image-dark-toggle {
 }
 
 /* Colorful Frame */
-.wolf-colorful-frame:not(.wolf-translucent-window) {
+.aura-colorful-frame:not(.aura-translucent-window) {
    --titlebar-background: rgba(
       var(--cpt-accent),
-      var(--wolf-colorful-frame-opacity)
+      var(--aura-colorful-frame-opacity)
    );
    --titlebar-background-focused: rgba(
       var(--cpt-accent),
-      var(--wolf-colorful-frame-opacity)
+      var(--aura-colorful-frame-opacity)
    );
    --tab-container-background: rgba(var(--cpt-accent), 0.7);
 }
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window) .horizontal-main-container,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window) .mod-left-split,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window)
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .horizontal-main-container,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .mod-left-split,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .mod-left-split
    .workspace-tabs
    .workspace-leaf,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window)
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .mod-right-split
    .workspace-tabs
    .workspace-leaf,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window) .mod-root .workspace-tabs .workspace-leaf,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window) .mod-vertical,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window) .mod-vertical .workspace-tab-container,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window) .mod-vertical .workspace-tabs,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window)
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .mod-root .workspace-tabs .workspace-leaf,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .mod-vertical,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .mod-vertical .workspace-tab-container,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .mod-vertical .workspace-tabs,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .workspace-fake-target-overlay:not(.is-in-sidebar)
    .workspace-tabs
    .workspace-leaf,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window) .workspace-split.mod-vertical,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window) .workspace {
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .workspace-split.mod-vertical,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window) .workspace {
    --tab-container-background: rgba(
       var(--cpt-accent),
-      var(--wolf-colorful-frame-opacity)
+      var(--aura-colorful-frame-opacity)
    );
    --tab-container-background-focused: rgba(
       var(--cpt-accent),
-      var(--wolf-colorful-frame-opacity)
+      var(--aura-colorful-frame-opacity)
    );
    background-color: rgba(
       var(--cpt-accent),
-      var(--wolf-colorful-frame-opacity)
+      var(--aura-colorful-frame-opacity)
    );
 }
 
-.wolf-colorful-frame:not(.wolf-translucent-window) .mod-left-split .mod-top .workspace-tab-header-inner-icon,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window)
+.aura-colorful-frame:not(.aura-translucent-window) .mod-left-split .mod-top .workspace-tab-header-inner-icon,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .mod-left-split
    .workspace-tab-header-inner-icon,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window)
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .mod-right-split
    .workspace-tab-header-inner-icon,
-.wolf-colorful-frame:not(.wolf-translucent-window)
+.aura-colorful-frame:not(.aura-translucent-window)
    .mod-left-split
    .mod-top
    .workspace-tab-header-inner-icon:hover,
-.wolf-colorful-frame:not(.wolf-translucent-window).mod-right-split .mod-top .workspace-tab-header-inner-icon,
-.wolf-colorful-frame:not(.wolf-translucent-window)
+.aura-colorful-frame:not(.aura-translucent-window).mod-right-split .mod-top .workspace-tab-header-inner-icon,
+.aura-colorful-frame:not(.aura-translucent-window)
    .mod-left-split
    .mod-top
    .workspace-tab-header-inner-icon:hover,
-.wolf-colorful-frame:not(.wolf-translucent-window)
+.aura-colorful-frame:not(.aura-translucent-window)
    .mod-right-split
    .mod-top
    .workspace-tab-header-inner-icon:hover,
-.wolf-colorful-frame:not(.wolf-translucent-window) .mod-vertical .workspace-tab-header:not(.is-active),
-.wolf-colorful-frame:not(.wolf-translucent-window)
+.aura-colorful-frame:not(.aura-translucent-window) .mod-vertical .workspace-tab-header:not(.is-active),
+.aura-colorful-frame:not(.aura-translucent-window)
    .mod-vertical
    .workspace-tab-header:not(.is-active)
    .workspace-tab-header-inner:hover,
-.wolf-colorful-frame:not(.wolf-translucent-window) .mod-vertical .workspace-tab-header-inner-icon:hover,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window)
+.aura-colorful-frame:not(.aura-translucent-window) .mod-vertical .workspace-tab-header-inner-icon:hover,
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .workspace-tabs.mod-top
    .workspace-tab-header:not(.is-active)
    .workspace-tab-header-inner-icon,
-.wolf-colorful-frame:not(.wolf-translucent-window)
+.aura-colorful-frame:not(.aura-translucent-window)
    .workspace-split.mod-vertical
    .mod-top
    .workspace-tab-header:not(.is-active):hover,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window)
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .mod-top
    .workspace-tab-header:not(.is-active):hover,
-.wolf-colorful-frame.wolf-card-layout:not(.wolf-translucent-window)
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window)
    .mod-vertical
    .workspace-tab-header:not(.is-active):hover,
-.wolf-colorful-frame:not(.wolf-translucent-window) .workspace-tab-header-tab-list,
-.wolf-colorful-frame:not(.wolf-translucent-window) .workspace-tab-header-tab-list .clickable-icon:hover,
-.wolf-colorful-frame:not(.wolf-translucent-window) .workspace-tab-header-new-tab,
-.wolf-colorful-frame:not(.wolf-translucent-window) .workspace-tab-header-new-tab .clickable-icon:hover,
-.wolf-colorful-frame:not(.wolf-translucent-window):not(.wolf-card-layout-actions) .workspace-ribbon .side-dock-actions > .clickable-icon,
-.wolf-colorful-frame:not(.wolf-translucent-window):not(.wolf-card-layout-fileexplorer) .workspace-tabs .tree-item > .tree-item-self,
-.wolf-colorful-frame:not(.wolf-translucent-window):not(.wolf-card-layout-fileexplorer) .workspace-tabs .nav-header > .nav-buttons-container {
+.aura-colorful-frame:not(.aura-translucent-window) .workspace-tab-header-tab-list,
+.aura-colorful-frame:not(.aura-translucent-window) .workspace-tab-header-tab-list .clickable-icon:hover,
+.aura-colorful-frame:not(.aura-translucent-window) .workspace-tab-header-new-tab,
+.aura-colorful-frame:not(.aura-translucent-window) .workspace-tab-header-new-tab .clickable-icon:hover,
+.aura-colorful-frame:not(.aura-translucent-window):not(.aura-card-layout-actions) .workspace-ribbon .side-dock-actions > .clickable-icon,
+.aura-colorful-frame:not(.aura-translucent-window):not(.aura-card-layout-fileexplorer) .workspace-tabs .tree-item > .tree-item-self,
+.aura-colorful-frame:not(.aura-translucent-window):not(.aura-card-layout-fileexplorer) .workspace-tabs .nav-header > .nav-buttons-container {
    color: rgb(var(--cpt-black)) !important;
    --icon-color: rgb(var(--cpt-black)) !important;
    --icon-color-hover: rgb(var(--cpt-black)) !important;
@@ -1961,24 +1961,24 @@ body.wolf-disable-borders.wolf-workspace-background-image-dark-toggle {
    --tab-text-color-focused: rgb(var(--cpt-black)) !important;
    --tab-text-color-focused-active-current: rgb(var(--cpt-black)) !important;
 }
-.wolf-colorful-frame .mod-top .workspace-tab-header.is-active,
-.wolf-colorful-frame .mod-top .workspace-tab-header:hover,
-.wolf-colorful-frame.wolf-card-layout
+.aura-colorful-frame .mod-top .workspace-tab-header.is-active,
+.aura-colorful-frame .mod-top .workspace-tab-header:hover,
+.aura-colorful-frame.aura-card-layout
    .workspace-tabs
    .workspace-tab-header.is-active,
-.wolf-colorful-frame.wolf-card-layout
+.aura-colorful-frame.aura-card-layout
    .workspace-tabs
    .workspace-tab-header:hover,
-.wolf-colorful-frame .workspace-tab-header-tab-list .clickable-icon:hover,
-.wolf-colorful-frame .workspace-tab-header-new-tab .clickable-icon:hover {
+.aura-colorful-frame .workspace-tab-header-tab-list .clickable-icon:hover,
+.aura-colorful-frame .workspace-tab-header-new-tab .clickable-icon:hover {
    --background-modifier-hover: rgba(var(--cpt-crust), 0.1);
 }
 
-.wolf-colorful-frame .titlebar-button-container {
+.aura-colorful-frame .titlebar-button-container {
    color: rgb(var(--cpt-black));
 }
 
-.wolf-colorful-frame .sidebar-toggle-button {
+.aura-colorful-frame .sidebar-toggle-button {
    background-color: var(--background-primary);
    height: 35px;
    width: 44px;
@@ -2000,9 +2000,9 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    background: rgba(var(--cpt-core), 0.2);
 }
 /* Rainbow Folders */
-.wolf-rainbow-folders .nav-folder-title,
-.wolf-rainbow-folders .nav-folder-collapse-indicator,
-.wolf-rainbow-folders
+.aura-rainbow-folders .nav-folder-title,
+.aura-rainbow-folders .nav-folder-collapse-indicator,
+.aura-rainbow-folders
    .tree-item.nav-folder
    > .tree-item-children.nav-folder-children
    > .tree-item.nav-file
@@ -2015,11 +2015,11 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    --nav-item-color-highlighted: var(--text-on-accent-inverted);
 }
 
-.wolf-rainbow-folders .nav-file-tag {
+.aura-rainbow-folders .nav-file-tag {
    color: rgb(var(--cpt-text));
 }
 
-.wolf-rainbow-folders
+.aura-rainbow-folders
    .nav-files-container
    > .tree-item.nav-folder
    > .tree-item-children
@@ -2027,7 +2027,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    background-color: rgb(var(--cpt-white));
 }
 
-.wolf-rainbow-folders
+.aura-rainbow-folders
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 2) {
@@ -2036,7 +2036,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders
+.aura-rainbow-folders
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 3) {
@@ -2045,7 +2045,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders
+.aura-rainbow-folders
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 4) {
@@ -2054,7 +2054,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders
+.aura-rainbow-folders
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 5) {
@@ -2063,7 +2063,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders
+.aura-rainbow-folders
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 6) {
@@ -2072,7 +2072,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders
+.aura-rainbow-folders
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 7) {
@@ -2081,7 +2081,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders
+.aura-rainbow-folders
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 8) {
@@ -2090,7 +2090,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders
+.aura-rainbow-folders
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 9) {
@@ -2099,7 +2099,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders.wolf-colorschemes-dark-mystical-nights
+.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 2) {
@@ -2108,7 +2108,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders.wolf-colorschemes-dark-mystical-nights
+.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 3) {
@@ -2117,7 +2117,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders.wolf-colorschemes-dark-mystical-nights
+.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 4) {
@@ -2126,7 +2126,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders.wolf-colorschemes-dark-mystical-nights
+.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 5) {
@@ -2135,7 +2135,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders.wolf-colorschemes-dark-mystical-nights
+.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 6) {
@@ -2144,7 +2144,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders.wolf-colorschemes-dark-mystical-nights
+.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 7) {
@@ -2153,7 +2153,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders.wolf-colorschemes-dark-mystical-nights
+.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 8) {
@@ -2162,7 +2162,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    border-radius: 5px;
    margin-top: 2px;
 }
-.wolf-rainbow-folders.wolf-colorschemes-dark-mystical-nights
+.aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
    .nav-folder.mod-root
    > .nav-folder-children
    > .nav-folder:nth-child(8n + 9) {
@@ -2172,7 +2172,7 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    margin-top: 2px;
 }
 /* Tranlucent Window */
-.wolf-translucent-window.is-translucent:not(.is-fullscreen)
+.aura-translucent-window.is-translucent:not(.is-fullscreen)
    .workspace {
    --background-primary: transparent !important;
    --background-primary-alt: transparent !important;
@@ -2183,14 +2183,14 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    --titlebar-background-focused: transparent !important;
    --card-background-color: transparent !important;
 }
-.wolf-translucent-window.wolf-card-layout.is-translucent:not(.is-fullscreen) .workspace-tab-container, .wolf-translucent-window.wolf-card-layout.is-translucent:not(.is-fullscreen) .workspace-tab-container, .wolf-translucent-window.wolf-card-layout.is-translucent:not(.is-fullscreen) .workspace-split.mod-root .view-content, .wolf-translucent-window.wolf-card-layout.is-translucent:not(.is-fullscreen) .workspace-split .workspace-leaf-content[data-type='file-explorer'] {
+.aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen) .workspace-tab-container, .aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen) .workspace-tab-container, .aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen) .workspace-split.mod-root .view-content, .aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen) .workspace-split .workspace-leaf-content[data-type='file-explorer'] {
    background-color: transparent !important;
    --card-background-color: transparent !important;
 }
-.wolf-translucent-window.is-translucent:not(.is-fullscreen) {
+.aura-translucent-window.is-translucent:not(.is-fullscreen) {
    --workspace-background-translucent: rgba(
       var(--cpt-mantle),
-      var(--wolf-translucent-window-opacity)
+      var(--aura-translucent-window-opacity)
    );
 }
 
@@ -2217,28 +2217,28 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
 
 /* ---------- SHOW/HIDE ELEMENTS ---------- */
 /* Floating Titlebar */
-.wolf-floating-titlebar:not(.is-mobile) {
+.aura-floating-titlebar:not(.is-mobile) {
    --title-bar-delay: 150ms;
    --title-bar-duration: 300ms;
    --title-bar-target-translate-y: 18px;
    --title-bar-translate-y: 40px;
    --title-bar-windows-fix: 5;
 }
-.wolf-floating-titlebar:not(.is-mobile) .workspace-leaf-content .view-header {
+.aura-floating-titlebar:not(.is-mobile) .workspace-leaf-content .view-header {
    margin-top: calc(var(--title-bar-translate-y) * -1);
    position: relative;
    transition: transform var(--title-bar-duration) var(--title-bar-delay),
       margin-right 0s calc(var(--title-bar-duration) + var(--title-bar-delay)),
       padding 0s calc(var(--title-bar-duration) + var(--title-bar-delay));
 }
-.wolf-floating-titlebar:not(.is-mobile):not(.mod-macos)
+.aura-floating-titlebar:not(.is-mobile):not(.mod-macos)
    .workspace-tabs:is(.mod-top-right-space, .mod-top-left-space)
    .workspace-leaf-content
    .view-header {
    margin-right: calc(var(--title-bar-windows-fix) * var(--frame-right-space));
    padding: 0;
 }
-.wolf-floating-titlebar:not(.is-mobile):not(.mod-macos)
+.aura-floating-titlebar:not(.is-mobile):not(.mod-macos)
    .workspace-tabs:is(.mod-top-right-space, .mod-top-left-space)
    .workspace-leaf-content
    .view-header:is(:hover, :focus-within) {
@@ -2247,14 +2247,14 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
       margin-right 0s, padding 0s;
    padding: 0 var(--size-4-3);
 }
-.wolf-floating-titlebar:not(.is-mobile):not(.mod-macos)
+.aura-floating-titlebar:not(.is-mobile):not(.mod-macos)
    .workspace-tabs:is(.mod-top-right-space, .mod-top-left-space)
    .workspace-leaf-content
    .view-header::before {
    width: calc(100% + var(--title-bar-windows-fix) * var(--frame-right-space));
    top: var(--header-height);
 }
-.wolf-floating-titlebar:not(.is-mobile)
+.aura-floating-titlebar:not(.is-mobile)
    .workspace-leaf-content
    .view-header::before {
    bottom: calc(var(--title-bar-target-translate-y) * -1);
@@ -2265,55 +2265,55 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    transition: transform var(--title-bar-duration) var(--title-bar-delay);
    width: 100%;
 }
-.wolf-floating-titlebar:not(.is-mobile) .workspace-leaf-content .view-content {
+.aura-floating-titlebar:not(.is-mobile) .workspace-leaf-content .view-content {
    transition: transform var(--title-bar-duration) var(--title-bar-delay);
 }
-.wolf-floating-titlebar:not(.is-mobile)
+.aura-floating-titlebar:not(.is-mobile)
    .workspace-leaf-content
    .view-header:is(:hover, :focus-within)::before {
    transform: translateY(var(--title-bar-target-translate-y));
 }
-.wolf-floating-titlebar:not(.is-mobile)
+.aura-floating-titlebar:not(.is-mobile)
    .workspace-leaf-content
    .view-header:is(:hover, :focus-within),
-.wolf-floating-titlebar:not(.is-mobile)
+.aura-floating-titlebar:not(.is-mobile)
    .workspace-leaf-content
    .view-header:is(:hover, :focus-within)
    + .view-content {
    transform: translateY(var(--title-bar-translate-y));
 }
-.wolf-floating-titlebar:not(.is-mobile)
+.aura-floating-titlebar:not(.is-mobile)
    .workspace-leaf-content
    .view-header:not(:hover, :focus-within)
    .clickable-icon {
    app-region: drag;
 }
-.wolf-floating-titlebar:not(.is-mobile) .view-header::before {
+.aura-floating-titlebar:not(.is-mobile) .view-header::before {
    z-index: 0;
 }
-.wolf-floating-titlebar:not(.is-mobile) .view-header > div {
+.aura-floating-titlebar:not(.is-mobile) .view-header > div {
    z-index: 1;
 }
-.wolf-floating-titlebar:not(.is-mobile) .view-header-title {
+.aura-floating-titlebar:not(.is-mobile) .view-header-title {
    --file-header-font-size: var(--font-ui-medium);
 }
 
 /* Hide Status bar */
-.wolf-hide-status-bar .status-bar {
+.aura-hide-status-bar .status-bar {
    display: none;
 }
 /* Floating Status bar */
-.wolf-floating-status-bar {
+.aura-floating-status-bar {
    --status-bar-position: absolute;
    --status-bar-radius: var(--radius-m);
 }
-.wolf-floating-status-bar .status-bar {
+.aura-floating-status-bar .status-bar {
    transform: translateX(calc(100% + 5px));
    transition: transform 300ms 150ms;
    bottom: 5px;
    right: 5px;
 }
-.wolf-floating-status-bar .status-bar::before {
+.aura-floating-status-bar .status-bar::before {
    width: 100%;
    min-height: 100%;
    content: ' ';
@@ -2322,29 +2322,29 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
    bottom: 0;
    transform: translateX(-100%);
 }
-.wolf-floating-status-bar .status-bar:hover {
+.aura-floating-status-bar .status-bar:hover {
    transform: none;
    transition: transform 300ms 150ms;
 }
 
 /* Toggle Metadata */
-.wolf-toggle-metadata .frontmatter-container,
+.aura-toggle-metadata .frontmatter-container,
 .markdown-rendered.hide-metadata .frontmatter-container {
    display: none;
 }
 
 /* Toggle tooltips */
-.wolf-tooltips-toggle .tooltip {
+.aura-tooltips-toggle .tooltip {
    display: none;
 }
 
 /* Hide vault name */
-.wolf-vault-name-toggle .nav-folder.mod-root > .nav-folder-title {
+.aura-vault-name-toggle .nav-folder.mod-root > .nav-folder-title {
    display: none;
 }
 
 /* ---------- STYLE SETTINGS ---------- */
-.style-settings-heading[data-id='wolf'] {
+.style-settings-heading[data-id='aura'] {
    background-color: rgb(var(--cpt-accent));
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
@@ -2410,9 +2410,9 @@ body:not(.custom-font) .setting-item[data-id='font-monospace-custom'] {
 .style-settings-container
    .setting-item:is(
       [data-id='callout-radius'],
-      [data-id='wolf-card-radius'],
-      [data-id='wolf-card-header-left-padding'],
-      [data-id='wolf-card-layout-padding']
+      [data-id='aura-card-radius'],
+      [data-id='aura-card-header-left-padding'],
+      [data-id='aura-card-layout-padding']
    )
    .setting-item-control::after {
    content: 'px';
@@ -2432,12 +2432,12 @@ body:not(.custom-font) .setting-item[data-id='font-monospace-custom'] {
 
 /* @settings
 
-name: Wolf
-id: wolf
+name: Aura
+id: aura
 level: 1
 settings:
    - 
-      id: wolf-colors-heading
+      id: aura-colors-heading
       title: Colors
       description: Theme Accent, Colorschemes
       type: heading
@@ -2449,11 +2449,11 @@ settings:
       description: Change the theme accent as you like
       type: variable-select
       allowEmpty: false
-      default: var(--cpt-wolf)
+      default: var(--cpt-aura)
       options:
          - 
-            label: Wolf
-            value: var(--cpt-wolf)
+            label: Aura
+            value: var(--cpt-aura)
          - 
             label: Red
             value: var(--cpt-red)
@@ -2479,7 +2479,7 @@ settings:
             label: Purple
             value: var(--cpt-purple)
    - 
-      id: wolf-colorshemes-light
+      id: aura-colorshemes-light
       title: Light Theme Colorscheme
       type: class-select
       allowEmpty: false
@@ -2490,15 +2490,15 @@ settings:
          value: default
       -
          label: Notion
-         value: wolf-colorschemes-light-notion
+         value: aura-colorschemes-light-notion
       - 
          label: Gruvbox
-         value: wolf-colorschemes-light-gruvbox
+         value: aura-colorschemes-light-gruvbox
       - 
          label: Solarized
-         value: wolf-colorschemes-light-solarized
+         value: aura-colorschemes-light-solarized
    - 
-      id: wolf-colorshemes-dark
+      id: aura-colorshemes-dark
       title: Dark Theme Colorscheme
       type: class-select
       allowEmpty: false
@@ -2509,46 +2509,46 @@ settings:
          value: default
       -
          label: Dracula
-         value: wolf-colorschemes-dark-dracula
+         value: aura-colorschemes-dark-dracula
       -
          label: Kanagawa
-         value: wolf-colorschemes-dark-kanagawa
+         value: aura-colorschemes-dark-kanagawa
       - 
          label: Gruvbox
-         value: wolf-colorschemes-dark-gruvbox
+         value: aura-colorschemes-dark-gruvbox
       - 
          label: Solarized
-         value: wolf-colorschemes-dark-solarized
+         value: aura-colorschemes-dark-solarized
       - 
          label: Mystical Nights
-         value: wolf-colorschemes-dark-mystical-nights
+         value: aura-colorschemes-dark-mystical-nights
 
    #---------- E D I T O R ----------
    - 
-      id: wolf-editor-heading
+      id: aura-editor-heading
       title: Editor
       description: Active Line, Headings, Callouts, Checkbox and Rainbow Tags, etc...
       type: heading
       level: 1
       collapsed: true
    -
-      id: wolf-active-line
+      id: aura-active-line
       title: Active line highlight
       type: class-select
       allowEmpty: false
-      default: wolf-no-highlight
+      default: aura-no-highlight
       options:
          -
             label: None
-            value: wolf-no-highlight
+            value: aura-no-highlight
          -
             label: Highlight
-            value: wolf-active-line-highlight
+            value: aura-active-line-highlight
          -
             label: Highlight + Border
-            value: wolf-active-line-highlight-border
+            value: aura-active-line-highlight-border
    - 
-      id: wolf-text-heading
+      id: aura-text-heading
       title: Text
       type: heading
       level: 2
@@ -2763,23 +2763,23 @@ settings:
             label: Purple
             value: rgb(var(--cpt-purple))
    - 
-      id: wolf-headings-heading
+      id: aura-headings-heading
       title: Headings
       type: heading
       level: 2
       collapsed: true
    -
-      id: wolf-heading-color
+      id: aura-heading-color
       title: Colored Heading
       type: class-toggle
       default: true
    -
-      id: wolf-neon-headings
+      id: aura-neon-headings
       title: Neon Heading
       type: class-toggle
       default: false
    -
-      id: wolf-h1-heading
+      id: aura-h1-heading
       title: H1 settings
       type: heading
       level: 3
@@ -2839,7 +2839,7 @@ settings:
       type: variable-number
       default: 1
    - 
-      id: wolf-h1-color
+      id: aura-h1-color
       title: H1 color
       type: class-select
       allowEmpty: true
@@ -2847,28 +2847,28 @@ settings:
       options:
          - 
             label: Red
-            value: wolf-h1-red
+            value: aura-h1-red
          - 
             label: Orange
-            value: wolf-h1-orange
+            value: aura-h1-orange
          - 
             label: Yellow
-            value: wolf-h1-yellow
+            value: aura-h1-yellow
          - 
             label: Green
-            value: wolf-h1-green
+            value: aura-h1-green
          - 
             label: Cyan
-            value: wolf-h1-cyan
+            value: aura-h1-cyan
          - 
             label: Blue
-            value: wolf-h1-blue
+            value: aura-h1-blue
          -
             label: Pink
-            value: wolf-h1-pink
+            value: aura-h1-pink
          - 
             label: Purple
-            value: wolf-h1-purple
+            value: aura-h1-purple
    -
       id: h1-color
       title: Custom H1 Color
@@ -2878,7 +2878,7 @@ settings:
       default-light: '#'
       default-dark: '#'
    -
-      id: wolf-h2-heading
+      id: aura-h2-heading
       title: H2 settings
       type: heading
       level: 3
@@ -2938,7 +2938,7 @@ settings:
       type: variable-number
       default: 1
    - 
-      id: wolf-h2-color
+      id: aura-h2-color
       title: H2 color
       type: class-select
       allowEmpty: true
@@ -2946,28 +2946,28 @@ settings:
       options:
          - 
             label: Red
-            value: wolf-h2-red
+            value: aura-h2-red
          - 
             label: Orange
-            value: wolf-h2-orange
+            value: aura-h2-orange
          - 
             label: Yellow
-            value: wolf-h2-yellow
+            value: aura-h2-yellow
          - 
             label: Green
-            value: wolf-h2-green
+            value: aura-h2-green
          - 
             label: Cyan
-            value: wolf-h2-cyan
+            value: aura-h2-cyan
          - 
             label: Blue
-            value: wolf-h2-blue
+            value: aura-h2-blue
          -
             label: Pink
-            value: wolf-h2-pink
+            value: aura-h2-pink
          - 
             label: Purple
-            value: wolf-h2-purple
+            value: aura-h2-purple
    -
       id: h2-color
       title: Custom H2 Color
@@ -2977,7 +2977,7 @@ settings:
       default-light: '#'
       default-dark: '#'
    -
-      id: wolf-h3-heading
+      id: aura-h3-heading
       title: H3 settings
       type: heading
       level: 3
@@ -3037,7 +3037,7 @@ settings:
       type: variable-number
       default: 1
    - 
-      id: wolf-h3-color
+      id: aura-h3-color
       title: H3 color
       type: class-select
       allowEmpty: true
@@ -3045,28 +3045,28 @@ settings:
       options:
          - 
             label: Red
-            value: wolf-h3-red
+            value: aura-h3-red
          - 
             label: Orange
-            value: wolf-h3-orange
+            value: aura-h3-orange
          - 
             label: Yellow
-            value: wolf-h3-yellow
+            value: aura-h3-yellow
          - 
             label: Green
-            value: wolf-h3-green
+            value: aura-h3-green
          - 
             label: Cyan
-            value: wolf-h3-cyan
+            value: aura-h3-cyan
          - 
             label: Blue
-            value: wolf-h3-blue
+            value: aura-h3-blue
          -
             label: Pink
-            value: wolf-h3-pink
+            value: aura-h3-pink
          - 
             label: Purple
-            value: wolf-h3-purple
+            value: aura-h3-purple
    -
       id: h3-color
       title: Custom H3 Color
@@ -3076,7 +3076,7 @@ settings:
       default-light: '#'
       default-dark: '#'
    -
-      id: wolf-h4-heading
+      id: aura-h4-heading
       title: H4 settings
       type: heading
       level: 3
@@ -3136,7 +3136,7 @@ settings:
       type: variable-number
       default: 1
    - 
-      id: wolf-h4-color
+      id: aura-h4-color
       title: H4 color
       type: class-select
       allowEmpty: true
@@ -3144,28 +3144,28 @@ settings:
       options:
          - 
             label: Red
-            value: wolf-h4-red
+            value: aura-h4-red
          - 
             label: Orange
-            value: wolf-h4-orange
+            value: aura-h4-orange
          - 
             label: Yellow
-            value: wolf-h4-yellow
+            value: aura-h4-yellow
          - 
             label: Green
-            value: wolf-h4-green
+            value: aura-h4-green
          - 
             label: Cyan
-            value: wolf-h4-cyan
+            value: aura-h4-cyan
          - 
             label: Blue
-            value: wolf-h4-blue
+            value: aura-h4-blue
          -
             label: Pink
-            value: wolf-h4-pink
+            value: aura-h4-pink
          - 
             label: Purple
-            value: wolf-h4-purple
+            value: aura-h4-purple
    -
       id: h4-color
       title: Custom H4 Color
@@ -3175,7 +3175,7 @@ settings:
       default-light: '#'
       default-dark: '#'
    -
-      id: wolf-h5-heading
+      id: aura-h5-heading
       title: H5 settings
       type: heading
       level: 3
@@ -3235,7 +3235,7 @@ settings:
       type: variable-number
       default: 1
    - 
-      id: wolf-h5-color
+      id: aura-h5-color
       title: H5 color
       type: class-select
       allowEmpty: true
@@ -3243,28 +3243,28 @@ settings:
       options:
          - 
             label: Red
-            value: wolf-h5-red
+            value: aura-h5-red
          - 
             label: Orange
-            value: wolf-h5-orange
+            value: aura-h5-orange
          - 
             label: Yellow
-            value: wolf-h5-yellow
+            value: aura-h5-yellow
          - 
             label: Green
-            value: wolf-h5-green
+            value: aura-h5-green
          - 
             label: Cyan
-            value: wolf-h5-cyan
+            value: aura-h5-cyan
          - 
             label: Blue
-            value: wolf-h5-blue
+            value: aura-h5-blue
          -
             label: Pink
-            value: wolf-h5-pink
+            value: aura-h5-pink
          - 
             label: Purple
-            value: wolf-h5-purple
+            value: aura-h5-purple
    -
       id: h5-color
       title: Custom H5 Color
@@ -3274,7 +3274,7 @@ settings:
       default-light: '#'
       default-dark: '#'
    -
-      id: wolf-h6-heading
+      id: aura-h6-heading
       title: H6 settings
       type: heading
       level: 3
@@ -3334,7 +3334,7 @@ settings:
       type: variable-number
       default: 1
    - 
-      id: wolf-h6-color
+      id: aura-h6-color
       title: H6 color
       type: class-select
       allowEmpty: true
@@ -3342,28 +3342,28 @@ settings:
       options:
          - 
             label: Red
-            value: wolf-h6-red
+            value: aura-h6-red
          - 
             label: Orange
-            value: wolf-h6-orange
+            value: aura-h6-orange
          - 
             label: Yellow
-            value: wolf-h6-yellow
+            value: aura-h6-yellow
          - 
             label: Green
-            value: wolf-h6-green
+            value: aura-h6-green
          - 
             label: Cyan
-            value: wolf-h6-cyan
+            value: aura-h6-cyan
          - 
             label: Blue
-            value: wolf-h6-blue
+            value: aura-h6-blue
          -
             label: Pink
-            value: wolf-h6-pink
+            value: aura-h6-pink
          - 
             label: Purple
-            value: wolf-h6-purple
+            value: aura-h6-purple
    -
       id: h6-color
       title: Custom H6 Color
@@ -3374,19 +3374,19 @@ settings:
       default-dark: '#'
       
    - 
-      id: wolf-callouts-heading
+      id: aura-callouts-heading
       title: Callouts
       type: heading
       level: 2
       collapsed: true
 
    -
-      id: wolf-callouts
+      id: aura-callouts
       title: Enable Callout Styling
       type: class-toggle
 
    -
-      id: wolf-callouts-select
+      id: aura-callouts-select
       title: Callout Styling
       type: class-select
       allowEmpty: false
@@ -3397,13 +3397,13 @@ settings:
                value: default
             - 
                label: Sleek
-               value: wolf-callouts-sleek
+               value: aura-callouts-sleek
             - 
                label: Vanilla
-               value: wolf-callouts-vanilla
+               value: aura-callouts-vanilla
             - 
                label: Block
-               value: wolf-callouts-block
+               value: aura-callouts-block
    -
       id: callout-radius
       title: Callout Radius
@@ -3411,70 +3411,70 @@ settings:
       default: 4
       format: px
    - 
-      id: wolf-custom-checkbox-heading
+      id: aura-custom-checkbox-heading
       title: Checkbox
       type: heading
       level: 2
       collapsed: true
    -
-      id: wolf-custom-checkbox
+      id: aura-custom-checkbox
       title: Enable Custom Checkbox
       description: Enable custom checkboxes for checkbox customization
       default: true
       type: class-toggle
    - 
-      id: wolf-css-classes-heading
+      id: aura-css-classes-heading
       title: CSS Classes
       type: heading
       level: 2
       collapsed: true
    -
-      id: wolf-css-classes
+      id: aura-css-classes
       title: Toggle CSS Classes
       description: Customize your notes with custom css classes
       default: true
       type: class-toggle
    - 
-      id: wolf-rainbow-tags-heading
+      id: aura-rainbow-tags-heading
       title: Rainbow Tags
       type: heading
       level: 2
       collapsed: true
    -
-      id: wolf-rainbow-tags
+      id: aura-rainbow-tags
       title: Enable Rainbow Tags
       description: Customize your tag with rainbow colors
       type: class-toggle
 
    #---------- L A Y O U T ----------
    - 
-      id: wolf-workspace-heading
+      id: aura-workspace-heading
       title: Workspace
       description: Layout, Background, Colorful frame, etc.
       type: heading
       level: 1
       collapsed: true
    - 
-      id: wolf-layout-heading
+      id: aura-layout-heading
       title: Layout
       type: heading
       level: 2
       collapsed: true
    - 
-      id: wolf-layout-select
+      id: aura-layout-select
       title: Layout Style
       type: class-select
       allowEmpty: false
-      default: wolf-default-layout
+      default: aura-default-layout
       options:
          -
             label: Default
-            value: wolf-default-layout
+            value: aura-default-layout
          -
             label: Cards
-            value: wolf-card-layout
+            value: aura-card-layout
    - 
-      id: wolf-disable-borders
+      id: aura-disable-borders
       title: Disable borders
       type: class-toggle
    -
@@ -3485,90 +3485,90 @@ settings:
       format: hex
       default: '#'
    - 
-      id: wolf-card-heading
+      id: aura-card-heading
       title: Card Layout
       type: heading
       level: 3
       collapsed: true
    - 
-      id: wolf-card-radius
+      id: aura-card-radius
       title: Card radius
       description: Size unit is px
       type: variable-number
       default: 16
       format: px
    - 
-      id: wolf-card-layout-padding
+      id: aura-card-layout-padding
       title: Card padding
       description: Size unit is px
       type: variable-number
       default: 10
       format: px
    - 
-      id: wolf-card-header-left-padding
+      id: aura-card-header-left-padding
       title: Tab left padding
       description: Size unit is px
       type: variable-number
       default: 20
       format: px
    - 
-      id: wolf-card-shadows
+      id: aura-card-shadows
       title: Enable shadows for cards
       type: class-toggle
    - 
-      id: wolf-card-layout-actions
+      id: aura-card-layout-actions
       title: Enable card format for left ribbon
       type: class-toggle
    - 
-      id: wolf-card-layout-fileexplorer
+      id: aura-card-layout-fileexplorer
       title: Enable card format for file explorer
       default: true
       type: class-toggle
    - 
-      id: wolf-workspace-background-heading
+      id: aura-workspace-background-heading
       title: Background
       type: heading
       level: 2
       collapsed: true
    -
-      id: wolf-workspace-background
+      id: aura-workspace-background
       title: Enable Backgound
       description: Customize your workspace background by adding images to it (not compatible with colorful frames) 
       type: class-toggle
    - 
-      id: wolf-workspace-background-light-heading
+      id: aura-workspace-background-light-heading
       title: Light Theme
       type: heading
       level: 3
       collapsed: true
    -
-      id: wolf-workspace-background-image-dark
+      id: aura-workspace-background-image-dark
       title: Select Background Image
       description: Customize your workspace background by adding images to it
       type: class-select
       allowEmpty: false
-      default: wolf-workspace-background-image-lines
+      default: aura-workspace-background-image-lines
       options:
          - 
             label: Lines
-            value: wolf-workspace-background-image-lines
+            value: aura-workspace-background-image-lines
          - 
             label: Waves
-            value: wolf-workspace-background-image-waves
+            value: aura-workspace-background-image-waves
          - 
             label: Water Waves
-            value: wolf-workspace-background-image-waterwaves
+            value: aura-workspace-background-image-waterwaves
          -
             label: Custom
-            value: wolf-workspace-background-image-custom
+            value: aura-workspace-background-image-custom
    -
-      id: wolf-workspace-background-image-light-custom-option
+      id: aura-workspace-background-image-light-custom-option
       title: Custom Workspace Background Image
       description: Customize the background image. Use the default format below for an online image. Use the following format to point to a local file - url("app://local/D:/Pictures/Mountain.jpg").
       type: variable-text
       default: url("https://")
    -
-      id: wolf-workspace-background-workspace-slider-light
+      id: aura-workspace-background-workspace-slider-light
       title: Container opacity
       type: variable-number-slider
       min: 0
@@ -3576,7 +3576,7 @@ settings:
       step: 0.05
       default: 0.4
    - 
-      id: wolf-workspace-background-blur-light
+      id: aura-workspace-background-blur-light
       title: Background blur
       type: variable-number-slider
       min: 0
@@ -3585,7 +3585,7 @@ settings:
       default: 5
       format: px
    - 
-      id: wolf-workspace-background-brightness-light
+      id: aura-workspace-background-brightness-light
       title: Background brightness
       type: variable-number-slider
       min: 0
@@ -3593,42 +3593,42 @@ settings:
       step: 0.05
       default: 0.7
    - 
-      id: wolf-workspace-background-dark-heading
+      id: aura-workspace-background-dark-heading
       title: Dark Theme
       type: heading
       level: 3
       collapsed: true
    -
-      id: wolf-workspace-background-image-dark
+      id: aura-workspace-background-image-dark
       title: Select Background Image
       description: Customize your workspace background by adding images to it
       type: class-select
       allowEmpty: false
-      default: wolf-workspace-background-image-tokoyo
+      default: aura-workspace-background-image-tokoyo
       options:
          - 
             label: Tokoyo
-            value: wolf-workspace-background-image-tokoyo
+            value: aura-workspace-background-image-tokoyo
          - 
             label: Skyline
-            value: wolf-workspace-background-image-skyline
+            value: aura-workspace-background-image-skyline
          - 
             label: Spider Man Multiverse
-            value: wolf-workspace-background-image-spiderman
+            value: aura-workspace-background-image-spiderman
          - 
             label: Neon Sunrise
-            value: wolf-workspace-background-image-neonsunrise
+            value: aura-workspace-background-image-neonsunrise
          -
             label: Custom
-            value: wolf-workspace-background-image-custom
+            value: aura-workspace-background-image-custom
    -
-      id: wolf-workspace-background-image-dark-custom-option
+      id: aura-workspace-background-image-dark-custom-option
       title: Custom Workspace Background Image
       description: Customize the background image. Use the default format below for an online image. Use the following format to point to a local file - url("app://local/D:/Pictures/Mountain.jpg").
       type: variable-text
       default: url("https://")
    -
-      id: wolf-workspace-background-workspace-slider-dark
+      id: aura-workspace-background-workspace-slider-dark
       title: Container opacity
       type: variable-number-slider
       min: 0
@@ -3636,7 +3636,7 @@ settings:
       step: 0.05
       default: 0.4
    - 
-      id: wolf-workspace-background-blur-dark
+      id: aura-workspace-background-blur-dark
       title: Background blur
       type: variable-number-slider
       min: 0
@@ -3645,7 +3645,7 @@ settings:
       default: 5
       format: px
    - 
-      id: wolf-workspace-background-brightness-dark
+      id: aura-workspace-background-brightness-dark
       title: Background brightness
       type: variable-number-slider
       min: 0
@@ -3653,34 +3653,34 @@ settings:
       step: 0.05
       default: 0.7
    - 
-      id: wolf-file-explorer-heading
+      id: aura-file-explorer-heading
       title: File Explorer
       type: heading
       level: 2
       collapsed: true
    -
-      id: wolf-file-icons
+      id: aura-file-icons
       title: Enable File Icons
       description: Customize your file icons
       type: class-toggle
    -
-      id: wolf-folder-icons
+      id: aura-folder-icons
       title: Enable folder Icons
       description: Customize your folder icons
       type: class-toggle
    -
-      id: wolf-colorful-frame-heading
+      id: aura-colorful-frame-heading
       title: Colorful Frame
       type: heading
       level: 2
       collapsed: true
    -
-      id: wolf-colorful-frame
+      id: aura-colorful-frame
       title: Enable Colorful Frame
       description: This does not work with Transluent Window or Custom Background
       type: class-toggle
    -
-      id: wolf-colorful-frame-opacity
+      id: aura-colorful-frame-opacity
       title: Colorful Frame Opacity
       type: variable-number-slider
       default: 1
@@ -3688,29 +3688,29 @@ settings:
       max: 1
       step: 0.05
    - 
-      id: wolf-rainbow-folders-heading
+      id: aura-rainbow-folders-heading
       title: Rainbow Folders
       type: heading
       level: 2
       collapsed: true
    -
-      id: wolf-rainbow-folders
+      id: aura-rainbow-folders
       title: Enable Rainbow Folders
       description: Customize your folder colors
       type: class-toggle
    -
-      id: wolf-translucent-window-heading
+      id: aura-translucent-window-heading
       title: Translucent Window
       type: heading
       level: 2
       collapsed: true
    -
-      id: wolf-translucent-window
+      id: aura-translucent-window
       title: Translucent Window
       description: Make the window 100% translucent.
       type: class-toggle
    - 
-      id: wolf-translucent-window-opacity
+      id: aura-translucent-window-opacity
       title: Background opacity
       type: variable-number-slider
       min: 0
@@ -3719,34 +3719,34 @@ settings:
       default: 0.5
 
    -
-      id: wolf-show-hide-elements-header
+      id: aura-show-hide-elements-header
       title: Show/Hide UI Elements
       description: Toggle Visibility of UI Elements
       type: heading
       level: 1
       collapsed: true
    -   
-      id: wolf-floating-titlebar
+      id: aura-floating-titlebar
       title: Floating titlebar
       type: class-toggle
    -
-      id: wolf-floating-status-bar
+      id: aura-floating-status-bar
       title: Floating Status Bar
       type: class-toggle
    -   
-      id: wolf-hide-status-bar
+      id: aura-hide-status-bar
       title: Hide Status Bar
       type: class-toggle   
    -
-      id: wolf-toggle-metadata
+      id: aura-toggle-metadata
       title: Hide Metadata
       type: class-toggle
    -   
-      id: wolf-tooltip-toggle
+      id: aura-tooltip-toggle
       title: Hide Tooltips
       type: class-toggle
    - 
-      id: wolf-vault-name-toggle
+      id: aura-vault-name-toggle
       title: Hide Vault Name
       type: class-toggle
 */
