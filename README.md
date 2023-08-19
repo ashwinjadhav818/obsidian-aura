@@ -1,6 +1,5 @@
-# Aura
-
 ![](assets/showcase.png)
+# Aura
 
 ## Installation
 
@@ -56,6 +55,10 @@ Unveal the true power of checkboxes
 <img src="assets/checkboxes.png" style="border-radius: 10px; width: 400px"/>
 
 ## Credits
-
--   Callouts, Floating Statusbar, File & Folder Icons by [Anubis](https://github.com/AnubisNekhet)
--   Workspace background and card layout by [Farouk](http://github.com/faroukx)
+- [Anubis](https://github.com/AnubisNekhet)
+   - Callouts
+   - Floating Status bar
+   - File & Folder Icons
+-  [Farouk](http://github.com/faroukx)
+	- Card layout
+ 	- Workspace background 
