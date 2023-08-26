@@ -1,5 +1,4 @@
 ![](assets/showcase.png)
-# Aura
 
 ## Installation
 
@@ -24,6 +23,12 @@ Customize your workspace with custom background images
 
 <img src="assets/workspace-background.png" style="border-radius: 10px"/>
 
+### Translucent Window
+
+Make it fully transparent like it used to be
+
+<img src="assets/translucent-window.png" style="border-radius: 10px"/>
+
 ### Alternate Layout
 
 Make your workspace more rounded
@@ -36,23 +41,11 @@ Change the frame color as per your liking
 
 <img src="assets/colorful-frame.png" style="border-radius: 10px"/>
 
-### Rainbow Folders
+### And many more..
 
-Make your callouts pop out
+Make your callouts and folders pop out
 
-<img src="assets/custom-callouts.png" style="border-radius: 10px; width: 400px"/>
-
-### Rainbow Folders
-
-Make your folders look awesome
-
-<img src="assets/rainbow-folders.png" style="border-radius: 10px; width: 400px"/>
-
-### Custom checkboxes
-
-Unveal the true power of checkboxes
-
-<img src="assets/checkboxes.png" style="border-radius: 10px; width: 400px"/>
+<img src="assets/callouts-and-rainbow-folders.png" style="border-radius: 10px; "/>
 
 ## Credits
 - [Anubis](https://github.com/AnubisNekhet)
@@ -62,3 +55,6 @@ Unveal the true power of checkboxes
 -  [Farouk](http://github.com/faroukx)
 	- Card layout
  	- Workspace background 
+- [Ha'ani Whitlock](https://github.com/Bluemoondragon07)
+   - Origin colorscheme
+   - Origin layout
