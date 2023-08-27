@@ -125,6 +125,23 @@ body {
    --italic-colors: rgb(var(--cpt-blue));
 }
 .theme-light {
+   /* Colors */
+   --cpt-crust: 241, 230, 214;
+   --cpt-crust-alt: 247, 203, 160;
+   --cpt-mantle: 238, 231, 221;
+   --cpt-mantle-alt: 22, 22, 22;
+   --cpt-core: 247, 243, 238;
+   --cpt-core-alt: 250, 238, 225;
+
+   --cpt-red: 240, 100, 119;
+   --cpt-orange: 245, 146, 75;
+   --cpt-yellow: 233, 179, 92;
+   --cpt-green: 154, 230, 92;
+   --cpt-cyan: 89, 202, 206;
+   --cpt-blue: 124, 155, 255;
+   --cpt-pink: 235, 0, 235;
+   --cpt-purple: 144, 120, 241;
+
    --cpt-black: 74, 52, 28;
    --cpt-white: 240, 240, 240;
    --cpt-text: 74, 52, 28;
@@ -167,6 +184,23 @@ body {
    --text-selection: rgba(var(--cpt-accent), 0.1);
 }
 .theme-dark {
+   /* Colors */
+   --cpt-crust: 18, 18, 18;
+   --cpt-crust-alt: 19, 19, 19;
+   --cpt-mantle: 20, 20, 20;
+   --cpt-mantle-alt: 22, 22, 22;
+   --cpt-core: 25, 25, 25;
+   --cpt-core-alt: 27, 27, 27;
+
+   --cpt-red: 208, 66, 85;
+   --cpt-orange: 213, 118, 52;
+   --cpt-yellow: 229, 181, 103;
+   --cpt-green: 168, 195, 115;
+   --cpt-cyan: 50, 181, 185;
+   --cpt-blue: 112, 122, 250;
+   --cpt-pink: 235, 0, 235;
+   --cpt-purple: 147, 134, 200;
+
    --cpt-black: 10, 10, 10;
    --cpt-white: 240, 240, 240;
    --cpt-text: 240, 240, 240;
@@ -210,42 +244,6 @@ body {
 }
 
 /* ---------- COLOR SCHEMES ---------- */
-/* Deafults */
-.theme-light.aura-colorschemes-light-default {
-   --cpt-crust: 241, 230, 214;
-   --cpt-crust-alt: 247, 203, 160;
-   --cpt-mantle: 238, 231, 221;
-   --cpt-mantle-alt: 22, 22, 22;
-   --cpt-core: 247, 243, 238;
-   --cpt-core-alt: 250, 238, 225;
-
-   --cpt-red: 240, 100, 119;
-   --cpt-orange: 245, 146, 75;
-   --cpt-yellow: 233, 179, 92;
-   --cpt-green: 154, 230, 92;
-   --cpt-cyan: 89, 202, 206;
-   --cpt-blue: 124, 155, 255;
-   --cpt-pink: 235, 0, 235;
-   --cpt-purple: 144, 120, 241;
-}
-.theme-dark.aura-colorschemes-dark-default {
-   --cpt-crust: 18, 18, 18;
-   --cpt-crust-alt: 19, 19, 19;
-   --cpt-mantle: 20, 20, 20;
-   --cpt-mantle-alt: 22, 22, 22;
-   --cpt-core: 25, 25, 25;
-   --cpt-core-alt: 27, 27, 27;
-
-   --cpt-red: 208, 66, 85;
-   --cpt-orange: 213, 118, 52;
-   --cpt-yellow: 229, 181, 103;
-   --cpt-green: 168, 195, 115;
-   --cpt-cyan: 50, 181, 185;
-   --cpt-blue: 112, 122, 250;
-   --cpt-pink: 235, 0, 235;
-   --cpt-purple: 147, 134, 200;
-}
-
 /* Light Themes */
 .theme-light.aura-colorschemes-light-origin {
    --cpt-crust: 242, 242, 242;
@@ -3040,11 +3038,11 @@ settings:
       title: Light Theme Colorscheme
       type: class-select
       allowEmpty: false
-      default: aura-colorschemes-light-default
+      default: default
       options:
       - 
          label: Default
-         value: aura-colorschemes-light-default
+         value: default
       -
          label: Origin
          value: aura-colorschemes-light-origin
@@ -3062,11 +3060,11 @@ settings:
       title: Dark Theme Colorscheme
       type: class-select
       allowEmpty: false
-      default: aura-colorschemes-dark-default
+      default: default
       options:
       - 
          label: Default
-         value: aura-colorschemes-dark-default
+         value: default
       -
          label: Origin
          value: aura-colorschemes-dark-origin
@@ -4101,17 +4099,17 @@ settings:
       title: Tab Display
       type: class-select
       allowEmpty: false
-      default: tabs-default
+      default: aura-origin-tabs-default
       options:
-        -
-          label: Hide Tabs Completely
-          value: aura-origin-hide-tabs
-        -
-          label: Show Tabs on Hover
-          value: aura-origin-tabs-default
-        -
-          label: Show Tabs Completely
-          value: aura-origin-show-tabs  
+         -
+            label: Hide Tabs Completely
+            value: aura-origin-hide-tabs
+         -
+            label: Show Tabs on Hover
+            value: aura-origin-tabs-default
+         -
+            label: Show Tabs Completely
+            value: aura-origin-show-tabs  
 
 
    - 
