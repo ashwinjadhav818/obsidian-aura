@@ -1,0 +1,179 @@
+.theme-light.aura-workspace-background {
+	--background-primary: rgba(
+		var(--cpt-core),
+		var(--aura-workspace-background-workspace-slider-light)
+	);
+	--background-primary-alt: rgba(
+		var(--cpt-core-alt),
+		var(--aura-workspace-background-workspace-slider-light)
+	);
+	--background-secondary: rgba(
+		var(--cpt-mantle),
+		var(--aura-workspace-background-workspace-slider-light)
+	);
+	--background-secondary-alt: rgba(
+		var(--cpt-mantle-alt),
+		var(--aura-workspace-background-workspace-slider-light)
+	);
+	--ribbon-background: rgba(
+		var(--cpt-mantle),
+		var(--aura-workspace-background-workspace-slider-light)
+	);
+	--ribbon-background-collapsed: rgba(
+		var(--cpt-mantle),
+		var(--aura-workspace-background-workspace-slider-light)
+	);
+	--titlebar-background: rgba(
+		var(--cpt-crust),
+		var(--aura-workspace-background-workspace-slider-light)
+	);
+	--titlebar-background-focused: rgba(
+		var(--cpt-crust),
+		var(--aura-workspace-background-workspace-slider-light)
+	);
+}
+.theme-dark.aura-workspace-background {
+	--background-primary: rgba(
+		var(--cpt-core),
+		var(--aura-workspace-background-workspace-slider-dark)
+	);
+	--background-primary-alt: rgba(
+		var(--cpt-core-alt),
+		var(--aura-workspace-background-workspace-slider-dark)
+	);
+	--background-secondary: rgba(
+		var(--cpt-mantle),
+		var(--aura-workspace-background-workspace-slider-dark)
+	);
+	--background-secondary-alt: rgba(
+		var(--cpt-mantle-alt),
+		var(--aura-workspace-background-workspace-slider-dark)
+	);
+	--ribbon-background: rgba(
+		var(--cpt-mantle),
+		var(--aura-workspace-background-workspace-slider-dark)
+	);
+	--ribbon-background-collapsed: rgba(
+		var(--cpt-mantle),
+		var(--aura-workspace-background-workspace-slider-dark)
+	);
+	--titlebar-background: rgba(
+		var(--cpt-crust),
+		var(--aura-workspace-background-workspace-slider-dark)
+	);
+	--titlebar-background-focused: rgba(
+		var(--cpt-crust),
+		var(--aura-workspace-background-workspace-slider-dark)
+	);
+}
+
+.aura-workspace-background .popover {
+	background-color: rgba(
+		var(--cpt-core),
+		var(--aura-workspace-background-workspace-slider-dark)
+	);
+}
+
+.aura-workspace-background .horizontal-main-container {
+	background: var(--workspace-background-image);
+	background-color: transparent;
+	background-size: cover;
+}
+.theme-light.aura-workspace-background .workspace {
+	background-color: rgba(var(--cpt-core), 0.2);
+	backdrop-filter: brightness(
+			var(--aura-workspace-background-brightness-light, 0.5)
+		)
+		blur(var(--aura-workspace-background-blur-light, 5px));
+}
+.theme-dark.aura-workspace-background .workspace {
+	background-color: rgba(var(--cpt-core), 0.2);
+	backdrop-filter: brightness(
+			var(--aura-workspace-background-brightness-dark, 0.5)
+		)
+		blur(var(--aura-workspace-background-blur-dark, 5px));
+}
+
+.theme-light.aura-workspace-background.aura-workspace-background-image-lines
+	.horizontal-main-container {
+	--lines: url("https://images.hdqwalls.com/wallpapers/up-down-lines-light-mode-8k-o9.jpg");
+	--workspace-background-image: var(--lines);
+}
+.theme-light.aura-workspace-background.aura-workspace-background-image-waves
+	.horizontal-main-container {
+	--waves: url("https://wallpapercave.com/wp/wp8561217.jpg");
+	--workspace-background-image: var(--waves);
+}
+.theme-light.aura-workspace-background.aura-workspace-background-image-waterwaves
+	.horizontal-main-container {
+	--water-waves: url("https://wallpapercave.com/wp/wp8561104.jpg");
+	--workspace-background-image: var(--water-waves);
+}
+.theme-light.aura-workspace-background .horizontal-main-container {
+	--workspace-background-image: var(
+		--aura-workspace-background-image-light-custom-option
+	);
+}
+
+.theme-dark.aura-workspace-background.aura-workspace-background-image-tokoyo
+	.horizontal-main-container {
+	--tokyo: url("https://www.pixel4k.com/wp-content/uploads/2018/09/tokyo-tower-4k_1538072109.jpg");
+	--workspace-background-image: var(--tokyo);
+}
+.theme-dark.aura-workspace-background.aura-workspace-background-image-skyline
+	.horizontal-main-container {
+	--skyline: url("https://i.redd.it/m23bwh4n0x151.png");
+	--workspace-background-image: var(--skyline);
+}
+.theme-dark.aura-workspace-background.aura-workspace-background-image-spiderman
+	.horizontal-main-container {
+	--sipder-man-multiverse: url("https://i.imgur.com/OuXoXpu.jpeg");
+	--workspace-background-image: var(--sipder-man-multiverse);
+}
+.theme-dark.aura-workspace-background.aura-workspace-background-image-neonsunrise
+	.horizontal-main-container {
+	--neon-sunrise: url("https://i.imgur.com/W08gUuJ.jpeg");
+	--workspace-background-image: var(--neon-sunrise);
+}
+.theme-dark.aura-workspace-background .horizontal-main-container {
+	--workspace-background-image: var(
+		--aura-workspace-background-image-dark-custom-option
+	);
+}
+
+.aura-workspace-background
+	.workspace
+	.mod-root
+	.workspace-tabs.mod-stacked
+	.workspace-tab-container
+	.workspace-tab-header {
+	--background-primary: rgba(var(--cpt-crust), 0.7);
+}
+
+.aura-workspace-background .workspace-leaf.is-hidden {
+	--background-primary: transparent !important;
+}
+
+.aura-workspace-background
+	.workspace-fake-target-overlay:not(.is-in-sidebar)
+	.workspace-tabs
+	.workspace-leaf,
+.aura-workspace-background .mod-root .workspace-tabs .workspace-leaf {
+	--background-primary: rgba(
+		var(--cpt-crust),
+		var(--aura-workspace-background-workspace-slider-dark)
+	);
+}
+
+.aura-workspace-background,
+.prompt,
+.menu .popover {
+	--background-primary: rgba(var(--cpt-crust), 0.7);
+	--background-primary-alt: rgba(var(--cpt-core-alt), 0.7);
+	--background-secondary: rgba(var(--cpt-mantle), 0.5);
+	--background-secondary-alt: rgba(var(--cpt-mantle-alt), 0.5);
+	--modal-background: rgba(var(--cpt-mantle), 0.9);
+}
+.aura-workspace-background .prompt {
+	background-color: var(--background-secondary);
+}

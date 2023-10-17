@@ -1,0 +1,10 @@
+/* Toggle Metadata */
+.aura-toggle-metadata .frontmatter-container,
+.markdown-rendered.hide-metadata .frontmatter-container {
+	display: none;
+}
+
+/* Toggle tooltips */
+.aura-tooltips-toggle .tooltip {
+	display: none;
+}

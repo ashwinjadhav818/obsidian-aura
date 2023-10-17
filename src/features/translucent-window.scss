@@ -1,0 +1,37 @@
+.aura-translucent-window.is-translucent:not(.is-fullscreen) .workspace {
+	--background-primary: transparent !important;
+	--background-primary-alt: transparent !important;
+	--background-secondary: transparent !important;
+	--background-secondary-alt: transparent !important;
+
+	--titlebar-background: transparent !important;
+	--titlebar-background-focused: transparent !important;
+	--card-background-color: transparent !important;
+}
+.aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen)
+	.workspace-tab-container,
+.aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen)
+	.workspace-tab-container,
+.aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen)
+	.workspace-split.mod-root
+	.view-content,
+.aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen)
+	.workspace-split
+	.workspace-leaf-content[data-type="file-explorer"] {
+	background-color: transparent !important;
+	--card-background-color: transparent !important;
+}
+.aura-translucent-window.is-translucent:not(.is-fullscreen) {
+	--workspace-background-translucent: rgba(
+		var(--cpt-mantle),
+		var(--aura-translucent-window-opacity)
+	);
+}
+
+.is-translucent:not(.is-fullscreen) .titlebar,
+.is-translucent.is-hidden-frameless:not(.is-fullscreen)
+	.titlebar-button-container.mod-right,
+.is-translucent.is-hidden-frameless:not(.is-fullscreen).is-focused
+	.titlebar-button-container.mod-right {
+	background-color: inherit;
+}

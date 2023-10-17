@@ -1,0 +1,75 @@
+/* Font bundles */
+body,
+.font-bundle.ia-font {
+	--font-default: "iA Writer Quattro S";
+	--font-secondary: "iA Writer Duo S";
+	--font-monospace: "iA Writer Mono S";
+}
+.font-bundle.gothic-font {
+	--font-secondary: "Century Gothic", "Nanum Gothic", sans-serif;
+	--font-default: "Karla", "Gotham Book", sans-serif;
+	--font-monospace: "Inconsolata", "Consolas", "Source Code Pro", monospace;
+}
+.font-bundle.obsidian-font {
+	--font-default: "Inter";
+	--font-secondary: "Ysabeau";
+	--font-monospace: "Source Code Pro", monospace;
+}
+.font-bundle.cursive-font {
+	--font-default: "Varela Round", cursive;
+	--font-secondary: Comfortaa, cursive;
+	--h1-font: var(--font-secondary);
+	--h2-font: var(--font-secondary);
+	--h3-font: var(--font-secondary);
+	--h4-font: var(--font-secondary);
+	--h5-font: var(--font-secondary);
+	--h6-font: var(--font-secondary);
+}
+.font-bundle.google-font {
+	--font-default: "Noto Sans", sans-serif;
+	--font-secondary: "Roboto", system-ui, sans-serif;
+	--font-monospace: "Noto Sans Mono", "Source Code Pro", monospace;
+}
+.font-bundle.serif-font {
+	--font-secondary: "Martel", Cambria, Times, "Times New Roman", sans-serif;
+	--font-default: "Lora", "Sitka Small", Cochin, Georgia, sans-serif;
+	--font-monospace: "Source Code Pro", monospace;
+}
+.font-bundle.robust-font {
+	--font-default: "Lexend", sans-serif;
+	--font-secondary: "Figtree", sans-serif;
+	--font-monospace: "iA Writer Mono S", monospace;
+}
+.font-bundle.web-font {
+	--font-default: "Titillium Web", Corbel, monospace;
+	--font-secondary: "Exo", monospace;
+	--font-monospace: "iA Writer Duo S", monospace;
+}
+.font-bundle.austere-font {
+	--font-default: "Special Elite", cursive;
+	--font-secondary: "Ysabeau", cursive;
+	--font-monospace: "Sono", monospace;
+}
+
+/* Fonts from list select */
+.font-select {
+	--font-default: var(--font-default-select), sans-serif;
+	--font-secondary: var(--font-secondary-select), sans-serif;
+	--font-monospace: var(--font-monospace-select), monospace;
+
+	--font-default-select: "iA Writer Quattro S";
+	--font-secondary-select: "iA Writer Duo S";
+	--font-monospace-select: "iA Writer Mono S";
+}
+
+/* Custom font */
+body {
+	--font-default-custom: "iA Writer Quattro S";
+	--font-secondary-custom: "iA Writer Duo S";
+	--font-monospace-custom: "iA Writer Mono S";
+}
+.custom-font {
+	--font-default: var(--font-default-custom) !important;
+	--font-secondary: var(--font-secondary-custom) !important;
+	--font-monospace: var(--font-monospace-custom) !important;
+}

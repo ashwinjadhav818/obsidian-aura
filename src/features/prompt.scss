@@ -1,0 +1,6 @@
+body:not(.aura-workspace-background) .prompt .prompt-input {
+	background: rgb(var(--cpt-crust));
+}
+body:not(.aura-workspace-background) .prompt {
+	background: rgba(var(--cpt-mantle));
+}

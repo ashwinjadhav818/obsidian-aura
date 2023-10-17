@@ -1,0 +1,11 @@
+.workspace .mod-root .workspace-tab-header {
+	border-radius: 5px;
+}
+.workspace .mod-root .workspace-tab-header.is-active {
+	margin-bottom: 5px;
+}
+
+.workspace-split.mod-root .workspace-tab-header.is-active::before,
+.workspace-split.mod-root .workspace-tab-header.is-active::after {
+	box-shadow: none;
+}

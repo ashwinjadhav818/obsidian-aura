@@ -1,0 +1,51 @@
+/* 
+----------- A U R A -------------------
+------ A Minimalist Theme -------------
+------- By Ashwin Jadhav --------------
+*/
+
+/* Imports */
+@import "imports/fonts";
+
+/* Variables */
+@import "variables/root";
+@import "variables/theme";
+
+/* Colorschemes */
+@import "colorschemes/origin";
+@import "colorschemes/notion";
+@import "colorschemes/dracula";
+@import "colorschemes/gruvbox";
+@import "colorschemes/rose-pine";
+@import "colorschemes/nord";
+@import "colorschemes/kanagawa";
+@import "colorschemes/solarized";
+@import "colorschemes/mystical-nights";
+
+/* App */
+@import "app/editor";
+@import "app/sidebar";
+@import "app/tabs";
+@import "app/status-bar";
+
+/* Features */
+@import "features/active-line-highlight";
+@import "features/heading-color";
+@import "features/neon-headings";
+@import "features/fonts";
+@import "features/callouts";
+@import "features/checkbox";
+@import "features/rainbow-tags";
+@import "features/css-classes";
+@import "features/prompt";
+@import "features/card-layout";
+@import "features/origin-layout";
+@import "features/workspace-background";
+@import "features/file-folder-icons";
+@import "features/colorful-frame";
+@import "features/rainbow-folders";
+@import "features/translucent-window";
+@import "features/floating-titlebar";
+
+/* Plugins */
+@import "plugins/style-settings";
