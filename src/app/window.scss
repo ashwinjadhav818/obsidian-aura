@@ -1,0 +1,8 @@
+body {
+    --scrollbar-active-thumb-bg: rgba(var(--cpt-crust), 0.7);
+    --scrollbar-thumb-bg: rgba(var(--cpt-crust), 0.5);
+}
+
+.aura-scrollbar-toggle *::-webkit-scrollbar {
+    display: none;
+}

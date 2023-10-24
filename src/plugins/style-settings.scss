@@ -1432,7 +1432,7 @@ settings:
       collapsed: true
    -   
       id: aura-floating-titlebar
-      title: Floating titlebar
+      title: Floating Titlebar
       type: class-toggle
    -
       id: aura-floating-status-bar
@@ -1441,7 +1441,11 @@ settings:
    -   
       id: aura-hide-status-bar
       title: Hide Status Bar
-      type: class-toggle   
+      type: class-toggle  
+   - 
+      id: aura-scrollbar-toggle
+      title: Hide Scrollbar
+      type: class-toggle
    -
       id: aura-toggle-metadata
       title: Hide Metadata
