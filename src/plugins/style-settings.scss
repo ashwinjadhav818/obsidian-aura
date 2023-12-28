@@ -19,15 +19,15 @@
 	overflow-x: hidden;
 }
 /* certain settins to hide when not in use */
-body:not(.font-select) .setting-item[data-id="font-default-select"],
-body:not(.font-select) .setting-item[data-id="font-secondary-select"],
-body:not(.font-select) .setting-item[data-id="font-monospace-select"],
-body:not(.font-bundle) .setting-item[data-id="font-bundle-select"],
-body:not(.custom-font) .setting-item[data-id="font-default-custom"],
-body:not(.custom-font) .setting-item[data-id="font-secondary-custom"],
-body:not(.custom-font) .setting-item[data-id="font-monospace-custom"] {
-	display: none;
-}
+// body:not(.font-select) .setting-item[data-id="font-default-select"],
+// body:not(.font-select) .setting-item[data-id="font-secondary-select"],
+// body:not(.font-select) .setting-item[data-id="font-monospace-select"],
+// body:not(.font-bundle) .setting-item[data-id="font-bundle-select"],
+// body:not(.custom-font) .setting-item[data-id="fon t-default-custom"],
+// body:not(.custom-font) .setting-item[data-id="font-secondary-custom"],
+// body:not(.custom-font) .setting-item[data-id="font-monospace-custom"] {
+// 	display: none;
+// }
 
 .style-settings-heading:not([data-level="0"]) + .style-settings-container {
 	border: 1px solid rgba(var(--cpt-text), 0.2);
@@ -231,140 +231,6 @@ settings:
       type: heading
       level: 2
       collapsed: true
-   -
-      id: fonts-source
-      title: Fonts Source
-      type: class-select
-      default: font-bundle
-      options: 
-            -  
-               label: Use Font Bundles (Presets)
-               value: font-bundle
-            -
-               label: Select Fonts
-               value: font-select
-            -
-               label: Use a System Font
-               value: custom-font
-
-   -
-      id: font-bundle-select
-      title: Font Bundle
-      type: class-select
-      description: Choose a combination of fonts. NOTE - some fonts may not work offline.
-      default: ia-font
-      options:   
-            -
-               label: Austere
-               value: austere-font
-            -
-               label: iA Writer
-               value: ia-font
-            -
-               label: Google
-               value: google-font
-            -
-               label: Gothic
-               value: gothic-font
-            -   
-               label: Obsidian
-               value: obsidian-font
-            -
-               label: Serif 
-               value: serif-font
-            -
-               label: Robust 
-               value: robust-font
-            -
-               label: Round
-               value: cursive-font   
-            -
-               label: Web
-               value: web-font
-   -
-         id: font-default-select
-         title: Default Font
-         type: variable-select
-         default: 'iA Writer Quattro S'
-         options:
-            - 'Comfortaa'
-            - 'Exo'
-            - 'Figtree'
-            - 'iA Writer Duo S'
-            - 'iA Writer Mono S'
-            - 'iA Writer Quattro S'
-            - 'Inconsolata'
-            - 'Inter '
-            - 'Karla'
-            - 'Lexend'
-            - 'Lora'
-            - 'Martel'
-            - 'Montserrat'
-            - 'Nanum Gothic'
-            - 'Noto Sans'
-            - 'Noto Sans Mono'
-            - 'Noto Serif'
-            - 'Pathway Extreme'
-            - 'Recursive'
-            - 'Roboto'
-            - 'Rubik'
-            - 'Sono'
-            - 'Source Code Pro'
-            - 'Special Elite'
-            - 'Titillium Web'
-            - 'Varela Round'
-            - 'Ysabeau'
-   -
-         id: font-secondary-select
-         title: Secondary Font
-         type: variable-select
-         default: 'iA Writer Quattro S'
-         options:
-            - 'Comfortaa'
-            - 'Exo'
-            - 'Figtree'
-            - 'iA Writer Duo S'
-            - 'iA Writer Mono S'
-            - 'iA Writer Quattro S'
-            - 'Inconsolata'
-            - 'Inter '
-            - 'Karla'
-            - 'Lexend'
-            - 'Lora'
-            - 'Martel'
-            - 'Montserrat'
-            - 'Nanum Gothic'
-            - 'Noto Sans'
-            - 'Noto Sans Mono'
-            - 'Noto Serif'
-            - 'Pathway Extreme'
-            - 'Recursive'
-            - 'Roboto'
-            - 'Rubik'
-            - 'Sono'
-            - 'Source Code Pro'
-            - 'Special Elite'
-            - 'Titillium Web'
-            - 'Varela Round'
-            - 'Ysabeau'
-   -
-         id: font-monospace-select
-         title: Monospace Font
-         type: variable-select
-         default: 'iA Writer Mono S'
-         options: 
-            - 'Cousine'
-            - 'Exo'
-            - 'Fira Code'
-            - 'iA Writer Mono S'
-            - 'iA Writer Duo S'
-            - 'iA Writer Quattro S'
-            - 'Inconsolata'
-            - 'Nanum Gothic Coding'
-            - 'Noto Sans Mono'
-            - 'Roboto Mono'
-            - 'Special Elite'
-            - 'Source Code Mono'
    -
       id: font-default-custom
       title: Custom Font Default
