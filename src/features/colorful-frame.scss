@@ -135,8 +135,15 @@
 	.side-dock-actions
 	> .clickable-icon,
 .aura-colorful-frame:not(.aura-translucent-window):not(
+		.aura-card-layout-actions
+	).aura-card-layout
+	.workspace-ribbon
+	.side-dock-settings
+	> .clickable-icon,
+.aura-colorful-frame:not(.aura-translucent-window):not(
 		.aura-card-layout-fileexplorer
 	)
+	.mod-left-split
 	.workspace-tabs.mod-top
 	.tree-item
 	> .tree-item-self,
@@ -166,7 +173,8 @@
 	.workspace-tabs
 	.workspace-tab-header:hover,
 .aura-colorful-frame .workspace-tab-header-tab-list .clickable-icon:hover,
-.aura-colorful-frame .workspace-tab-header-new-tab .clickable-icon:hover {
+.aura-colorful-frame .workspace-tab-header-new-tab .clickable-icon:hover,
+.aura-colorful-frame .side-dock-ribbon .clickable-icon {
 	--background-modifier-hover: rgba(var(--cpt-crust), 0.1);
 }
 

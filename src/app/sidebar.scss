@@ -4,6 +4,23 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
 body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
 	background: rgba(var(--cpt-core), 0.2);
 }
+.nav-folder .tree-item-self {
+	margin-bottom: 0px !important;
+}
+.nav-folder.mod-root > .nav-folder-title:hover {
+	color: rgba(var(--cpt-text), 0.7);
+}
+
+/* Files */
+.nav-file {
+	margin-top: 2px;
+}
+.tree-item-self {
+	align-items: center;
+}
+.nav-file-title-content {
+	margin-top: 2px;
+}
 
 /* Hide vault name */
 .aura-vault-name-toggle .nav-folder.mod-root > .nav-folder-title {

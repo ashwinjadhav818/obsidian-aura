@@ -16,12 +16,15 @@
    --cpt-cyan: 0, 184, 212;
    --cpt-pink: 245, 0, 87;
    --cpt-purple: 124, 77, 255;
+
+   --interactive-normal: rgb(var(--cpt-crust-alt));
+   --interactive-hover: rgb(var(--cpt-crust))
 }
 
 /* Dark Mode */
 .theme-dark.aura-colorschemes-dark-origin {
-   --cpt-crust: 10, 10, 10;
-   --cpt-crust-alt: 5, 5, 5;
+   --cpt-crust: 0, 0, 0;
+   --cpt-crust-alt: 10, 10, 10;
    --cpt-mantle: 22, 22, 22;
    --cpt-mantle-alt: 20, 20, 20;
    --cpt-core: 32, 32, 32;
@@ -36,4 +39,7 @@
    --cpt-cyan: 0, 184, 212;
    --cpt-pink: 245, 0, 87;
    --cpt-purple: 124, 77, 255;
+
+   --interactive-normal: rgb(var(--cpt-crust-alt));
+   --interactive-hover: rgb(var(--cpt-crust))
 }

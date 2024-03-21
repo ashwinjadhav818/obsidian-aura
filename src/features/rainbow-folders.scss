@@ -170,3 +170,7 @@
 	border-radius: 5px;
 	margin-top: 2px;
 }
+
+.aura-rainbow-folders.aura-colorful-frame.aura-card-layout .mod-left-split .nav-files-container > .mod-root > .tree-item-children > .tree-item.nav-folder {
+	border: 1px solid rgb(var(--cpt-crust));
+}

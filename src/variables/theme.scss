@@ -56,6 +56,8 @@
    --text-accent-hover: rgba(var(--cpt-accent), 0.7);
    --text-on-accent: var(--text-on-accent-inverted);
    --text-selection: rgba(var(--cpt-accent), 0.1);
+   --bold-color: rgb(var(--cpt-red));
+   --italic-color: rgb(var(--cpt-blue));
 }
 .theme-dark {
    /* Colors */
@@ -115,5 +117,7 @@
    --text-accent-hover: rgba(var(--cpt-accent), 0.7);
    --text-on-accent: var(--text-on-accent-inverted);
    --text-selection: rgba(var(--cpt-accent), 0.1);
+   --bold-color: rgb(var(--cpt-red));
+   --italic-color: rgb(var(--cpt-blue));
 }
 

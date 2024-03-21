@@ -8,30 +8,43 @@
 	--titlebar-background-focused: transparent !important;
 	--card-background-color: transparent !important;
 }
-.aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen)
-	.workspace-tab-container,
-.aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen)
-	.workspace-tab-container,
-.aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen)
-	.workspace-split.mod-root
-	.view-content,
-.aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen)
-	.workspace-split
-	.workspace-leaf-content[data-type="file-explorer"] {
+
+.aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen) .workspace-tab-container,
+.aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen) .workspace-tab-container,
+.aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen) .workspace-split.mod-root .view-content,
+.aura-translucent-window.aura-card-layout.is-translucent:not(.is-fullscreen) .workspace-split .workspace-leaf-content[data-type="file-explorer"] {
 	background-color: transparent !important;
 	--card-background-color: transparent !important;
 }
+
 .aura-translucent-window.is-translucent:not(.is-fullscreen) {
-	--workspace-background-translucent: rgba(
-		var(--cpt-mantle),
-		var(--aura-translucent-window-opacity)
-	);
+	--workspace-background-translucent: rgba(var(--cpt-mantle),
+			var(--aura-translucent-window-opacity));
 }
 
 .is-translucent:not(.is-fullscreen) .titlebar,
-.is-translucent.is-hidden-frameless:not(.is-fullscreen)
-	.titlebar-button-container.mod-right,
-.is-translucent.is-hidden-frameless:not(.is-fullscreen).is-focused
-	.titlebar-button-container.mod-right {
+.is-translucent.is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right,
+.is-translucent.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
 	background-color: inherit;
 }
+
+/* Style Settings 
+	-
+		id: aura-translucent-window-heading
+		title: Translucent Window
+		type: heading	
+		level: 2
+		collapsed: true	
+	-
+		id: aura-translucent-window
+		title: Translucent Window
+		description: Make the window 100% translucent.type: class-toggle
+	- 
+		id: aura-translucent-window-opacity
+		title: Background opacity
+		type: variable-number-slider
+		min: 0
+		max: 1
+		step: 0.1
+		default: 0.5
+*/

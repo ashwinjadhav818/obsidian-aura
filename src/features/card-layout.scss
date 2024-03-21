@@ -67,6 +67,7 @@ body.aura-card-layout:not(.aura-colorful-frame) {
 	background-color: var(--tab-container-background);
 	padding-left: var(--aura-card-layout-padding, 10px);
 	padding-right: var(--aura-card-layout-padding, 10px);
+	padding-bottom: var(--aura-card-layout-padding, 10px);
 }
 
 .aura-card-layout .mod-left-split .workspace-tab-container,
@@ -74,6 +75,11 @@ body.aura-card-layout:not(.aura-colorful-frame) {
 	/* padding-left: var(--aura-card-layout-padding, 10px);
    padding-right: var(--aura-card-layout-padding, 10px); */
 	background-color: var(--tab-container-background);
+	padding-bottom: var(--aura-card-layout-padding, 10px);
+}
+
+.aura-card-layout .mod-right-split .workspace-tab-container {
+	padding-right: var(--aura-card-layout-padding, 10px);
 }
 
 .aura-card-layout

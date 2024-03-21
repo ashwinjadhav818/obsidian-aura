@@ -9,3 +9,8 @@
 .workspace-split.mod-root .workspace-tab-header.is-active::after {
 	box-shadow: none;
 }
+
+/* With Origin Layout */
+.aura-origin-layout .workspace .mod-root .workspace-tab-header.is-active {
+	margin-top: 5px;
+}
