@@ -23,12 +23,6 @@ Customize your workspace with custom background images
 
 <img src="assets/workspace-background.png" style="border-radius: 10px"/>
 
-### Translucent Window
-
-Make it fully transparent like it used to be
-
-<img src="assets/translucent-window.png" style="border-radius: 10px"/>
-
 ### Alternate Layout
 
 Make your workspace more rounded
