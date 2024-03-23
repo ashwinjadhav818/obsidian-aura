@@ -58,6 +58,7 @@
    --text-selection: rgba(var(--cpt-accent), 0.1);
    --bold-color: rgb(var(--cpt-red));
    --italic-color: rgb(var(--cpt-blue));
+   --cpt-marker-shadow: rgb(var(--cpt-accent));
 }
 .theme-dark {
    /* Colors */
@@ -119,5 +120,6 @@
    --text-selection: rgba(var(--cpt-accent), 0.1);
    --bold-color: rgb(var(--cpt-red));
    --italic-color: rgb(var(--cpt-blue));
+   --cpt-marker-shadow: rgb(var(--cpt-accent));
 }
 

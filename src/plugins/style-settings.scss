@@ -84,6 +84,10 @@
 	content: "em";
 }
 
+body:not(.aura-neon-list) .setting-item[data-id="cpt-marker-shadow"] {
+      display: none;
+}
+
 /* @settings
 
 name: Aura
@@ -282,6 +286,77 @@ settings:
       type: variable-select
       default: rgb(var(--cpt-blue))
       options:
+         - 
+            label: Red
+            value: rgb(var(--cpt-red))
+         - 
+            label: Orange
+            value: rgb(var(--cpt-orange))
+         - 
+            label: Yellow
+            value: rgb(var(--cpt-yellow))
+         - 
+            label: Green
+            value: rgb(var(--cpt-green))
+         - 
+            label: Cyan
+            value: rgb(var(--cpt-cyan))
+         - 
+            label: Blue
+            value: rgb(var(--cpt-blue))
+         -
+            label: Pink
+            value: rgb(var(--cpt-pink))
+         - 
+            label: Purple
+            value: rgb(var(--cpt-purple))
+   -
+      id: list-marker-color
+      title: List Marker Color
+      type: variable-select
+      default: rgb(var(--cpt-accent))
+      options:
+         -
+            label: Aura
+            value: rgb(var(--cpt-accent))
+         - 
+            label: Red
+            value: rgb(var(--cpt-red))
+         - 
+            label: Orange
+            value: rgb(var(--cpt-orange))
+         - 
+            label: Yellow
+            value: rgb(var(--cpt-yellow))
+         - 
+            label: Green
+            value: rgb(var(--cpt-green))
+         - 
+            label: Cyan
+            value: rgb(var(--cpt-cyan))
+         - 
+            label: Blue
+            value: rgb(var(--cpt-blue))
+         -
+            label: Pink
+            value: rgb(var(--cpt-pink))
+         - 
+            label: Purple
+            value: rgb(var(--cpt-purple))
+   -
+      id: aura-neon-list
+      title: Neon List
+      type: class-toggle
+      default: false
+   -
+      id: cpt-marker-shadow
+      title: List Marker Shadow Color
+      type: variable-select
+      default: rgb(var(--cpt-accent))
+      options:
+         -
+            label: Aura
+            value: rgb(var(--cpt-accent))
          - 
             label: Red
             value: rgb(var(--cpt-red))

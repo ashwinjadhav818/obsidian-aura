@@ -6,3 +6,7 @@ body {
 .aura-scrollbar-toggle *::-webkit-scrollbar {
     display: none;
 }
+
+button {
+    border: 1px soild rgb(var(--cpt-crust));
+}

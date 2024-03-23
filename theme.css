@@ -161,6 +161,7 @@ body {
   --text-selection: rgba(var(--cpt-accent), 0.1);
   --bold-color: rgb(var(--cpt-red));
   --italic-color: rgb(var(--cpt-blue));
+  --cpt-marker-shadow: rgb(var(--cpt-accent));
 }
 
 .theme-dark {
@@ -214,6 +215,7 @@ body {
   --text-selection: rgba(var(--cpt-accent), 0.1);
   --bold-color: rgb(var(--cpt-red));
   --italic-color: rgb(var(--cpt-blue));
+  --cpt-marker-shadow: rgb(var(--cpt-accent));
 }
 
 /* Colorschemes */
@@ -565,6 +567,10 @@ body {
   display: none;
 }
 
+button {
+  border: 1px soild rgb(var(--cpt-crust));
+}
+
 /* Toggle Metadata */
 .aura-toggle-metadata .frontmatter-container,
 .markdown-rendered.hide-metadata .frontmatter-container {
@@ -669,6 +675,22 @@ body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
   border-left: 2px solid var(--interactive-accent);
   margin-left: -2px !important;
   background-color: var(--background-secondary);
+}
+
+.aura-neon-list .markdown-preview-section .list-bullet {
+  box-shadow: 0 0 0.5em var(--cpt-marker-shadow);
+}
+
+.aura-neon-list .list-bullet:after {
+  box-shadow: 0 0 0.5em var(--cpt-marker-shadow);
+}
+
+.aura-neon-list .markdown-preview-section .list-number {
+  text-shadow: 0 0 0.5em var(--cpt-marker-shadow);
+}
+
+.aura-neon-list ol > li::marker, ul > li::marker {
+  text-shadow: 0 0 0.5em var(--cpt-marker-shadow);
 }
 
 .aura-heading-color {
@@ -2955,6 +2977,10 @@ pre[class*=language] {
   content: "em";
 }
 
+body:not(.aura-neon-list) .setting-item[data-id=cpt-marker-shadow] {
+  display: none;
+}
+
 /* @settings
 
 name: Aura
@@ -3153,6 +3179,77 @@ settings:
       type: variable-select
       default: rgb(var(--cpt-blue))
       options:
+         - 
+            label: Red
+            value: rgb(var(--cpt-red))
+         - 
+            label: Orange
+            value: rgb(var(--cpt-orange))
+         - 
+            label: Yellow
+            value: rgb(var(--cpt-yellow))
+         - 
+            label: Green
+            value: rgb(var(--cpt-green))
+         - 
+            label: Cyan
+            value: rgb(var(--cpt-cyan))
+         - 
+            label: Blue
+            value: rgb(var(--cpt-blue))
+         -
+            label: Pink
+            value: rgb(var(--cpt-pink))
+         - 
+            label: Purple
+            value: rgb(var(--cpt-purple))
+   -
+      id: list-marker-color
+      title: List Marker Color
+      type: variable-select
+      default: rgb(var(--cpt-accent))
+      options:
+         -
+            label: Aura
+            value: rgb(var(--cpt-accent))
+         - 
+            label: Red
+            value: rgb(var(--cpt-red))
+         - 
+            label: Orange
+            value: rgb(var(--cpt-orange))
+         - 
+            label: Yellow
+            value: rgb(var(--cpt-yellow))
+         - 
+            label: Green
+            value: rgb(var(--cpt-green))
+         - 
+            label: Cyan
+            value: rgb(var(--cpt-cyan))
+         - 
+            label: Blue
+            value: rgb(var(--cpt-blue))
+         -
+            label: Pink
+            value: rgb(var(--cpt-pink))
+         - 
+            label: Purple
+            value: rgb(var(--cpt-purple))
+   -
+      id: aura-neon-list
+      title: Neon List
+      type: class-toggle
+      default: false
+   -
+      id: cpt-marker-shadow
+      title: List Marker Shadow Color
+      type: variable-select
+      default: rgb(var(--cpt-accent))
+      options:
+         -
+            label: Aura
+            value: rgb(var(--cpt-accent))
          - 
             label: Red
             value: rgb(var(--cpt-red))
