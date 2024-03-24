@@ -67,6 +67,13 @@
 	);
 }
 
+.aura-workspace-background.aura-card-layout  {
+	--card-background-color: rgba(
+		var(--cpt-crust),
+		var(--aura-workspace-background-workspace-slider-dark)
+	);
+}
+
 .aura-workspace-background .popover {
 	background-color: rgba(
 		var(--cpt-core),

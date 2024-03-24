@@ -1327,8 +1327,7 @@ body {
 }
 
 .aura-custom-checkbox .HyperMD-task-line[data-task="-"] {
-  -webkit-text-decoration: var(--checklist-done-decoration);
-          text-decoration: var(--checklist-done-decoration);
+  text-decoration: var(--checklist-done-decoration);
   color: var(--checklist-done-color);
 }
 
@@ -1666,12 +1665,12 @@ body:not(.aura-workspace-background) .prompt {
   background: rgba(var(--cpt-mantle));
 }
 
-.aura-card-layout .mod-root .workspace-tabs .workspace-leaf {
+.aura-card-layout:not(.aura-workspace-background) .mod-root .workspace-tabs .workspace-leaf {
   background-color: rgb(var(--cpt-mantle));
 }
 
-.aura-card-layout:not(.aura-colorful-frame) .workspace-tabs.mod-top,
-body.aura-card-layout:not(.aura-colorful-frame) {
+.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) .workspace-tabs.mod-top,
+body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) {
   --titlebar-background-focused: rgb(var(--cpt-mantle));
   --file-header-border: var(--border-width) dotted
   	var(--background-modifier-border);
@@ -1761,7 +1760,7 @@ body.aura-card-layout:not(.aura-colorful-frame) {
   border: 1px solid var(--tab-outline-color);
 }
 
-.aura-card-layout .workspace-split .workspace-leaf-content[data-type=file-explorer] {
+.aura-card-layout:not(.aura-workspace-background) .workspace-split .workspace-leaf-content[data-type=file-explorer] {
   background-color: var(--tab-container-background);
   box-shadow: none;
   border-width: 0;
@@ -1798,6 +1797,10 @@ body.aura-card-layout:not(.aura-colorful-frame) {
   border-style: solid;
   border-color: var(--tab-outline-color);
   border-radius: 0 var(--aura-card-radius, var(--radius-xl)) var(--aura-card-radius, var(--radius-xl)) 0;
+}
+
+.aura-card-layout .workspace .mod-root .workspace-tab-header.is-active {
+  margin-bottom: 0;
 }
 
 .aura-card-layout .mod-stacked .workspace-tab-container {
@@ -2430,6 +2433,13 @@ pre[class*=language] {
   );
 }
 
+.aura-workspace-background.aura-card-layout {
+  --card-background-color: rgba(
+  	var(--cpt-crust),
+  	var(--aura-workspace-background-workspace-slider-dark)
+  );
+}
+
 .aura-workspace-background .popover {
   background-color: rgba(var(--cpt-core), var(--aura-workspace-background-workspace-slider-dark));
 }
@@ -2442,14 +2452,12 @@ pre[class*=language] {
 
 .theme-light.aura-workspace-background .workspace {
   background-color: rgba(var(--cpt-core), 0.2);
-  -webkit-backdrop-filter: brightness(var(--aura-workspace-background-brightness-light, 0.5)) blur(var(--aura-workspace-background-blur-light, 5px));
-          backdrop-filter: brightness(var(--aura-workspace-background-brightness-light, 0.5)) blur(var(--aura-workspace-background-blur-light, 5px));
+  backdrop-filter: brightness(var(--aura-workspace-background-brightness-light, 0.5)) blur(var(--aura-workspace-background-blur-light, 5px));
 }
 
 .theme-dark.aura-workspace-background .workspace {
   background-color: rgba(var(--cpt-core), 0.2);
-  -webkit-backdrop-filter: brightness(var(--aura-workspace-background-brightness-dark, 0.5)) blur(var(--aura-workspace-background-blur-dark, 5px));
-          backdrop-filter: brightness(var(--aura-workspace-background-brightness-dark, 0.5)) blur(var(--aura-workspace-background-blur-dark, 5px));
+  backdrop-filter: brightness(var(--aura-workspace-background-brightness-dark, 0.5)) blur(var(--aura-workspace-background-blur-dark, 5px));
 }
 
 .theme-light.aura-workspace-background.aura-workspace-background-image-lines .horizontal-main-container {
@@ -4090,4 +4098,6 @@ settings:
       id: aura-vault-name-toggle
       title: Hide Vault Name
       type: class-toggle
-*//*# sourceMappingURL=theme.css.map */
+*/
+
+/*# sourceMappingURL=theme.css.map */

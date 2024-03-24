@@ -1,9 +1,9 @@
-.aura-card-layout .mod-root .workspace-tabs .workspace-leaf {
+.aura-card-layout:not(.aura-workspace-background) .mod-root .workspace-tabs .workspace-leaf {
 	background-color: rgb(var(--cpt-mantle));
 }
 
-.aura-card-layout:not(.aura-colorful-frame) .workspace-tabs.mod-top,
-body.aura-card-layout:not(.aura-colorful-frame) {
+.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) .workspace-tabs.mod-top,
+body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) {
 	--titlebar-background-focused: rgb(var(--cpt-mantle));
 	--file-header-border: var(--border-width) dotted
 		var(--background-modifier-border);
@@ -101,7 +101,7 @@ body.aura-card-layout:not(.aura-colorful-frame) {
 	border: 1px solid var(--tab-outline-color);
 }
 
-.aura-card-layout
+.aura-card-layout:not(.aura-workspace-background)
 	.workspace-split
 	.workspace-leaf-content[data-type="file-explorer"] {
 	background-color: var(--tab-container-background);
@@ -144,6 +144,10 @@ body.aura-card-layout:not(.aura-colorful-frame) {
 	border-color: var(--tab-outline-color);
 	border-radius: 0 var(--aura-card-radius, var(--radius-xl))
 		var(--aura-card-radius, var(--radius-xl)) 0;
+}
+
+.aura-card-layout .workspace .mod-root .workspace-tab-header.is-active {
+	margin-bottom: 0;
 }
 
 .aura-card-layout .mod-stacked .workspace-tab-container {
