@@ -1,0 +1,7 @@
+{
+	"name": "aura",
+	"version": "2.2.4",
+	"scripts": {
+		"version": "node version-bump.mjs && git add manifest.json versions.json"
+	}
+}
