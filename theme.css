@@ -2016,7 +2016,7 @@ body {
 .aura-origin-layout {
   --nav-item-background-active: var(--background-secondary-alt);
   --nav-item-background-hover: var(--background-secondary-alt);
-  --background-modifier-hover: var(--background-secondary);
+  --background-modifier-hover: rgba(var(--cpt-crust), 0.7);
   --nav-item-background-selected: transparent;
 }
 
