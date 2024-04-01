@@ -535,6 +535,47 @@ body {
   --cpt-purple: 108, 113, 196;
 }
 
+/* Light Theme */
+.theme-light.aura-colorschemes-light-tokyonight {
+  --cpt-crust: 188, 189, 194;
+  --cpt-crust-alt: 186, 187, 192;
+  --cpt-mantle: 203, 204, 209;
+  --cpt-mantle-alt: 201, 202, 207;
+  --cpt-core: 213, 214, 219;
+  --cpt-core-alt: 211, 212, 217;
+  --cpt-aura: var(--cpt-purple);
+  --cpt-red: 247, 118, 142;
+  --cpt-orange: 255, 158, 100;
+  --cpt-yellow: 224, 175, 104;
+  --cpt-green: 158, 206, 106;
+  --cpt-cyan: 115, 218, 202;
+  --cpt-blue: 42, 195, 222;
+  --cpt-pink: 244, 154, 247;
+  --cpt-purple: 187, 154, 247;
+  --cpt-black: 52, 59, 88;
+}
+
+/* Dark Theme */
+.theme-dark.aura-colorschemes-dark-tokyonight {
+  --cpt-crust: 22, 22, 30;
+  --cpt-crust-alt: 20, 20, 28;
+  --cpt-mantle: 24, 24, 34;
+  --cpt-mantle-alt: 22, 22, 32;
+  --cpt-core: 26, 27, 38;
+  --cpt-core-alt: 24, 24, 36;
+  --cpt-aura: var(--cpt-purple);
+  --cpt-red: 247, 118, 142;
+  --cpt-orange: 255, 158, 100;
+  --cpt-yellow: 224, 175, 104;
+  --cpt-green: 158, 206, 106;
+  --cpt-cyan: 115, 218, 202;
+  --cpt-blue: 42, 195, 222;
+  --cpt-pink: 244, 154, 247;
+  --cpt-purple: 187, 154, 247;
+  --cpt-black: 52, 59, 88;
+  --cpt-white: 169, 177, 214;
+}
+
 /* Dark Theme */
 .theme-dark.aura-colorschemes-dark-mystical-nights {
   --cpt-crust: 9, 0, 15;
@@ -1799,10 +1840,6 @@ body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) 
   border-radius: 0 var(--aura-card-radius, var(--radius-xl)) var(--aura-card-radius, var(--radius-xl)) 0;
 }
 
-.aura-card-layout .workspace .mod-root .workspace-tab-header.is-active {
-  margin-bottom: 0;
-}
-
 .aura-card-layout .mod-stacked .workspace-tab-container {
   padding-bottom: var(--aura-card-layout-padding, 10px);
 }
@@ -2121,8 +2158,8 @@ the colorful border interferes with the tab look. */
 }
 
 /* making the active tab color correct */
-.aura-origin-layout .tree-item-self.is-active {
-  background-color: rgb(var(--cpt-crust));
+.aura-origin-layout:not(.aura-rainbow-folders) .tree-item-self.is-active {
+  background-color: rgba(var(--cpt-crust), 0.6);
 }
 
 /* making the hover tab color correct */
@@ -3075,6 +3112,9 @@ settings:
       - 
          label: Gruvbox
          value: aura-colorschemes-light-gruvbox
+      -
+         label: Tokyonight
+         value: aura-colorschemes-light-tokyonight
       - 
          label: Solarized
          value: aura-colorschemes-light-solarized
@@ -3109,6 +3149,9 @@ settings:
       - 
          label: Gruvbox
          value: aura-colorschemes-dark-gruvbox
+      -
+         label: Tokyonight
+         value: aura-colorschemes-dark-tokyonight
       - 
          label: Solarized
          value: aura-colorschemes-dark-solarized

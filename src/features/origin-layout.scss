@@ -298,8 +298,8 @@ the colorful border interferes with the tab look. */
 }
 
 /* making the active tab color correct */ 
-.aura-origin-layout .tree-item-self.is-active {
-	background-color: rgb(var(--cpt-crust));
+.aura-origin-layout:not(.aura-rainbow-folders) .tree-item-self.is-active {
+	background-color: rgba(var(--cpt-crust), 0.6);
 }
 
 /* making the hover tab color correct */ 

@@ -146,10 +146,6 @@ body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) 
 		var(--aura-card-radius, var(--radius-xl)) 0;
 }
 
-.aura-card-layout .workspace .mod-root .workspace-tab-header.is-active {
-	margin-bottom: 0;
-}
-
 .aura-card-layout .mod-stacked .workspace-tab-container {
 	padding-bottom: var(--aura-card-layout-padding, 10px);
 }
