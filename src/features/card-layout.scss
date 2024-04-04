@@ -20,10 +20,6 @@ body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) 
 	border: none;
 }
 
-.aura-card-layout-actions.aura-card-layout .workspace-ribbon.mod-left {
-	padding-right: var(--aura-card-layout-padding, 10px);
-}
-
 .aura-card-layout .workspace-ribbon.mod-left:before {
 	border-bottom: none;
 	background-color: var(--tab-container-background) !important;
@@ -35,19 +31,19 @@ body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) 
 }
 
 .aura-card-layout-actions.aura-card-layout .side-dock-actions {
-	border-radius: 0 var(--aura-card-radius, var(--radius-xl))
-		var(--aura-card-radius, var(--radius-xl)) 0;
+	border-radius: var(--aura-card-radius, var(--radius-xl));
 	border: 1px solid var(--tab-outline-color);
 	background-color: var(--card-background-color);
 	margin-top: 2px;
-	width: 38px;
+	margin-left: 2px;
 }
 
 .aura-card-layout-actions.aura-card-layout .side-dock-settings {
-	border-radius: 0 var(--aura-card-radius, var(--radius-xl)) 0 0;
+	border-radius: var(--aura-card-radius, var(--radius-xl));
 	border: 1px solid var(--tab-outline-color);
 	background-color: var(--card-background-color);
-	width: 38px;
+	margin-bottom: 2px;
+	margin-left: 2px;
 }
 
 .aura-card-layout .workspace-ribbon.mod-left {
@@ -179,6 +175,10 @@ body.aura-disable-borders.aura-workspace-background-image-dark-toggle {
 .workspace-leaf .graph-controls.is-close,
 .workspace-leaf .graph-controls:not(.is-close) {
 	background-color: rgb(var(--side));
+}
+
+.aura-card-layout .workspace-ribbon.side-dock-ribbon.mod-left {
+	margin-right: 2px;
 }
 
 body {

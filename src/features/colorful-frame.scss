@@ -140,14 +140,14 @@
 	.workspace-ribbon
 	.side-dock-settings
 	> .clickable-icon,
-.aura-colorful-frame:not(.aura-translucent-window):not(
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window):not(
 		.aura-card-layout-fileexplorer
 	)
 	.mod-left-split
 	.workspace-tabs.mod-top
 	.tree-item
 	> .tree-item-self,
-.aura-colorful-frame:not(.aura-translucent-window):not(
+.aura-colorful-frame.aura-card-layout:not(.aura-translucent-window):not(
 		.aura-card-layout-fileexplorer
 	)
 	.workspace-tabs.mod-top
@@ -156,7 +156,11 @@
 .aura-colorful-frame:not(.aura-translucent-window)
 	.titlebar
 	> .titlebar-inner
-	> .titlebar-text {
+	> .titlebar-text,
+.aura-colorful-frame 
+	.workspace-tabs
+	.workspace-tab-header-inner
+	.workspace-tab-header-status-container > .workspace-tab-header-status-icon {
 	color: rgb(var(--cpt-black)) !important;
 	--icon-color: rgb(var(--cpt-black)) !important;
 	--icon-color-hover: rgb(var(--cpt-black)) !important;
@@ -195,6 +199,15 @@
 	height: 35px;
 	width: 44px;
 	border-radius: 7px;
+}
+
+.aura-colorful-frame .sidebar-toggle-button.mod-left {
+	margin-top: 2px;
+	margin-left: 2px;
+}
+
+.aura-colorful-frame .sidebar-toggle-button.mod-right {
+	margin-top: 2px;
 }
 
 .workspace-split.mod-vertical .workspace-tab-header-new-tab {
