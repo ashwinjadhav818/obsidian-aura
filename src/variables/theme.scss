@@ -40,7 +40,7 @@
    --background-modifier-border: rgb(var(--cpt-border));
    --background-modifier-border-hover: rgb(var(--cpt-border));
    --background-modifier-form-field: rgb(var(--cpt-crust));
-   --background-modifier-hover: rgb(var(--cpt-crust));
+   --background-modifier-hover: rgba(var(--cpt-crust), 0.7);
 
    /* Interictive elements */
    --interactive-normal: rgb(var(--cpt-mantle));
@@ -102,7 +102,7 @@
    --background-modifier-border: rgb(var(--cpt-border));
    --background-modifier-border-hover: rgb(var(--cpt-border));
    --background-modifier-form-field: rgb(var(--cpt-crust));
-   --background-modifier-hover: rgb(var(--cpt-crust));
+   --background-modifier-hover: rgba(var(--cpt-crust), 0.7);
 
    /* Interictive elements */
    --interactive-normal: rgb(var(--cpt-crust));
