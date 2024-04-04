@@ -1,12 +1,11 @@
 .aura-colorful-frame:not(.aura-translucent-window) {
-	--aura-colorful-frame-opacity: 1;
 	--titlebar-background: rgba(
 		var(--cpt-accent),
-		var(--aura-colorful-frame-opacity)
+		var(--aura-colorful-frame-opacity, 1)
 	);
 	--titlebar-background-focused: rgba(
 		var(--cpt-accent),
-		var(--aura-colorful-frame-opacity)
+		var(--aura-colorful-frame-opacity, 1)
 	);
 	--tab-container-background: rgba(var(--cpt-accent), 0.7);
 }
