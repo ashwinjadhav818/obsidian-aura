@@ -42,7 +42,7 @@ body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) 
 	border-radius: var(--aura-card-radius, var(--radius-xl));
 	border: 1px solid var(--tab-outline-color);
 	background-color: var(--card-background-color);
-	margin-bottom: 2px;
+	margin-bottom: var(--aura-card-layout-padding, 10px);
 	margin-left: 2px;
 }
 
