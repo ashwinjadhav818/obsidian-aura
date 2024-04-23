@@ -102,11 +102,15 @@
 	--ribbon-background-collapsed: rgb(var(--cpt-crust));
 }
 
-.aura-origin-layout .workspace-ribbon.mod-left:before {
+.aura-origin-layout:not(.aura-colorful-frame)
+	.workspace-ribbon.mod-left:before {
 	background-color: var(--ribbon-background);
+	border-right: var(--tab-outline-width) solid var(--ribbon-background);
 	border-bottom: var(--tab-outline-width) solid
 		var(--background-secondary-alt);
-	border-right: var(--tab-outline-width) solid var(--ribbon-background);
+}
+
+.aura-origin-layout .workspace-ribbon.mod-left:before {
 	width: var(--ribbon-width);
 }
 .aura-origin-layout .workspace-ribbon.mod-left .sidebar-toggle-button {
@@ -276,39 +280,45 @@
 	padding-bottom: 0px;
 	margin-top: 3px;
 }
-.aura-origin-layout .workspace-tab-header-container {
+.aura-origin-layout:not(.aura-colorful-frame) .workspace-tab-header-container {
 	background-color: var(--ribbon-background) !important;
 }
 /* make the background lighter, like a tab.
 But only when the file explorer is not active, because
 the colorful border interferes with the tab look. */
 .aura-origin-layout .mod-left-split .workspace-tab-header.is-active {
-	background-color: var(--background-secondary) !important;
 	border-radius: 4px 4px 0 0;
 }
 
-.aura-origin-layout .mod-left-split .workspace-tab-header {
-	/* make these tabs wider */
-	width: 45px;
+.aura-origin-layout:not(.aura-colorful-frame)
+	.mod-left-split
+	.workspace-tab-header.is-active {
+	background-color: var(--background-secondary) !important;
 }
+
+// .aura-origin-layout .mod-left-split .workspace-tab-header {
+// 	/* make these tabs wider */
+// 	width: 45px;
+// }
 
 /* remove bottom border for tabs */
 .aura-origin-layout .workspace-tab-header-container {
 	border-bottom: none;
 }
 
-/* making the active tab color correct */ 
+/* making the active tab color correct */
 .aura-origin-layout:not(.aura-rainbow-folders) .tree-item-self.is-active {
 	background-color: rgba(var(--cpt-crust), 0.6);
 }
 
-/* making the hover tab color correct */ 
-.aura-origin-layout:not(.is-grabbing):not(.aura-rainbow-folders) .tree-item-self.is-clickable:hover {
+/* making the hover tab color correct */
+.aura-origin-layout:not(.is-grabbing):not(.aura-rainbow-folders)
+	.tree-item-self.is-clickable:hover {
 	background-color: rgba(var(--cpt-crust), 0.6);
 }
 
 /* ------------ ****** Titlebar ****** ---------- */
-.aura-origin-layout .titlebar {
+.aura-origin-layout:not(.aura-colorful-frame) .titlebar {
 	background-color: var(--ribbon-background) !important;
 }
 
