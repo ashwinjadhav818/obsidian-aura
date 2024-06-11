@@ -18,159 +18,161 @@
 	color: rgb(var(--cpt-text));
 }
 
-.aura-rainbow-folders
-	.nav-files-container
-	> .tree-item.nav-folder
-	> .tree-item-children
-	> .tree-item.nav-file {
+.aura-rainbow-folders.aura-card-layout .nav-files-container > div > .tree-item.nav-file {
 	background-color: rgb(var(--cpt-white));
+	border-radius: 5px;
+	border-color: rgb(var(--cpt-crust));
 }
 
 .aura-rainbow-folders
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 2) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 2) {
 	background-color: rgb(var(--cpt-red));
 	border-color: rgb(var(--cpt-red));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 3) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 3) {
 	background-color: rgb(var(--cpt-orange));
 	border-color: rgb(var(--cpt-orange));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 4) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 4) {
 	background-color: rgb(var(--cpt-yellow));
 	border-color: rgb(var(--cpt-yellow));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 5) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 5) {
 	background-color: rgb(var(--cpt-green));
 	border-color: rgb(var(--cpt-green));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 6) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 6) {
 	background-color: rgb(var(--cpt-cyan));
 	border-color: rgb(var(--cpt-cyan));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 7) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 7) {
 	background-color: rgb(var(--cpt-blue));
 	border-color: rgb(var(--cpt-blue));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 8) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 8) {
 	background-color: rgb(var(--cpt-pink));
 	border-color: rgb(var(--cpt-pink));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 9) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 9) {
 	background-color: rgb(var(--cpt-purple));
 	border-color: rgb(var(--cpt-purple));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 2) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 2) {
 	background-color: rgb(var(--cpt-pink));
 	border-color: rgb(var(--cpt-pink));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 3) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 3) {
 	background-color: rgb(var(--cpt-purple));
 	border-color: rgb(var(--cpt-purple));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 4) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 4) {
 	background-color: rgb(var(--cpt-blue));
 	border-color: rgb(var(--cpt-blue));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 5) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 5) {
 	background-color: rgb(var(--cpt-cyan));
 	border-color: rgb(var(--cpt-cyan));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 6) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 6) {
 	background-color: rgb(var(--cpt-orange));
 	border-color: rgb(var(--cpt-orange));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 7) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 7) {
 	background-color: rgb(var(--cpt-green));
 	border-color: rgb(var(--cpt-green));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 8) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 8) {
 	background-color: rgb(var(--cpt-red));
 	border-color: rgb(var(--cpt-red));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 .aura-rainbow-folders.aura-colorschemes-dark-mystical-nights
-	.nav-folder.mod-root
-	> .nav-folder-children
-	> .nav-folder:nth-child(8n + 9) {
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder:nth-child(8n + 9) {
 	background-color: rgb(var(--cpt-purple));
 	border-color: rgb(var(--cpt-purple));
 	border-radius: 5px;
 	margin-top: 2px;
 }
 
-.aura-rainbow-folders.aura-colorful-frame.aura-card-layout .mod-left-split .nav-files-container > .mod-root > .tree-item-children > .tree-item.nav-folder {
+.aura-rainbow-folders.aura-colorful-frame.aura-card-layout
+	.mod-left-split
+	.nav-files-container
+	> div
+	> .tree-item.nav-folder {
 	border: 1px solid rgb(var(--cpt-crust));
 }
