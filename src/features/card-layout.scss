@@ -5,8 +5,7 @@
 .aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) .workspace-tabs.mod-top,
 body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) {
 	--titlebar-background-focused: rgb(var(--cpt-mantle));
-	--file-header-border: var(--border-width) dotted
-		var(--background-modifier-border);
+	--file-header-border: var(--border-width) dotted var(--background-modifier-border);
 }
 
 .aura-card-layout .mod-left-split .workspace-tab-header-container,
@@ -31,20 +30,20 @@ body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) 
 }
 
 .aura-card-layout-actions.aura-card-layout .side-dock-actions {
-	border-radius: var(--aura-card-radius, var(--radius-xl));
+	border-radius: 5px;
 	border: 1px solid var(--tab-outline-color);
 	background-color: var(--card-background-color);
 	margin-top: 2px;
 	margin-left: 2px;
 }
 
-.aura-card-layout-actions.aura-card-layout .side-dock-settings {
-	border-radius: var(--aura-card-radius, var(--radius-xl));
-	border: 1px solid var(--tab-outline-color);
-	background-color: var(--card-background-color);
-	margin-bottom: var(--aura-card-layout-padding, 10px);
-	margin-left: 2px;
-}
+// .aura-card-layout-actions.aura-card-layout .side-dock-settings {
+// 	border-radius: var(--aura-card-radius, var(--radius-xl));
+// 	border: 1px solid var(--tab-outline-color);
+// 	background-color: var(--card-background-color);
+// 	margin-bottom: var(--aura-card-layout-padding, 10px);
+// 	margin-left: 2px;
+// }
 
 .aura-card-layout .workspace-ribbon.mod-left {
 	margin-top: calc(var(--header-height) - 1px) !important;
@@ -78,16 +77,10 @@ body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) 
 	padding-right: var(--aura-card-layout-padding, 10px);
 }
 
-.aura-card-layout
-	.workspace-split.mod-horizontal
-	> *
-	> .workspace-leaf-resize-handle,
-.aura-card-layout
-	.workspace-split.mod-left-split
-	> .workspace-leaf-resize-handle,
-.aura-card-layout
-	.workspace-split.mod-right-split
-	> .workspace-leaf-resize-handle {
+.aura-card-layout .workspace-split.mod-horizontal>*>.workspace-leaf-resize-handle,
+.aura-card-layout .workspace-split.mod-left-split>.workspace-leaf-resize-handle,
+.aura-card-layout .workspace-split.mod-right-split>.workspace-leaf-resize-handle,
+.aura-card-layout .workspace-split.mod-left-split>.workspace-sidedock-vault-profile {
 	border: 2px solid transparent;
 }
 
@@ -97,17 +90,13 @@ body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) 
 	border: 1px solid var(--tab-outline-color);
 }
 
-.aura-card-layout:not(.aura-workspace-background)
-	.workspace-split
-	.workspace-leaf-content[data-type="file-explorer"] {
+.aura-card-layout:not(.aura-workspace-background) .workspace-split .workspace-leaf-content[data-type="file-explorer"] {
 	background-color: var(--tab-container-background);
 	box-shadow: none;
 	border-width: 0;
 }
 
-.aura-card-layout.aura-card-layout-fileexplorer
-	.workspace-split
-	.workspace-leaf-content[data-type="file-explorer"] {
+.aura-card-layout.aura-card-layout-fileexplorer .workspace-split .workspace-leaf-content[data-type="file-explorer"] {
 	background-color: var(--card-background-color);
 	border-width: 1px;
 }
@@ -119,14 +108,13 @@ body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) 
 	border-left: none;
 }
 
-.aura-card-layout .workspace-split.mod-horizontal > * {
+.aura-card-layout .workspace-split.mod-horizontal>* {
 	width: unset;
 }
 
 .aura-card-layout .mod-stacked .workspace-tab-header {
 	border-style: solid;
-	border-radius: var(--aura-card-radius, var(--radius-xl)) 0 0
-		var(--aura-card-radius, var(--radius-xl)) !important;
+	border-radius: var(--aura-card-radius, var(--radius-xl)) 0 0 var(--aura-card-radius, var(--radius-xl)) !important;
 	border-width: var(--tab-outline-width);
 	border-color: var(--tab-outline-color);
 	border-right: var(--tab-outline-width) dashed var(--tab-outline-color);
@@ -138,8 +126,7 @@ body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) 
 	border-bottom-width: var(--tab-outline-width);
 	border-style: solid;
 	border-color: var(--tab-outline-color);
-	border-radius: 0 var(--aura-card-radius, var(--radius-xl))
-		var(--aura-card-radius, var(--radius-xl)) 0;
+	border-radius: 0 var(--aura-card-radius, var(--radius-xl)) var(--aura-card-radius, var(--radius-xl)) 0;
 }
 
 .aura-card-layout .mod-stacked .workspace-tab-container {
@@ -160,6 +147,7 @@ body.aura-disable-borders.aura-workspace-background-image-dark-toggle {
 	height: calc(100% - 6px - var(--aura-card-layout-padding, 0) * 2);
 	margin: auto;
 }
+
 .workspace-split:not(.mod-root) .graph-controls,
 .workspace-split:not(.mod-root) .graph-controls.is-close,
 .workspace-split:not(.mod-root) .graph-controls:not(.is-close) {
@@ -168,9 +156,7 @@ body.aura-disable-borders.aura-workspace-background-image-dark-toggle {
 
 .aura-card-layout .workspace-split:not(.mod-root) .graph-controls,
 .aura-card-layout .workspace-split:not(.mod-root) .graph-controls.is-close,
-.aura-card-layout
-	.workspace-split:not(.mod-root)
-	.graph-controls:not(.is-close),
+.aura-card-layout .workspace-split:not(.mod-root) .graph-controls:not(.is-close),
 .workspace-leaf .graph-controls,
 .workspace-leaf .graph-controls.is-close,
 .workspace-leaf .graph-controls:not(.is-close) {
@@ -179,6 +165,13 @@ body.aura-disable-borders.aura-workspace-background-image-dark-toggle {
 
 .aura-card-layout .workspace-ribbon.side-dock-ribbon.mod-left {
 	margin-right: 2px;
+}
+
+.aura-card-layout .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+	background-color: transparent !important;
+	padding-left: var(--aura-card-layout-padding, 10px);
+	padding-right: var(--aura-card-layout-padding, 10px);
+	padding-bottom: var(--aura-card-layout-padding, 10px);
 }
 
 body {
