@@ -73,8 +73,16 @@ body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) 
 	padding-bottom: var(--aura-card-layout-padding, 10px);
 }
 
+.aura-card-layout .mod-left-split .workspace-tab-container {
+	padding-left: var(--aura-card-layout-padding, 10px);
+}
+
 .aura-card-layout .mod-right-split .workspace-tab-container {
 	padding-right: var(--aura-card-layout-padding, 10px);
+}
+
+.aura-card-layout .mod-stacked .workspace-tab-container {
+	padding-bottom: var(--aura-card-layout-padding, 10px);
 }
 
 .aura-card-layout .workspace-split.mod-horizontal>*>.workspace-leaf-resize-handle,
@@ -127,10 +135,6 @@ body.aura-card-layout:not(.aura-colorful-frame):not(.aura-workspace-background) 
 	border-style: solid;
 	border-color: var(--tab-outline-color);
 	border-radius: 0 var(--aura-card-radius, var(--radius-xl)) var(--aura-card-radius, var(--radius-xl)) 0;
-}
-
-.aura-card-layout .mod-stacked .workspace-tab-container {
-	padding-bottom: var(--aura-card-layout-padding, 10px);
 }
 
 .aura-card-layout .mod-top .workspace-leaf-resize-handle {
