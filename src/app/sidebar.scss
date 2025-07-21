@@ -2,7 +2,7 @@
 body:not(.is-grabbing) .tree-item-self.is-active:hover,
 .tree-item-self.is-active,
 body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
-	background: rgba(var(--cpt-core), 0.2);
+	background: rgb(var(--cpt-crust-alt));
 }
 .nav-folder .tree-item-self {
 	margin-bottom: 0px !important;
